@@ -1,69 +1,55 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+import { Hero } from "@/components/home/Hero";
+import { Marquee } from "@/components/home/Marquee";
+import { ServicesIndex } from "@/components/home/ServicesIndex";
+import { StatsSection } from "@/components/home/StatsSection";
+import { WorkGridSection } from "@/components/home/WorkGrid";
+import { Ic } from "@/components/ui/Ic";
+import { Reveal } from "@/components/ui/Reveal";
+import { ScrubText } from "@/components/ui/ScrubText";
+import { D } from "@/lib/icons";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <Hero />
+      <Marquee />
+      <section className="sec bg-paper">
+        <div className="wrap">
+          <Reveal className="sec-label">(01) Who we are</Reveal>
+          <ScrubText
+            style={{ marginTop: "2.5rem" }}
+            text="Twelve senior people in Hyderabad, building for companies in six countries. Websites, apps, cloud, AI — no juniors learning on your budget, and no handover to a team you never met."
+          />
+          <Reveal className="intro-foot">
+            <span>— THE POINT, IN 30 WORDS</span>
+            <Link className="link-arrow" href="/about">
+              More about the company <Ic d={D.ne} />
+            </Link>
+          </Reveal>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+      <section className="sec bg-ink">
+        <div className="wrap">
+          <div className="sec-head row-between">
+            <div>
+              <Reveal className="sec-label">(02) Capabilities</Reveal>
+              <Reveal variant="clip" className="sec-title">
+                <span>
+                  BUILT <em>IN-HOUSE</em>
+                </span>
+              </Reveal>
+            </div>
+            <Reveal as="p" className="lead" delay={0.1}>
+              One accountable team across the whole stack — so nothing gets lost
+              between the design file and production.
+            </Reveal>
+          </div>
+          <ServicesIndex />
         </div>
-      </main>
-    </div>
+      </section>
+      <WorkGridSection />
+      <StatsSection />
+    </>
   );
 }
