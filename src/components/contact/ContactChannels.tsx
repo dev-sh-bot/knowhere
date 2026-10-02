@@ -1,37 +1,36 @@
 import { Clock } from "@/components/ui/Clock";
 import { Ic } from "@/components/ui/Ic";
 import { Reveal } from "@/components/ui/Reveal";
+import { CONTACT } from "@/lib/data";
 import { D } from "@/lib/icons";
 
 export function ContactChannels() {
   return (
     <Reveal className="c-channels">
-      <a className="ch" href="mailto:Info@knowheresystems.com">
+      <a className="ch" href={`mailto:${CONTACT.email}`}>
         <span className="ch-k">EMAIL</span>
-        <span className="ch-v">Info@knowheresystems.com</span>
+        <span className="ch-v">{CONTACT.email}</span>
         <Ic d={D.ne} className="ch-a" />
       </a>
       <a
         className="ch"
-        href="https://wa.me/923133054378"
+        href={CONTACT.whatsapp}
         target="_blank"
         rel="noopener noreferrer"
       >
         <span className="ch-k">PHONE / WHATSAPP</span>
-        <span className="ch-v">+92 313 3054378</span>
+        <span className="ch-v">{CONTACT.phone}</span>
         <Ic d={D.ne} className="ch-a" />
       </a>
       <div className="ch">
-        <span className="ch-k">OFFICE</span>
+        <span className="ch-k">HOURS</span>
         <span className="ch-v">
-          House 279/5-6, Al-Waheed Colony, Hyderabad 71000, Sindh, Pakistan
+          {CONTACT.hours} — now <Clock />
         </span>
       </div>
       <div className="ch">
-        <span className="ch-k">HOURS</span>
-        <span className="ch-v">
-          Mon–Sat, 09:00–18:00 PKT — now <Clock /> PKT
-        </span>
+        <span className="ch-k">REPLY</span>
+        <span className="ch-v">Within one business day — a human, not a bot</span>
       </div>
     </Reveal>
   );

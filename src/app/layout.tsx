@@ -19,16 +19,16 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Knowhere Systems — IT Services, Hyderabad",
+    default: "Knowhere Systems — IT Services & Software",
     template: "%s — Knowhere Systems",
   },
   description:
-    "Knowhere Systems — IT services agency in Hyderabad, Pakistan. Web apps, mobile apps, UI/UX, cloud, AI, cybersecurity, data analytics, QA and consulting. From nowhere to now here.",
+    "Knowhere Systems — a senior IT services company. Web apps, mobile apps, UI/UX, cloud, AI, cybersecurity, data analytics, QA and consulting. From nowhere to now here.",
   metadataBase: new URL("https://knowheresystems.com"),
   openGraph: {
-    title: "Knowhere Systems — IT Services, Hyderabad",
+    title: "Knowhere Systems — IT Services & Software",
     description:
-      "Web apps, mobile, cloud, AI, security and consulting — engineered in Hyderabad, shipped worldwide.",
+      "Web apps, mobile, cloud, AI, security and consulting — engineered by a senior team, shipped worldwide.",
     type: "website",
   },
   icons: {
@@ -50,19 +50,11 @@ const jsonLd = {
   "@type": "ProfessionalService",
   name: "Knowhere Systems",
   description:
-    "IT services agency — web development, custom software, mobile apps, UI/UX, cloud & DevOps, cybersecurity, AI & automation, data analytics, QA testing and IT consulting.",
+    "IT services company — web development, custom software, mobile apps, UI/UX, cloud & DevOps, cybersecurity, AI & automation, data analytics, QA testing and IT consulting.",
   email: "Info@knowheresystems.com",
   telephone: "+923133054378",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "House 279/5-6, Al-Waheed Colony",
-    addressLocality: "Hyderabad",
-    addressRegion: "Sindh",
-    postalCode: "71000",
-    addressCountry: "PK",
-  },
   foundingDate: "2020",
-  areaServed: ["Pakistan", "United Arab Emirates", "United Kingdom"],
+  areaServed: "Worldwide",
   url: "https://knowheresystems.com",
 };
 

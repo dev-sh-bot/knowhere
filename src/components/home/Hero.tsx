@@ -281,7 +281,7 @@ export function Hero() {
         </div>
         <Reveal className="hero-foot" delay={0.85}>
           <span>
-            EST. 2020 — HYDERABAD ⇄ WORLDWIDE — <b>80+ SHIPPED</b>
+            EST. 2020 — SENIOR TEAM · WORLDWIDE CLIENTS — <b>80+ SHIPPED</b>
           </span>
           <span className="hf-scroll">
             SCROLL

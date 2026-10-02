@@ -404,8 +404,14 @@ footer{position:relative;background:
 .f-meta{margin-top:2.2rem;font:500 11px/2.2 var(--font-m);letter-spacing:.12em;color:var(--mut);text-transform:uppercase}
 .f-meta a{color:var(--fg)}
 .f-meta a:hover{color:var(--lime-deep)}
-.pr-row{display:grid;grid-template-columns:70px 1fr 1.3fr;gap:2rem;padding:2.6rem 0;border-top:1px solid var(--hair-i);align-items:start}
-.pr-row:last-child{border-bottom:1px solid var(--hair-i)}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--hair-i);margin-top:.5rem}
+.team-card{list-style:none;padding:2.2rem 1.6rem 2.4rem 0;border-bottom:1px solid var(--hair-i);border-right:1px solid var(--hair-i)}
+.team-card:nth-child(4n){border-right:none;padding-right:0}
+.team-num{display:block;font:500 10px/1 var(--font-m);letter-spacing:.22em;color:var(--lime);margin-bottom:1.1rem}
+.team-name{font:700 clamp(1.05rem,1.6vw,1.35rem)/1.15 var(--font-d);font-variation-settings:'wdth' 112;text-transform:uppercase;color:var(--paper)}
+.team-role{display:block;font:500 11px/1.5 var(--font-m);letter-spacing:.08em;color:var(--mut-i);margin-top:.75rem}
+.pr-row{display:grid;grid-template-columns:70px 1fr 1.3fr;gap:2rem;padding:2.6rem 0;border-top:1px solid var(--hair);align-items:start}
+.pr-row:last-child{border-bottom:1px solid var(--hair)}
 .pr-row b{font:700 11px/1 var(--font-m);color:var(--lime);padding-top:.5rem}
 .pr-row h3{font:700 clamp(1.1rem,2vw,1.5rem)/1.15 var(--font-d);font-variation-settings:'wdth' 114;text-transform:uppercase}
 .pr-row p{color:var(--mut-i);font-size:.98rem;max-width:52ch}
@@ -497,9 +503,11 @@ a.ch:hover .ch-v{text-decoration:underline;text-decoration-thickness:2px;text-de
   .wl-item:nth-child(even) .wl-media{order:0}
   .wl-item:nth-child(even) .wl-info{order:1;padding-top:0}
   .founder-grid{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:1fr 1fr}
+  .team-card:nth-child(4n){border-right:1px solid var(--hair-i);padding-right:1.6rem}
+  .team-card:nth-child(2n){border-right:none;padding-right:0}
   .pr-row{grid-template-columns:56px 1fr}
   .pr-row p{grid-column:2}
-  .loc-grid{grid-template-columns:1fr;justify-items:start;gap:2.5rem}
   .contact-grid{grid-template-columns:1fr}
   .f-row{grid-template-columns:1fr}
   .m-cols{grid-template-columns:1fr}
@@ -510,6 +518,8 @@ a.ch:hover .ch-v{text-decoration:underline;text-decoration-thickness:2px;text-de
 @media(max-width:560px){
   .hero-inner{padding-top:calc(72px + 1.5rem)}
   .phero-title{font-size:14vw}
+  .team-grid{grid-template-columns:1fr}
+  .team-card,.team-card:nth-child(2n),.team-card:nth-child(4n){border-right:none;padding-right:0}
   .ch{grid-template-columns:1fr;gap:.5rem}
   .ch-a{display:none}
   .btn{padding:1.15em 1.5em;font-size:10px}

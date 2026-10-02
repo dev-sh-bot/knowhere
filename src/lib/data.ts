@@ -222,7 +222,7 @@ export const CASES: CaseStudy[] = [
     no: "C-01",
     title: "Meridian Retail",
     sector: "RETAIL & E-COMMERCE",
-    loc: "KARACHI, PK",
+    loc: "RETAIL · E-COMMERCE",
     year: "2024",
     tags: ["web", "commerce"],
     homeTag: "E-COMMERCE — 2024",
@@ -261,7 +261,7 @@ export const CASES: CaseStudy[] = [
     no: "C-03",
     title: "Sona Textiles",
     sector: "MANUFACTURING & B2B",
-    loc: "FAISALABAD, PK",
+    loc: "MANUFACTURING · B2B",
     year: "2023",
     tags: ["web"],
     homeTag: "B2B WEB — 2023",
@@ -301,13 +301,13 @@ export const CASES: CaseStudy[] = [
     no: "C-05",
     title: "Agha Freight",
     sector: "LOGISTICS",
-    loc: "HYDERABAD, PK",
+    loc: "LOGISTICS · FLEET",
     year: "2025",
     tags: ["mobile", "cloud"],
     homeTag: "LOGISTICS — 2025",
     img: "https://picsum.photos/seed/agha-freight/1200/800.jpg",
     blurb:
-      "Live tracking platform for a 1,200-vehicle fleet across Sindh and Punjab — built to work on 2G.",
+      "Live tracking platform for a 1,200-vehicle fleet — built to work on 2G.",
     ch: "Customers called dispatch for location updates; dispatch called the drivers. Nobody knew where anything was.",
     bd: "Offline-first driver check-ins, live GPS ingestion, geofenced alerts, and a tracking page that loads on 2G.",
     outs: [
@@ -402,14 +402,27 @@ export const PRINCIPLES: Principle[] = [
 ];
 
 export const TIMELINE: TimelineItem[] = [
-  { y: "2020", d: "Founded in a rented house in Al-Waheed Colony, Hyderabad." },
+  { y: "2020", d: "Knowhere Systems founded — one engineer, one stubborn bar for quality." },
   { y: "2022", d: "25th project shipped. The design practice launches." },
-  { y: "2023", d: "First international clients — the UAE and UK." },
+  { y: "2023", d: "First international clients across the Middle East and Europe." },
   { y: "2024", d: "Managed services and 24/7 support plans launch." },
   {
     y: "2025",
     d: "80+ projects delivered — still answering our own phones.",
   },
+];
+
+export type TeamMember = { name: string; role: string };
+
+export const TEAM: TeamMember[] = [
+  { name: "Syed Huzaifa Ali", role: "Founder & Principal Engineer" },
+  { name: "Ayesha Rahman", role: "Head of Product Design" },
+  { name: "Bilal Khan", role: "Lead Mobile Engineer" },
+  { name: "Fatima Noor", role: "Cloud & DevOps Lead" },
+  { name: "Hamza Siddiqui", role: "Full-Stack Engineer" },
+  { name: "Sara Malik", role: "QA & Delivery Lead" },
+  { name: "Omar Farooq", role: "AI & Automation" },
+  { name: "Zainab Ali", role: "Client Success" },
 ];
 
 export const STATS: Stat[] = [
@@ -456,11 +469,5 @@ export const CONTACT = {
   phone: "+92 313 3054378",
   phoneTel: "+923133054378",
   whatsapp: "https://wa.me/923133054378",
-  address: "House 279/5-6, Al-Waheed Colony",
-  city: "Hyderabad 71000, Sindh, Pakistan",
-  addressLines: [
-    "House 279/5-6, Al-Waheed Colony",
-    "Hyderabad 71000, Sindh, Pakistan",
-  ],
-  hours: "Mon–Sat, 09:00–18:00 PKT",
+  hours: "Mon–Sat, 09:00–18:00",
 } as const;

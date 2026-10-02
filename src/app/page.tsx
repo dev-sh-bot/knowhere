@@ -19,7 +19,7 @@ export default function HomePage() {
           <Reveal className="sec-label">(01) Who we are</Reveal>
           <ScrubText
             style={{ marginTop: "2.5rem" }}
-            text="Twelve senior people in Hyderabad, building for companies in six countries. Websites, apps, cloud, AI — no juniors learning on your budget, and no handover to a team you never met."
+            text="A small senior team building for companies in six countries. Websites, apps, cloud, AI — no juniors learning on your budget, and no handover to a team you never met."
           />
           <Reveal className="intro-foot">
             <span>— THE POINT, IN 30 WORDS</span>

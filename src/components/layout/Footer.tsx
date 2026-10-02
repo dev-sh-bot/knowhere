@@ -36,7 +36,10 @@ export function Footer() {
         <div className="foot-grid">
           <div className="foot-intro">
             <h4>KNOWHERE SYSTEMS</h4>
-            <p>IT services from Hyderabad, Pakistan — for companies anywhere.</p>
+            <p>
+              A senior IT team building websites, apps and systems for companies
+              anywhere.
+            </p>
           </div>
           <div>
             <h4>NAVIGATE</h4>
@@ -50,14 +53,13 @@ export function Footer() {
             <h4>CONTACT</h4>
             <a href="mailto:Info@knowheresystems.com">Info@knowheresystems.com</a>
             <a href="tel:+923133054378">+92 313 3054378</a>
-            <span>House 279/5-6, Al-Waheed Colony</span>
-            <span>Hyderabad 71000, Sindh, Pakistan</span>
+            <span>Mon–Sat, 09:00–18:00</span>
           </div>
         </div>
         <div className="foot-bar">
           <span>© 2026 KNOWHERE SYSTEMS</span>
           <span>
-            HYDERABAD, PAKISTAN · <Clock /> PKT
+            LOCAL TIME · <Clock />
           </span>
           <button
             id="to-top"
