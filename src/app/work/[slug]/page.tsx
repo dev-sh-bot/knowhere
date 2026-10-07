@@ -56,7 +56,7 @@ export default async function CaseStudyPage({
               <Reveal className="sec-label">
                 Case file {c.no} — {c.sector}
               </Reveal>
-              <Reveal variant="clip" className="phero-title cs-title">
+              <Reveal variant="clip" className={`phero-title cs-title${c.title.length > 10 ? " cs-title-long" : ""}`}>
                 <span>{c.title}</span>
               </Reveal>
               <Reveal as="p" className="cs-headline" delay={0.05}>
@@ -70,6 +70,17 @@ export default async function CaseStudyPage({
                   <span key={s}>{s}</span>
                 ))}
               </Reveal>
+              {d.website ? (
+                <a
+                  className="link-arrow"
+                  style={{ marginTop: "1.5rem" }}
+                  href={d.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit product <Ic d={D.ne} />
+                </a>
+              ) : null}
             </div>
             <Reveal className="cs-hero-shot" delay={0.1}>
               <Image

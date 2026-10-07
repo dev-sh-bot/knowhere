@@ -8,7 +8,7 @@ import { CASES } from "@/lib/data";
 
 export function WorkGrid() {
   const { openCase } = useCaseModal();
-  const indices = [0, 1, 2, 3];
+  const indices = [CASES.length - 1, 0, 1, 3];
 
   return (
     <div className="work-grid">

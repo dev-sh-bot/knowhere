@@ -375,16 +375,38 @@ export const CASES: CaseStudy[] = [
     ],
     stack: ["Flutter", "Firebase", "Node.js", "OpenAI API"],
   },
-
+  {
+    no: "C-09",
+    title: "SocialSyncc",
+    sector: "SOCIAL PUBLISHING",
+    loc: "WEB & MOBILE · OMNICHANNEL",
+    tags: ["web", "mobile", "cloud"],
+    homeTag: "WEB · MOBILE · CLOUD",
+    img: "/work/case-mockups/socialsyncc/cover.webp",
+    slug: "socialsyncc",
+    blurb:
+      "A mobile-first platform for connecting social accounts, composing posts, scheduling content and tracking publishing activity in one workspace.",
+    ch: "Publishing across separate social networks meant repeated content entry, different destination rules and limited visibility into scheduled posts or failed deliveries.",
+    bd: "A Flutter interface backed by NestJS, TypeORM and PostgreSQL. OAuth account connections, destination-aware publishing, a content calendar, a shared queue and activity analytics connect to DigitalOcean hosting and AWS media services.",
+    outs: [
+      ["OMNICHANNEL", "CONNECTED ACCOUNTS AND ONE POST COMPOSER"],
+      ["SCHEDULED", "CONTENT CALENDAR AND PUBLISHING QUEUE"],
+      ["STATUS", "PUBLISHING ACTIVITY AND RECONNECTION HANDLING"],
+    ],
+    stack: ["Flutter", "NestJS", "PostgreSQL", "TypeORM", "AWS S3", "OAuth"],
+  },
 ];
 
 export const FILTERS: Filter[] = [
-  { k: "all", l: "ALL / 08" },
-  { k: "web", l: "WEB / 04" },
-  { k: "mobile", l: "MOBILE / 06" },
-  { k: "ai", l: "AI / 05" },
-  { k: "cloud", l: "CLOUD / 04" },
-];
+  { k: "all", l: "ALL" },
+  { k: "web", l: "WEB" },
+  { k: "mobile", l: "MOBILE" },
+  { k: "ai", l: "AI" },
+  { k: "cloud", l: "CLOUD" },
+].map(({ k, l }) => ({
+  k,
+  l: `${l} / ${String(k === "all" ? CASES.length : CASES.filter((c) => c.tags.includes(k)).length).padStart(2, "0")}`,
+}));
 
 export const STEPS: Step[] = [
   {
@@ -461,7 +483,7 @@ export const PRINCIPLES: Principle[] = [
 ];
 
 export const STATS: Stat[] = [
-  { n: 8, suf: "", label: "Case studies" },
+  { n: CASES.length, suf: "", label: "Case studies" },
   { n: 3, suf: "", label: "Platforms represented" },
   { n: 12, suf: "", label: "Service disciplines" },
 ];

@@ -9,6 +9,7 @@ export type Item = { t: string; d: string };
 export type CaseDetail = {
   headline: string;
   intro: string;
+  website?: string;
   hero: Shot;
   facts: [string, string][];
   overview: { title: string; body: string[]; cards: [string, string][] };
@@ -39,6 +40,139 @@ export type CaseDetail = {
 };
 
 export const CASE_DETAILS: Record<string, CaseDetail> = {
+  socialsyncc: {
+    headline: "Mobile-first publishing and scheduling across social channels",
+    intro:
+      "SocialSyncc brings account connections, content creation, scheduling and publishing visibility into one mobile-first workspace for creators, marketers and businesses.",
+    website: "https://socialsyncc.com/",
+    hero: {
+      src: "/work/case-mockups/socialsyncc/cover.webp",
+      w: 1536,
+      h: 1024,
+      alt: "SocialSyncc teal welcome screen and publishing analytics in transparent phone mockups",
+    },
+    facts: [
+      ["Product", "Omnichannel social publishing"],
+      ["Interface", "Mobile-first web and mobile"],
+      ["Core stack", "Flutter · NestJS · PostgreSQL"],
+      ["Infrastructure", "DigitalOcean · AWS S3 · CloudFront"],
+    ],
+    overview: {
+      title: "One workspace from post creation to publishing visibility",
+      body: [
+        "SocialSyncc addresses the repeated work of opening separate social platforms, re-entering content and checking each publishing result. Users connect supported accounts, create a post, choose destinations and publish immediately or schedule it for later.",
+        "A content calendar, publishing queue, notifications and activity dashboard keep upcoming content and delivery states visible. The product combines a Flutter interface with backend services that handle account authorization, destination requirements and publishing operations.",
+      ],
+      cards: [
+        ["Product type", "Social media publishing and scheduling platform"],
+        ["Primary audience", "Content creators, marketers and businesses"],
+        ["Core workflow", "Connect · compose · preview · publish or schedule"],
+        ["Delivery foundation", "Flutter interface with cloud-hosted API and media storage"],
+      ],
+    },
+    journey: [
+      { t: "Sign in", d: "Access a personal workspace" },
+      { t: "Connect", d: "Authorize supported social accounts" },
+      { t: "Compose", d: "Prepare text and media" },
+      { t: "Choose", d: "Select and customize destinations" },
+      { t: "Publish", d: "Send now or schedule for later" },
+      { t: "Monitor", d: "Review states and publishing activity" },
+    ],
+    challenges: {
+      title: "A consistent publishing flow across different platform rules",
+      lead: "A unified interface needed to simplify content creation while retaining the account permissions, media requirements and delivery states of each destination.",
+      items: [
+        { t: "Repeated platform switching", d: "The same publishing task required separate tools and repeated content entry across social accounts." },
+        { t: "Destination-specific requirements", d: "Media formats, authorization scopes and publishing rules vary across the connected platforms." },
+        { t: "Scheduled delivery", d: "Future posts needed a stored publishing time, a central queue and a visible place in the content calendar." },
+        { t: "Account authorization", d: "Connections needed OAuth authorization and backend handling of the credentials required for permitted API operations." },
+        { t: "Failures and reconnection", d: "Expired connections and publishing errors needed clear states so users could understand what required attention." },
+        { t: "Mobile clarity", d: "Composing, choosing destinations, previewing and reviewing activity needed to remain usable on smaller screens." },
+      ],
+    },
+    solution: {
+      title: "A layered mobile, API and publishing architecture",
+      body: [
+        "Flutter and Dart provide the mobile-first interface. A modular NestJS API on Node.js handles authentication, connected accounts, posts, scheduling and publishing operations; TypeORM manages the related PostgreSQL records.",
+        "The backend and database run on a DigitalOcean VPS. AWS S3 stores media, with CloudFront supporting its delivery. OAuth connections allow the publishing services to communicate with supported social media APIs from one centralized workflow.",
+      ],
+      center: { t: "SocialSyncc", d: "Create · schedule · publish · monitor" },
+      nodes: [
+        { t: "User interface", d: "Flutter · Dart" },
+        { t: "Application API", d: "NestJS · Node.js" },
+        { t: "Structured data", d: "PostgreSQL · TypeORM" },
+        { t: "Media delivery", d: "AWS S3 · CloudFront" },
+        { t: "Infrastructure", d: "DigitalOcean VPS" },
+        { t: "Publishing integrations", d: "OAuth · social media APIs" },
+      ],
+    },
+    features: [
+      {
+        t: "A clear entry into the publishing workspace",
+        d: "The welcome and authentication screens introduce the product and provide sign-in, account creation and password recovery entry points before users move into their publishing workspace.",
+        points: ["Consistent teal and white product identity", "Email and password sign-in flow", "Account creation and recovery entry points", "Mobile-first navigation across the publishing workflow"],
+        shot: {
+          src: "/work/case-mockups/socialsyncc/onboarding.webp",
+          w: 1254,
+          h: 1254,
+          alt: "SocialSyncc product introduction and sign-in interface",
+        },
+      },
+      {
+        t: "Connected accounts and one post composer",
+        d: "Users authorize social accounts through OAuth, prepare text and supported media, select publishing destinations and review the content before submitting it. Destination-specific customization and validation fit within the same guided flow.",
+        points: ["Write, Platforms, Schedule and Preview steps", "Text and media preparation in one composer", "Destination selection and content customization", "Supported destinations include Facebook Pages, Instagram, TikTok, YouTube, Pinterest, Google Business and LinkedIn Pages or Profiles"],
+        shot: {
+          src: "/work/case-mockups/socialsyncc/publishing.webp",
+          w: 1254,
+          h: 1254,
+          alt: "SocialSyncc post composer and connected publishing destination selection",
+        },
+      },
+      {
+        t: "Scheduling with a central content calendar",
+        d: "Posts can be published immediately or stored for a future date and time. The calendar organizes planned content, while the backend publishing queue processes scheduled operations for the selected destinations.",
+        points: ["Publish-now and scheduled-post workflows", "Future publishing date and time selection", "Calendar view of planned publishing activity", "Backend scheduling and a shared publishing queue"],
+        shot: {
+          src: "/work/case-mockups/socialsyncc/scheduling.webp",
+          w: 1254,
+          h: 1254,
+          alt: "SocialSyncc scheduling form and content calendar presentation",
+        },
+      },
+      {
+        t: "Publishing states and account reconnection",
+        d: "A centralized post view makes scheduled, published, draft and failed content easier to review. Publishing-status records and notifications communicate delivery progress and flag accounts that require authorization again.",
+        points: ["Searchable posts with publishing-state filters", "Visible scheduled, publishing, published and failed states", "Notifications for publishing and account events", "Account reconnection when authorization expires"],
+        shot: {
+          src: "/work/case-mockups/socialsyncc/status.webp",
+          w: 1024,
+          h: 1536,
+          alt: "SocialSyncc post status cards and an account reconnection notice",
+        },
+      },
+      {
+        t: "Publishing activity in a focused analytics view",
+        d: "The activity dashboard brings reporting periods, post-state totals, a publishing trend, network distribution and posting frequency together. Users can review their publishing activity from the same app.",
+        points: ["7-day, 30-day and 90-day period selection", "Total, published, scheduled and failed post summaries", "Publishing-trend and platform-mix charts", "Posting frequency by weekday"],
+        shot: {
+          src: "/work/case-mockups/socialsyncc/analytics.webp",
+          w: 1254,
+          h: 1254,
+          alt: "SocialSyncc publishing activity, network mix and posting-frequency analytics",
+        },
+      },
+    ],
+    tech: ["Flutter", "Dart", "NestJS", "Node.js", "TypeORM", "PostgreSQL", "DigitalOcean VPS", "AWS S3", "CloudFront", "OAuth", "Social media APIs"],
+    results: {
+      title: "Connected publishing with visible delivery states",
+      items: [
+        { t: "One publishing workflow", d: "Account connections, composition, destination selection, previewing and submission share one application." },
+        { t: "Organized future content", d: "A calendar and publishing queue connect planned posts to their selected delivery times." },
+        { t: "Actionable publishing visibility", d: "Post states, notifications, reconnection handling and basic activity charts provide context around publishing operations." },
+      ],
+    },
+  },
   colearnix: {
     headline:
       "Campus collaboration platform for projects, mentorship & career growth",

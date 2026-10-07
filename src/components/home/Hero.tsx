@@ -5,6 +5,7 @@ import { Ic } from "@/components/ui/Ic";
 import { Magnetic } from "@/components/ui/Magnetic";
 import { Reveal } from "@/components/ui/Reveal";
 import { D } from "@/lib/icons";
+import { CASES } from "@/lib/data";
 import { prefersReducedMotion } from "@/lib/motion";
 
 type NodePt = { x: number; y: number; i: number };
@@ -281,7 +282,7 @@ export function Hero() {
         </div>
         <Reveal className="hero-foot" delay={0.85}>
           <span>
-            8 CASE STUDIES · <b>WEB · MOBILE · AI · CLOUD</b>
+            {CASES.length} CASE STUDIES · <b>WEB · MOBILE · AI · CLOUD</b>
           </span>
           <span className="hf-scroll">
             SCROLL

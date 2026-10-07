@@ -1,0 +1,80 @@
+[
+  {
+    "file": "public/work/case-mockups/socialsyncc/cover.webp",
+    "width": 1536,
+    "height": 1024,
+    "transparentPercent": 46.5,
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "size": 112270
+  },
+  {
+    "file": "public/work/case-mockups/socialsyncc/onboarding.webp",
+    "width": 1254,
+    "height": 1254,
+    "transparentPercent": 28.3,
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "size": 152300
+  },
+  {
+    "file": "public/work/case-mockups/socialsyncc/publishing.webp",
+    "width": 1254,
+    "height": 1254,
+    "transparentPercent": 25.9,
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "size": 180756
+  },
+  {
+    "file": "public/work/case-mockups/socialsyncc/scheduling.webp",
+    "width": 1254,
+    "height": 1254,
+    "transparentPercent": 27,
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "size": 164644
+  },
+  {
+    "file": "public/work/case-mockups/socialsyncc/status.webp",
+    "width": 1024,
+    "height": 1536,
+    "transparentPercent": 39.3,
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "size": 120972
+  },
+  {
+    "file": "public/work/case-mockups/socialsyncc/analytics.webp",
+    "width": 1254,
+    "height": 1254,
+    "transparentPercent": 25.2,
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "size": 158194
+  }
+]
