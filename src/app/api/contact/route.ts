@@ -23,7 +23,7 @@ async function postToAppsScript(url: URL, payload: Record<string, string>) {
     body: JSON.stringify(payload),
     cache: "no-store",
     redirect: "follow",
-    signal: AbortSignal.timeout(15_000),
+    signal: AbortSignal.timeout(25_000),
   });
 }
 
