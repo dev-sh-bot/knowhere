@@ -12,17 +12,20 @@ const BUDGET_OPTIONS = new Set([
   "Not sure yet",
 ]);
 
-type ContactLead = {
-  name: string;
-  email: string;
-  company: string;
-  service: string;
-  budget: string;
-  message: string;
-  website: string;
-};
-
 class PayloadTooLargeError extends Error {}
+
+async function postToAppsScript(url: URL, payload: Record<string, string>) {
+  // Apps Script still reads JSON from postData.contents with text/plain.
+  // Use redirect:"follow" — redirect:"manual" is rejected with 403 by script.google.com.
+  return fetch(url, {
+    method: "POST",
+    headers: { "content-type": "text/plain;charset=utf-8" },
+    body: JSON.stringify(payload),
+    cache: "no-store",
+    redirect: "follow",
+    signal: AbortSignal.timeout(15_000),
+  });
+}
 
 async function readBoundedBody(request: Request) {
   const reader = request.body?.getReader();
@@ -138,20 +141,14 @@ export async function POST(request: Request) {
   }
 
   try {
-    const response = await fetch(parsedWebhookUrl, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        name,
-        email,
-        company,
-        service,
-        budget,
-        message,
-        secret: webhookSecret,
-      }),
-      cache: "no-store",
-      signal: AbortSignal.timeout(10_000),
+    const response = await postToAppsScript(parsedWebhookUrl, {
+      name,
+      email,
+      company,
+      service,
+      budget,
+      message,
+      secret: webhookSecret,
     });
 
     if (!response.ok) {
