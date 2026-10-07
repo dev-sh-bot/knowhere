@@ -51,7 +51,7 @@ export function Footer() {
           <div>
             <h4>CONTACT</h4>
             <a href="mailto:Info@knowheresystems.com">Info@knowheresystems.com</a>
-            <a href="tel:+923133054378">+92 313 3054378</a>
+            {/* <a href="tel:+923133054378">+92 313 3054378</a> */}
             <span>Mon–Sat, 09:00–18:00</span>
           </div>
         </div>

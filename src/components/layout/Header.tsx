@@ -80,7 +80,7 @@ export function Header() {
         </nav>
         <div className="mm-info">
           <a href="mailto:Info@knowheresystems.com">INFO@KNOWHERESYSTEMS.COM</a>
-          <a href="tel:+923133054378">+92 313 3054378</a>
+          {/* <a href="tel:+923133054378">+92 313 3054378</a> */}
           <span>
             LOCAL TIME — <Clock />
           </span>

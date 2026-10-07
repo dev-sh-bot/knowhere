@@ -500,8 +500,8 @@ export const ICONS = {
 
 export const CONTACT = {
   email: "Info@knowheresystems.com",
-  phone: "+92 313 3054378",
-  phoneTel: "+923133054378",
-  whatsapp: "https://wa.me/923133054378",
+  // phone: "+92 313 3054378",npm run dev
+  // phoneTel: "+923133054378",
+  // whatsapp: "https://wa.me/923133054378",
   hours: "Mon–Sat, 09:00–18:00",
 } as const;

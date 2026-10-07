@@ -12,7 +12,7 @@ export function ContactChannels() {
         <span className="ch-v">{CONTACT.email}</span>
         <Ic d={D.ne} className="ch-a" />
       </a>
-      <a
+      {/* <a
         className="ch"
         href={CONTACT.whatsapp}
         target="_blank"
@@ -21,7 +21,7 @@ export function ContactChannels() {
         <span className="ch-k">PHONE / WHATSAPP</span>
         <span className="ch-v">{CONTACT.phone}</span>
         <Ic d={D.ne} className="ch-a" />
-      </a>
+      </a> */}
       <div className="ch">
         <span className="ch-k">HOURS</span>
         <span className="ch-v">

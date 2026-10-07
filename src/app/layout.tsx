@@ -52,7 +52,7 @@ const jsonLd = {
   description:
     "IT services company — web development, custom software, mobile apps, UI/UX, cloud & DevOps, cybersecurity, AI & automation, data analytics, QA testing and IT consulting.",
   email: "Info@knowheresystems.com",
-  telephone: "+923133054378",
+  telephone: "",
   url: "https://knowheresystems.com",
 };
 
