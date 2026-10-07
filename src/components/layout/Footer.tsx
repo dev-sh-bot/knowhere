@@ -14,7 +14,6 @@ export function Footer() {
       <div className="cta-band">
         <div className="wrap cta-flex">
           <div>
-            <Reveal className="cta-kick">Next available start — this month</Reveal>
             <Reveal as="h2" className="cta-title">
               From nowhere,
               <br />
@@ -25,7 +24,7 @@ export function Footer() {
             <Magnetic className="btn btn-ink" href="/contact">
               Start the move <Ic d={D.r} />
             </Magnetic>
-            <p className="cta-note">One business day to a real reply</p>
+            <p className="cta-note">Clear scope. A practical next step.</p>
           </Reveal>
         </div>
       </div>
@@ -37,7 +36,7 @@ export function Footer() {
           <div className="foot-intro">
             <h4>KNOWHERE SYSTEMS</h4>
             <p>
-              A senior IT team building websites, apps and systems for companies
+              Knowhere Systems builds websites, apps and systems for companies
               anywhere.
             </p>
           </div>

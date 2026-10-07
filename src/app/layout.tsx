@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     template: "%s — Knowhere Systems",
   },
   description:
-    "Knowhere Systems — a senior IT services company. Web apps, mobile apps, UI/UX, cloud, AI, cybersecurity, data analytics, QA and consulting. From nowhere to now here.",
+    "Knowhere Systems builds web apps, mobile apps, UI/UX, cloud systems and AI products, with cybersecurity, data analytics, QA and consulting services.",
   metadataBase: new URL("https://knowheresystems.com"),
   openGraph: {
     title: "Knowhere Systems — IT Services & Software",
     description:
-      "Web apps, mobile, cloud, AI, security and consulting — engineered by a senior team, shipped worldwide.",
+      "Web, mobile, cloud, AI, security and consulting services from Knowhere Systems.",
     type: "website",
   },
   icons: {
@@ -53,8 +53,6 @@ const jsonLd = {
     "IT services company — web development, custom software, mobile apps, UI/UX, cloud & DevOps, cybersecurity, AI & automation, data analytics, QA testing and IT consulting.",
   email: "Info@knowheresystems.com",
   telephone: "+923133054378",
-  foundingDate: "2020",
-  areaServed: "Worldwide",
   url: "https://knowheresystems.com",
 };
 

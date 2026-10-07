@@ -34,8 +34,8 @@ export function WorkGrid() {
               <Image
                 src={c.img}
                 alt={`${c.title} project`}
-                width={1200}
-                height={800}
+                width={1536}
+                height={1024}
                 sizes="(max-width: 900px) 100vw, 50vw"
               />
             </div>

@@ -19,7 +19,7 @@ export default function HomePage() {
           <Reveal className="sec-label">(01) Who we are</Reveal>
           <ScrubText
             style={{ marginTop: "2.5rem" }}
-            text="A small senior team building for companies in six countries. Websites, apps, cloud, AI — no juniors learning on your budget, and no handover to a team you never met."
+            text="Knowhere Systems builds websites, apps, cloud systems and AI products across education, privacy, sales, music, operations and more."
           />
           <Reveal className="intro-foot">
             <span>— THE POINT, IN 30 WORDS</span>
@@ -36,13 +36,13 @@ export default function HomePage() {
               <Reveal className="sec-label">(02) Capabilities</Reveal>
               <Reveal variant="clip" className="sec-title">
                 <span>
-                  BUILT <em>IN-HOUSE</em>
+                  FULL-STACK <em>CAPABILITIES</em>
                 </span>
               </Reveal>
             </div>
             <Reveal as="p" className="lead" delay={0.1}>
-              One accountable team across the whole stack — so nothing gets lost
-              between the design file and production.
+              One connected process across the stack, from product design
+              through production.
             </Reveal>
           </div>
           <ServicesIndex />

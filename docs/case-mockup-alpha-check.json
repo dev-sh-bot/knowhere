@@ -1,0 +1,662 @@
+{
+  "total": 50,
+  "errors": [],
+  "assets": [
+    {
+      "file": "public/work/case-mockups/colearnix/cover.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 53.4,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 112750
+    },
+    {
+      "file": "public/work/case-mockups/colearnix/onboarding.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 27,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 155768
+    },
+    {
+      "file": "public/work/case-mockups/colearnix/home.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 36.2,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 120520
+    },
+    {
+      "file": "public/work/case-mockups/colearnix/projects.webp",
+      "width": 1254,
+      "height": 1254,
+      "transparentPercent": 18.4,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 169008
+    },
+    {
+      "file": "public/work/case-mockups/colearnix/messaging.webp",
+      "width": 1254,
+      "height": 1254,
+      "transparentPercent": 21.2,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 163738
+    },
+    {
+      "file": "public/work/case-mockups/temp-mail/cover.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 44.3,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 107922
+    },
+    {
+      "file": "public/work/case-mockups/temp-mail/create.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 41.9,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 92664
+    },
+    {
+      "file": "public/work/case-mockups/temp-mail/mailboxes.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 37.2,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 106630
+    },
+    {
+      "file": "public/work/case-mockups/temp-mail/notifications.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 40.2,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 100100
+    },
+    {
+      "file": "public/work/case-mockups/temp-mail/custom.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 33,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 98350
+    },
+    {
+      "file": "public/work/case-mockups/temp-mail/forwarding.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 37.1,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 87914
+    },
+    {
+      "file": "public/work/case-mockups/temp-mail/outbound.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 38.2,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 76770
+    },
+    {
+      "file": "public/work/case-mockups/temp-mail/attachments.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 35.7,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 79634
+    },
+    {
+      "file": "public/work/case-mockups/temp-mail/private-mail.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 35.8,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 97644
+    },
+    {
+      "file": "public/work/case-mockups/smartly-ai/cover.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 53,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 81538
+    },
+    {
+      "file": "public/work/case-mockups/smartly-ai/compare.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 44.2,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 100668
+    },
+    {
+      "file": "public/work/case-mockups/smartly-ai/files.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 36.3,
+      "corners": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "size": 100672
+    },
+    {
+      "file": "public/work/case-mockups/smartly-ai/camera.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 38,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 122974
+    },
+    {
+      "file": "public/work/case-mockups/smartly-ai/assistants.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 34,
+      "corners": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "size": 94052
+    },
+    {
+      "file": "public/work/case-mockups/smartly-ai/generate.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 38.2,
+      "corners": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "size": 381530
+    },
+    {
+      "file": "public/work/case-mockups/smartly-ai/edit.webp",
+      "width": 1254,
+      "height": 1254,
+      "transparentPercent": 26.3,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 284130
+    },
+    {
+      "file": "public/work/case-mockups/smartly-ai/voice.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 39.5,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 94764
+    },
+    {
+      "file": "public/work/case-mockups/ai-sales-distribution/cover.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 26.4,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 135110
+    },
+    {
+      "file": "public/work/case-mockups/ai-sales-distribution/insights.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 22.4,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 142826
+    },
+    {
+      "file": "public/work/case-mockups/ai-sales-distribution/inventory.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 25,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 121822
+    },
+    {
+      "file": "public/work/case-mockups/ai-sales-distribution/route-tracking.webp",
+      "width": 1254,
+      "height": 1254,
+      "transparentPercent": 37.3,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 175048
+    },
+    {
+      "file": "public/work/case-mockups/ai-sales-distribution/orders.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 21.7,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 154812
+    },
+    {
+      "file": "public/work/case-mockups/ai-sales-distribution/attendance.webp",
+      "width": 1254,
+      "height": 1254,
+      "transparentPercent": 27.7,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 165264
+    },
+    {
+      "file": "public/work/case-mockups/ai-sales-distribution/dashboard.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 26.3,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 139296
+    },
+    {
+      "file": "public/work/case-mockups/audio-mixing-mastering/cover.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 32.8,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 150256
+    },
+    {
+      "file": "public/work/case-mockups/audio-mixing-mastering/services.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 27.9,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 151950
+    },
+    {
+      "file": "public/work/case-mockups/audio-mixing-mastering/upload.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 28.7,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 131216
+    },
+    {
+      "file": "public/work/case-mockups/audio-mixing-mastering/samples.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 29.1,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 142116
+    },
+    {
+      "file": "public/work/case-mockups/audio-mixing-mastering/projects.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 28.1,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 146804
+    },
+    {
+      "file": "public/work/case-mockups/audio-mixing-mastering/delivery.webp",
+      "width": 1254,
+      "height": 1254,
+      "transparentPercent": 40.7,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 141814
+    },
+    {
+      "file": "public/work/case-mockups/intelligent-erp/cover.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 33.5,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 133328
+    },
+    {
+      "file": "public/work/case-mockups/intelligent-erp/dashboard.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 22.7,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 164408
+    },
+    {
+      "file": "public/work/case-mockups/intelligent-erp/assistant.webp",
+      "width": 1254,
+      "height": 1254,
+      "transparentPercent": 25.8,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 206272
+    },
+    {
+      "file": "public/work/case-mockups/intelligent-erp/sales.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 24.4,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 121092
+    },
+    {
+      "file": "public/work/case-mockups/intelligent-erp/finance.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 28.2,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 140952
+    },
+    {
+      "file": "public/work/case-mockups/intelligent-erp/roles.webp",
+      "width": 1024,
+      "height": 1536,
+      "transparentPercent": 36.7,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 119432
+    },
+    {
+      "file": "public/work/case-mockups/propela/cover.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 35.3,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 129226
+    },
+    {
+      "file": "public/work/case-mockups/propela/dashboard.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 32.5,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 94544
+    },
+    {
+      "file": "public/work/case-mockups/propela/proposals.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 25.2,
+      "corners": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "size": 113272
+    },
+    {
+      "file": "public/work/case-mockups/propela/products.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 36.4,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 164862
+    },
+    {
+      "file": "public/work/case-mockups/propela/roles.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 35.4,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 105794
+    },
+    {
+      "file": "public/work/case-mockups/rackline/cover.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 45.2,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 182736
+    },
+    {
+      "file": "public/work/case-mockups/rackline/scoring.webp",
+      "width": 1254,
+      "height": 1254,
+      "transparentPercent": 20.5,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 297496
+    },
+    {
+      "file": "public/work/case-mockups/rackline/measurements.webp",
+      "width": 1254,
+      "height": 1254,
+      "transparentPercent": 22,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 169898
+    },
+    {
+      "file": "public/work/case-mockups/rackline/trophy-room.webp",
+      "width": 1536,
+      "height": 1024,
+      "transparentPercent": 23.8,
+      "corners": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "size": 322864
+    }
+  ],
+  "criteria": {
+    "alphaRequired": true,
+    "minimumFullyTransparentPercent": 1,
+    "maximumCornerAlpha": 2,
+    "alphaScale": 255
+  }
+}

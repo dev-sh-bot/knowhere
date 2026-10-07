@@ -37,7 +37,7 @@ export function ServicesIndex() {
   }, []);
 
   const show = (s: Service) => {
-    if (!hasFinePointer() || !pvRef.current) return;
+    if (!hasFinePointer() || !pvRef.current || !s.img) return;
     if (imgRef.current) imgRef.current.src = s.img;
     if (tagRef.current) tagRef.current.textContent = s.num;
     if (!shown.current) {

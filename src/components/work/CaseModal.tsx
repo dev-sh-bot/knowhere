@@ -57,14 +57,14 @@ export function CaseModal({ idx, onClose }: CaseModalProps) {
         <span className="m-no">CASE FILE {c.no}</span>
         <h2 className="m-title">{c.title}</h2>
         <div className="m-meta">
-          {c.sector} — {c.year} — {c.loc}
+          {c.sector} — {c.loc}
         </div>
         <div className="m-img">
           <Image
             src={c.img}
             alt={`${c.title} project`}
-            width={1200}
-            height={800}
+            width={1536}
+            height={1024}
             sizes="(max-width: 900px) 100vw, 800px"
             priority
           />

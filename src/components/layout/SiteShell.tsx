@@ -8,6 +8,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { useRouter } from "next/navigation";
 import { CaseModal } from "@/components/work/CaseModal";
 import { Cursor } from "@/components/effects/Cursor";
 import { Grain } from "@/components/effects/Grain";
@@ -15,6 +16,7 @@ import { Preloader } from "@/components/effects/Preloader";
 import { ToastHost } from "@/components/effects/ToastHost";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { CASES } from "@/lib/data";
 
 type CaseContextValue = {
   openCase: (idx: number) => void;
@@ -38,7 +40,15 @@ export function SiteShell({ children }: SiteShellProps) {
   const [loaded, setLoaded] = useState(false);
   const [caseIdx, setCaseIdx] = useState<number | null>(null);
 
-  const openCase = useCallback((i: number) => setCaseIdx(i), []);
+  const router = useRouter();
+  const openCase = useCallback(
+    (i: number) => {
+      const slug = CASES[i]?.slug;
+      if (slug) router.push(`/work/${slug}`);
+      else setCaseIdx(i);
+    },
+    [router],
+  );
   const closeCase = useCallback(() => setCaseIdx(null), []);
 
   const value = useMemo(

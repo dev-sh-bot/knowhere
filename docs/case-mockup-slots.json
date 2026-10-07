@@ -1,0 +1,524 @@
+[
+  {
+    "slug": "colearnix",
+    "name": "onboarding",
+    "title": "Secure onboarding & student authentication",
+    "description": "A guided entry flow introduces the product, supports email/password and Google sign-in, creates student accounts and verifies email before the user enters the main experience.",
+    "points": [
+      "Welcome screen with the campus value proposition",
+      "Email/password authentication",
+      "Google sign-in",
+      "Student registration",
+      "Email verification",
+      "Onboarding-ready account flow"
+    ],
+    "wide": true
+  },
+  {
+    "slug": "colearnix",
+    "name": "home",
+    "title": "Personalized home dashboard with AI skill matches",
+    "description": "The home experience brings relevant opportunities forward with AI skill matches, recommended projects and mentor discovery in one student-centred dashboard.",
+    "points": [
+      "AI skill matches — people and projects aligned with the student’s goals",
+      "Recommended projects — relevant campus projects and open project roles",
+      "Recommended mentors — found without leaving the home flow",
+      "Unified navigation across Home, Projects, Create, Messages and Profile"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "colearnix",
+    "name": "projects",
+    "title": "Projects, discovery & creation hub",
+    "description": "Students can discover and search projects, find collaborators and open a central creation hub for posts, projects, mentorship offers, achievements and portfolio items.",
+    "points": [
+      "Browse and search campus projects",
+      "Find collaborators for active project ideas",
+      "Create posts and project opportunities",
+      "Offer mentorship or publish achievements",
+      "Add portfolio items from one create menu"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "colearnix",
+    "name": "messaging",
+    "title": "Messaging, student profiles & career growth",
+    "description": "CoLearnix connects direct, project and mentorship conversations with a structured student profile containing education, skills, projects and portfolio content.",
+    "points": [
+      "Messaging — direct, project and mentorship conversations",
+      "Student profile — education, skills, projects and portfolio tabs",
+      "Career tools — AI resume review, portfolio builder and reputation",
+      "Settings — account, notifications, privacy and developer tools"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "temp-mail",
+    "name": "create",
+    "title": "Instant temporary email creation",
+    "description": "Generate disposable email addresses with a single tap for registrations, verification codes and temporary online activity.",
+    "points": [
+      "One-tap address generation",
+      "Copy the address straight to the clipboard"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "temp-mail",
+    "name": "mailboxes",
+    "title": "Multiple temporary mailboxes",
+    "description": "Manage several temporary inboxes at the same time, with organized mailbox switching and unread indicators.",
+    "points": [
+      "Email manager with active mailbox",
+      "Copy, switch or delete per address"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "temp-mail",
+    "name": "notifications",
+    "title": "Real-time email notifications",
+    "description": "Incoming emails arrive instantly through synchronized notifications — ideal for verification codes and important messages.",
+    "points": [
+      "Verification codes surfaced in the message",
+      "Synchronized push notifications"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "temp-mail",
+    "name": "custom",
+    "title": "Custom email addresses",
+    "description": "Create personalized temporary addresses using available usernames and supported domains.",
+    "points": [
+      "Choose a username",
+      "Pick from supported domains"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "temp-mail",
+    "name": "forwarding",
+    "title": "Email forwarding",
+    "description": "Automatically forward incoming temporary emails to another preferred address whenever needed.",
+    "points": [
+      "Set up auto-forwarding",
+      "Manage existing forwarders"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "temp-mail",
+    "name": "outbound",
+    "title": "Outbound email support",
+    "description": "Compose and send emails directly from supported temporary mailboxes without revealing your permanent address.",
+    "points": [
+      "Recipient, subject and message",
+      "Attach files to outgoing mail"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "temp-mail",
+    "name": "attachments",
+    "title": "Attachments & cloud storage",
+    "description": "Open attachments, store messages securely and access email history through cloud-based mailbox storage.",
+    "points": [
+      "In-app attachment viewing",
+      "Mailbox history kept in cloud storage"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "temp-mail",
+    "name": "private-mail",
+    "title": "Private mail infrastructure",
+    "description": "Powered by a dedicated Python mail server deployed on VPS infrastructure, for complete domain ownership and backend control.",
+    "points": [
+      "Own domains, no public API dependency",
+      "Inbox with verification-code labels"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "smartly-ai",
+    "name": "compare",
+    "title": "Ask once and compare multiple AI answers",
+    "description": "Submit one question and receive responses from several AI models. The comparison view helps users weigh explanations, writing styles, recommendations and problem-solving approaches without repeating the request across platforms.",
+    "points": [
+      "Clearly separated answer cards",
+      "Copy and expand actions",
+      "Faster model comparison"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "smartly-ai",
+    "name": "files",
+    "title": "Understand documents through conversational file analysis",
+    "description": "Upload a supported document and ask questions in natural language. Instead of searching long files, request summaries, explanations, key points, comparisons, action items or answers based on the material.",
+    "points": [
+      "Document upload and processing status",
+      "Suggested questions",
+      "Answers grounded in the file"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "smartly-ai",
+    "name": "camera",
+    "title": "Capture a question and solve it with AI",
+    "description": "Snap and Solve lets users photograph a question, worksheet, handwritten problem or printed material and ask for help — no typing complex questions by hand. Especially useful for education, maths and visual problems.",
+    "points": [
+      "Camera capture and crop",
+      "Step-by-step explanation",
+      "Built for education and maths"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "smartly-ai",
+    "name": "assistants",
+    "title": "More than 100 task-specific AI assistants",
+    "description": "A library of specialized bots built around common goals — writing, studying, planning, business communication, marketing, idea generation and problem solving — so users don’t start every request from scratch.",
+    "points": [
+      "Browse by category or search",
+      "Guided interaction with prompt starters",
+      "Faster results"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "smartly-ai",
+    "name": "generate",
+    "title": "Generate original images from written ideas",
+    "description": "Turn text descriptions into original visuals directly in the app — for social content, creative exploration, presentation visuals, concept development, marketing ideas and personal projects.",
+    "points": [
+      "Text-to-image prompts",
+      "Multiple creative styles",
+      "In-app preview and saving",
+      "Fast visual iteration"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "smartly-ai",
+    "name": "edit",
+    "title": "Edit existing photos with simple AI instructions",
+    "description": "Upload an image and describe the change in everyday language. Users can request adjustments, object changes, background edits, enhancements or creative transformations.",
+    "points": [
+      "Before-and-after comparison",
+      "Simple text-based instructions",
+      "Save and retry options"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "smartly-ai",
+    "name": "voice",
+    "title": "Speak naturally with AI in real time",
+    "description": "Real-time voice lets users talk to Smartly AI — for hands-free questions, language practice, brainstorming, learning, accessibility and moments when typing is inconvenient.",
+    "points": [
+      "Animated waveform and live status",
+      "Microphone and speaker controls",
+      "Visible transcript preview"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "ai-sales-distribution",
+    "name": "insights",
+    "title": "AI Powered Sales Insights",
+    "description": "Turn sales data into actionable insights with AI-driven analytics — sales analytics, performance tracking, AI recommendations and smart reports.",
+    "points": [
+      "Sales analytics",
+      "Performance tracking",
+      "AI recommendations",
+      "Smart reports"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "ai-sales-distribution",
+    "name": "inventory",
+    "title": "Smart Inventory Management",
+    "description": "Track stock levels, monitor warehouse inventory, and receive intelligent low-stock alerts.",
+    "points": [
+      "Live inventory",
+      "Stock alerts",
+      "Product forecasting",
+      "Warehouse tracking"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "ai-sales-distribution",
+    "name": "route-tracking",
+    "title": "Retailer Check In & Route Tracking",
+    "description": "Track retailer visits with GPS enabled check-ins and monitor daily field activities.",
+    "points": [
+      "GPS tracking",
+      "Route monitoring",
+      "Retail visits",
+      "Check-in reports"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "ai-sales-distribution",
+    "name": "orders",
+    "title": "Order & Delivery Management",
+    "description": "Manage customer orders from placement to successful delivery through one connected workflow.",
+    "points": [
+      "Sales orders",
+      "Rider assignment",
+      "Delivery tracking",
+      "Order status"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "ai-sales-distribution",
+    "name": "attendance",
+    "title": "Attendance & Workforce Management",
+    "description": "Monitor attendance, leave and employee activities across field operations.",
+    "points": [
+      "Attendance",
+      "Leave management",
+      "Daily activity",
+      "Staff activity monitoring"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "ai-sales-distribution",
+    "name": "dashboard",
+    "title": "Business Dashboard & Reports",
+    "description": "View sales, inventory, attendance, and operational performance through interactive dashboards.",
+    "points": [
+      "Executive dashboard",
+      "Sales reports",
+      "Performance metrics",
+      "Business analytics"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "audio-mixing-mastering",
+    "name": "services",
+    "title": "Professional mixing and mastering services",
+    "description": "Browse multiple audio services including Mixing, Mastering, Dolby Atmos, Album Packages, and Monthly Plans.",
+    "points": [
+      "Multiple service types",
+      "Monthly subscriptions",
+      "Album packages",
+      "Add-on services"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "audio-mixing-mastering",
+    "name": "upload",
+    "title": "Secure Audio File Upload",
+    "description": "Upload WAV files, stems, and reference tracks securely with project instructions. Drag-and-drop intake supports WAV, MP3, AIFF and more, up to 5GB per file.",
+    "points": [
+      "Drag-and-drop upload",
+      "Large file support",
+      "Reference tracks",
+      "Project notes"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "audio-mixing-mastering",
+    "name": "samples",
+    "title": "Before-and-after samples",
+    "description": "Compare original and professionally processed tracks before ordering, with audio preview, a waveform player, genre samples and quality comparison.",
+    "points": [
+      "Audio preview",
+      "Waveform player",
+      "Genre samples",
+      "Quality comparison"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "audio-mixing-mastering",
+    "name": "projects",
+    "title": "Project and Revision Management",
+    "description": "Track project progress, submit revision requests, download final audio files, and manage everything from one centralized dashboard.",
+    "points": [
+      "Status tracking — monitor progress in real-time",
+      "Revision requests — submit and track revisions",
+      "Engineer feedback — get expert input and updates",
+      "Version history — access all project versions",
+      "Admin dashboard — manage everything centrally"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "audio-mixing-mastering",
+    "name": "delivery",
+    "title": "Final Audio Delivery",
+    "description": "Download all approved files in organized formats after project completion — master-ready files from the same workflow.",
+    "points": [
+      "Final audio delivery in multiple formats",
+      "Master WAV, MP3 and additional exports",
+      "Download master-ready files"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "intelligent-erp",
+    "name": "dashboard",
+    "title": "Real Time Business Monitoring",
+    "description": "Track sales, purchases, inventory, and business performance through live dashboards with real-time analytics and reporting. Get the insights needed to make faster, data-driven decisions.",
+    "points": [
+      "Executive dashboard",
+      "Business analytics",
+      "Performance charts",
+      "Activity monitoring"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "intelligent-erp",
+    "name": "assistant",
+    "title": "AI Assistant & Inventory Forecasting",
+    "description": "Ask business questions in natural language and get instant insights from operational data. Forecast future demand using AI to reduce stock shortages and optimize inventory levels.",
+    "points": [
+      "AI chat",
+      "Business queries",
+      "Demand forecasting",
+      "Reorder suggestions"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "intelligent-erp",
+    "name": "sales",
+    "title": "Sales & Purchase Management",
+    "description": "Manage quotations, orders, invoices, suppliers, purchase orders, and procurement workflows in one connected system. Streamline sales and purchasing with real-time visibility, automation, and control from quote to payment.",
+    "points": [
+      "Sales orders",
+      "Invoice tracking",
+      "Supplier records",
+      "Procurement workflow"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "intelligent-erp",
+    "name": "finance",
+    "title": "Finance & HR Management",
+    "description": "Connect accounting, expenses, ledgers, payroll, employees, and attendance in one centralized ERP system for financial and human-resources operations.",
+    "points": [
+      "Financial reports",
+      "Expense tracking",
+      "Payroll",
+      "Attendance"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "intelligent-erp",
+    "name": "roles",
+    "title": "Secure Role Based Access",
+    "description": "Assign permissions based on departments and responsibilities while maintaining secure access across the entire platform.",
+    "points": [
+      "User roles",
+      "Department permissions",
+      "Approval workflows",
+      "Secure authentication"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "propela",
+    "name": "dashboard",
+    "title": "Business Proposal Dashboard",
+    "description": "A clear view of proposal activity, statuses and value at a glance.",
+    "points": [
+      "Proposal metrics",
+      "Status tracking",
+      "Value overview"
+    ],
+    "wide": true
+  },
+  {
+    "slug": "propela",
+    "name": "proposals",
+    "title": "Proposal Management",
+    "description": "Centralized proposal records with search, status and workflow visibility.",
+    "points": [
+      "Search & filter",
+      "Status tracking",
+      "Proposal actions"
+    ],
+    "wide": true
+  },
+  {
+    "slug": "propela",
+    "name": "products",
+    "title": "Products and Modules",
+    "description": "Reusable product structures that make proposal creation faster and consistent. Designed to support multiple products and independent module sets.",
+    "points": [
+      "Product catalog",
+      "Module management"
+    ],
+    "wide": true
+  },
+  {
+    "slug": "propela",
+    "name": "roles",
+    "title": "Role Based Workspace Access",
+    "description": "Separate experiences for administrators and proposal staff. Admins configure products and templates; staff build and send proposals.",
+    "points": [
+      "Admin workspace",
+      "Staff workflow",
+      "User roles"
+    ],
+    "wide": true
+  },
+  {
+    "slug": "rackline",
+    "name": "scoring",
+    "title": "AI Photo Scoring",
+    "description": "Users can upload trail camera or harvest photos and receive an AI assisted antler score estimate through a guided mobile workflow. Clear photo selection, preview, processing and completion states help users understand every step.",
+    "points": [
+      "Camera or gallery image selection",
+      "Image preview before submission",
+      "Visible AI processing state",
+      "Structured score result and retry flow"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "rackline",
+    "name": "measurements",
+    "title": "Detailed Measurement Breakdown",
+    "description": "The result screen displays measurements for main beams, tines, circumferences, inside spread and the estimated gross score. This gives users more context than displaying only one total number.",
+    "points": [
+      "Prominent estimated gross score",
+      "Main beam and tine measurements",
+      "Circumference and inside spread details",
+      "Clear estimate language"
+    ],
+    "wide": false
+  },
+  {
+    "slug": "rackline",
+    "name": "trophy-room",
+    "title": "Trophy Room and Community",
+    "description": "Users can save scored bucks inside a personal Trophy Room, create share ready score badges, and stay engaged through community content, post discussions and messaging. Saved records turn one time scoring into an ongoing social hunting experience.",
+    "points": [
+      "Saved deer records and Trophy Room history",
+      "Digital score badges and share assets",
+      "Community feed and post engagement",
+      "Messaging, profiles and notifications"
+    ],
+    "wide": false
+  }
+]

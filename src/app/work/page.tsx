@@ -5,7 +5,7 @@ import { PageHero } from "@/components/ui/PageHero";
 export const metadata: Metadata = {
   title: "Selected Work",
   description:
-    "Case files from the Knowhere Systems archive — retail, healthcare, fintech, logistics and more.",
+    "Eight case files from the Knowhere Systems archive — education, privacy, AI, sales, music, ERP, proposals and outdoors.",
 };
 
 export default function WorkPage() {
@@ -14,7 +14,7 @@ export default function WorkPage() {
       <PageHero
         label="(01) Case files"
         title="SELECTED WORK"
-        lead="Five files from the archive. Names are abbreviated where NDAs apply — the numbers are not."
+        lead="Eight projects across web, mobile and AI — explore the products, interfaces and systems we built."
       />
       <WorkList />
     </>

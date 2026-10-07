@@ -7,7 +7,7 @@ import { PageHero } from "@/components/ui/PageHero";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Tell us where you are — and where you’d rather be. We reply within one business day.",
+    "Tell Knowhere Systems about your website, app, software or cloud project and the next step you need.",
 };
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
       <PageHero
         label="(01) Contact"
         title="LET’S TALK"
-        lead="Tell us where you are — and where you’d rather be. An engineer reads every message, and replies within one business day."
+        lead="Tell us what you’re building and where you need help. Include useful context so the project scope and next steps are clear."
       />
       <section className="sec bg-paper">
         <div className="wrap contact-grid">

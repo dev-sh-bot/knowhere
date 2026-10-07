@@ -15,14 +15,18 @@ type FormErrors = {
   msg?: string;
 };
 
+type SubmitStatus = "idle" | "submitting" | "success" | "error";
+
 export function ContactForm() {
   const nameRef = useRef<HTMLInputElement | null>(null);
   const emailRef = useRef<HTMLInputElement | null>(null);
   const companyRef = useRef<HTMLInputElement | null>(null);
+  const websiteRef = useRef<HTMLInputElement | null>(null);
   const serviceRef = useRef<HTMLSelectElement | null>(null);
   const budgetRef = useRef<HTMLSelectElement | null>(null);
   const msgRef = useRef<HTMLTextAreaElement | null>(null);
   const [errs, setErrs] = useState<FormErrors>({});
+  const [status, setStatus] = useState<SubmitStatus>("idle");
   const preselect = useRef(takePendingService());
 
   const clearErr = (k: keyof FormErrors) =>
@@ -32,8 +36,11 @@ export function ContactForm() {
       return n;
     });
 
-  const submit = (e: FormEvent<HTMLFormElement>) => {
+  const submit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (status === "submitting") return;
+    const form = e.currentTarget;
+
     const name = (nameRef.current?.value || "").trim();
     const email = (emailRef.current?.value || "").trim();
     const message = (msgRef.current?.value || "").trim();
@@ -50,35 +57,54 @@ export function ContactForm() {
       toast("A FEW FIELDS NEED ATTENTION");
       return;
     }
+
     const company = (companyRef.current?.value || "").trim();
-    const subject = encodeURIComponent(
-      `Project inquiry — ${name}${company ? ` (${company})` : ""}`,
-    );
-    const body = encodeURIComponent(
-      [
-        `Name: ${name}`,
-        `Email: ${email}`,
-        `Company: ${company || "—"}`,
-        `Service: ${serviceRef.current?.value}`,
-        `Budget: ${budgetRef.current?.value}`,
-        "",
-        message,
-        "",
-        "— Sent from the Knowhere Systems website",
-      ].join("\n"),
-    );
-    toast("TRANSMISSION PREPARED — OPENING YOUR MAIL APP");
-    setTimeout(() => {
-      location.href = `mailto:Info@knowheresystems.com?subject=${subject}&body=${body}`;
-    }, 400);
-    e.currentTarget.reset();
-    setErrs({});
+    setStatus("submitting");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          company,
+          service: serviceRef.current?.value || "",
+          budget: budgetRef.current?.value || "",
+          message,
+          website: websiteRef.current?.value || "",
+        }),
+      });
+
+      const result = (await response.json()) as { error?: string; ok?: boolean };
+      if (!response.ok || !result.ok) {
+        throw new Error(result.error || "Your message couldn't be sent.");
+      }
+
+      form.reset();
+      setErrs({});
+      setStatus("success");
+      toast("MESSAGE RECEIVED — WE’LL BE IN TOUCH");
+    } catch {
+      setStatus("error");
+      toast("TRANSMISSION FAILED — PLEASE TRY AGAIN");
+    }
   };
 
   return (
     <Reveal className="c-form" delay={0.1}>
-      <form id="contact-form" noValidate onSubmit={submit}>
+      <form id="contact-form" noValidate onSubmit={submit} aria-busy={status === "submitting"}>
         <h2>SEND A TRANSMISSION</h2>
+        <div className="f-trap" aria-hidden="true">
+          <label htmlFor="cf-website">Leave this field empty</label>
+          <input
+            id="cf-website"
+            ref={websiteRef}
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+          />
+        </div>
         <div className="f-row">
           <div className={`f-field${errs.name ? " err" : ""}`}>
             <label htmlFor="cf-name">NAME *</label>
@@ -150,12 +176,18 @@ export function ContactForm() {
           />
           <p className="f-err">{errs.msg || ""}</p>
         </div>
-        <Magnetic type="submit" className="btn btn-lime">
-          Send transmission <Ic d={D.ne} />
+        <Magnetic type="submit" className="btn btn-lime" disabled={status === "submitting"}>
+          {status === "submitting" ? "Sending…" : "Send transmission"} <Ic d={D.ne} />
         </Magnetic>
+        <p className="f-feedback" role="status" aria-live="polite">
+          {status === "success"
+            ? "MESSAGE RECEIVED. WE’LL FOLLOW UP WITH NEXT STEPS."
+            : status === "error"
+              ? "WE COULDN’T SEND THAT MESSAGE. PLEASE TRY AGAIN OR EMAIL INFO@KNOWHERESYSTEMS.COM."
+              : ""}
+        </p>
         <p className="f-note">
-          NO DATA IS STORED ON THIS SITE — SUBMITTING OPENS YOUR MAIL CLIENT
-          WITH EVERYTHING PRE-FILLED, ADDRESSED TO INFO@KNOWHERESYSTEMS.COM.
+          YOUR PROJECT DETAILS ARE SENT TO KNOWHERE SYSTEMS AND STORED IN OUR PRIVATE LEADS SHEET.
         </p>
       </form>
     </Reveal>

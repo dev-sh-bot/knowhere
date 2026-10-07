@@ -1,0 +1,501 @@
+{
+  "mode": "Built-in image_gen",
+  "transparent_background": true,
+  "format": "WebP, quality 92, alpha quality 100. No background removal or alpha editing after generation.",
+  "coverPrompt": "Use case: product-mockup. Asset type: premium agency website case-study cover, landscape 1536x1024. Create a carefully art-directed photorealistic digital product device mockup on a genuinely transparent alpha background. The provided image is a reference for the real product UI and colours, not a background to preserve. Rebuild the devices with crisp, straight screen geometry, slim realistic graphite aluminium bezels, restrained studio highlights, no exaggerated perspective. Group centred and fills 88% of canvas with generous transparent margins. Entire devices visible; no crop. All pixels outside devices must be transparent, including between devices. No floor, scenery, rectangular background, coloured glow, checkerboard, headline outside screens, decorative cards, watermark. Keep the actual app features and brand. No individual names, team names, testimonials or invented business performance claims. Screen text minimal and correctly spelled; fine data can be abstract lines, no gibberish.",
+  "featurePrompt": "Use case: product-mockup. Asset type: agency case-study feature image. Rebuild the product interface in reference image 1 as a premium realistic device cutout. Reference image 2 supplies matching hardware and design polish from the new cover. Genuinely transparent alpha background: no room, stage, floor, coloured glow, white/black rectangle, checkerboard or background shadow. Only the device and screen visible, complete edges with 6% transparent padding. Crisp realistic graphite aluminium hardware, softly lit edges, flat legible UI, very subtle perspective. Keep product features, icons and colours from the reference, improve spacing and typography. Remove all personal names, real email addresses, invented performance claims and random dummy strings. Neutral grey lines for private data; keep concise feature labels accurately spelled. No headings or explanatory text outside screen. No watermark, no device crop.",
+  "assets": [
+    {
+      "slug": "colearnix",
+      "name": "cover",
+      "output": "public/work/case-mockups/colearnix/cover.webp",
+      "references": [
+        "public/work/colearnix/hero.png"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: premium agency website case-study cover, landscape 1536x1024. Create a carefully art-directed photorealistic digital product device mockup on a genuinely transparent alpha background. The provided image is a reference for the real product UI and colours, not a background to preserve. Rebuild the devices with crisp, straight screen geometry, slim realistic graphite aluminium bezels, restrained studio highlights, no exaggerated perspective. Group centred and fills 88% of canvas with generous transparent margins. Entire devices visible; no crop. All pixels outside devices must be transparent, including between devices. No floor, scenery, rectangular background, coloured glow, checkerboard, headline outside screens, decorative cards, watermark. Keep the actual app features and brand. No individual names, team names, testimonials or invented business performance claims. Screen text minimal and correctly spelled; fine data can be abstract lines, no gibberish. Subject: two elegant upright Android phones, one slightly behind tilted 6 degrees left, the other front nearly straight, offset horizontally without obscuring the main interface. CoLearnix purple/blue student collaboration app. Left phone shows the purple splash screen with exact brand 'CoLearnix' and original white learning icon. Main phone shows a refined ivory dashboard headed 'Discover', blue-purple 'AI skill matches' card, 'Projects' list with code and design icons and project tiles, 'Mentors' section with neutral initials instead of portraits/names, and five-icon bottom navigation. Match the reference app closely with premium typography. Purple only inside screens, not in background."
+    },
+    {
+      "slug": "propela",
+      "name": "cover",
+      "output": "public/work/case-mockups/propela/cover.webp",
+      "references": [
+        "public/work/propela/hero.png"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: premium agency website case-study cover, landscape 1536x1024. Create a carefully art-directed photorealistic digital product device mockup on a genuinely transparent alpha background. The provided image is a reference for the real product UI and colours, not a background to preserve. Rebuild the devices with crisp, straight screen geometry, slim realistic graphite aluminium bezels, restrained studio highlights, no exaggerated perspective. Group centred and fills 88% of canvas with generous transparent margins. Entire devices visible; no crop. All pixels outside devices must be transparent, including between devices. No floor, scenery, rectangular background, coloured glow, checkerboard, headline outside screens, decorative cards, watermark. Keep the actual app features and brand. No individual names, team names, testimonials or invented business performance claims. Screen text minimal and correctly spelled; fine data can be abstract lines, no gibberish. Subject: a slim open dark graphite laptop in a restrained three-quarter view, large readable display occupying most of image, with a smaller floating browser window overlapping the lower right of display but not covering the main sidebar. Propela proposal management platform: ivory workspace, ink-black sidebar, warm amber accents. Main screen exact label 'Propela', 'Dashboard', navigation 'Products', 'Modules', 'Templates', 'Proposals', 'Access'; crisp summary cards using status labels rather than invented metrics, amber bar chart and recent proposals table. Secondary window exact label 'Proposals', tidy proposal status table with 'Draft', 'Sent', 'Accepted' pills, no client names. Maintain source brand and visual language, polished and credible SaaS UI."
+    },
+    {
+      "slug": "ai-sales-distribution",
+      "name": "cover",
+      "output": "public/work/case-mockups/ai-sales-distribution/cover.webp",
+      "references": [
+        "public/work/ai-sales-distribution/hero.png"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: premium agency website case-study cover, landscape 1536x1024. Create a carefully art-directed photorealistic digital product device mockup on a genuinely transparent alpha background. The provided image is a reference for the real product UI and colours, not a background to preserve. Rebuild the devices with crisp, straight screen geometry, slim realistic graphite aluminium bezels, restrained studio highlights, no exaggerated perspective. Group centred and fills 88% of canvas with generous transparent margins. Entire devices visible; no crop. All pixels outside devices must be transparent, including between devices. No floor, scenery, rectangular background, coloured glow, checkerboard, headline outside screens, decorative cards, watermark. Keep the actual app features and brand. No individual names, team names, testimonials or invented business performance claims. Screen text minimal and correctly spelled; fine data can be abstract lines, no gibberish. Subject: premium desktop monitor with slim silver stand and one upright mobile phone offset in front at the right, balanced side-by-side, restrained 5 degree perspective. Source product sales and distribution platform. Desktop white interface, dark navy sidebar, violet accents; exact headings 'Sales & Distribution', 'Dashboard', 'Sales overview', 'Inventory', 'Orders', 'Route tracking', 'AI insights'. Show a structured sales chart, stock cards, order status table, neutral abstract data marks. Phone shows field-sales dashboard, icons for visits, orders, collection, attendance and a violet 'Check in' button. No personal names or dates. Keep devices coherent and sharp, transparent around stand and phone, no source blue backdrop."
+    },
+    {
+      "slug": "audio-mixing-mastering",
+      "name": "cover",
+      "output": "public/work/case-mockups/audio-mixing-mastering/cover.webp",
+      "references": [
+        "public/work/audio-mixing-mastering/hero.png"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: premium agency website case-study cover, landscape 1536x1024. Create a carefully art-directed photorealistic digital product device mockup on a genuinely transparent alpha background. The provided image is a reference for the real product UI and colours, not a background to preserve. Rebuild the devices with crisp, straight screen geometry, slim realistic graphite aluminium bezels, restrained studio highlights, no exaggerated perspective. Group centred and fills 88% of canvas with generous transparent margins. Entire devices visible; no crop. All pixels outside devices must be transparent, including between devices. No floor, scenery, rectangular background, coloured glow, checkerboard, headline outside screens, decorative cards, watermark. Keep the actual app features and brand. No individual names, team names, testimonials or invented business performance claims. Screen text minimal and correctly spelled; fine data can be abstract lines, no gibberish. Subject: one premium graphite laptop with a smaller thin browser window floating at its lower right, tasteful studio product presentation, no headphones or props. Audio mixing and mastering platform; screens dark midnight navy with vivid lime green controls and waveform accents. Main laptop exact heading 'Choose your service', three selectable cards exact labels 'Mastering', 'Mixing & mastering', 'Mixing', a 'Continue' button, navigation 'Home', 'Upload', 'Services', 'Samples', 'Projects'. Secondary window 'My projects' with green waveform tracks and status pills 'In review', 'Completed'. Correct all spelling. Transparent outside the hardware and floating window. No room, floor, lights, backdrop or background panels."
+    },
+    {
+      "slug": "rackline",
+      "name": "cover",
+      "output": "public/work/case-mockups/rackline/cover.webp",
+      "references": [
+        "public/work/rackline/hero.png"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: premium agency website case-study cover, landscape 1536x1024. Create a carefully art-directed photorealistic digital product device mockup on a genuinely transparent alpha background. The provided image is a reference for the real product UI and colours, not a background to preserve. Rebuild the devices with crisp, straight screen geometry, slim realistic graphite aluminium bezels, restrained studio highlights, no exaggerated perspective. Group centred and fills 88% of canvas with generous transparent margins. Entire devices visible; no crop. All pixels outside devices must be transparent, including between devices. No floor, scenery, rectangular background, coloured glow, checkerboard, headline outside screens, decorative cards, watermark. Keep the actual app features and brand. No individual names, team names, testimonials or invented business performance claims. Screen text minimal and correctly spelled; fine data can be abstract lines, no gibberish. Subject: two slim graphite iPhones standing upright with small perspective, forest green Rackline.ai antler scoring app. Left phone brand splash with exact 'rackline.ai', white original antler icon and an elegant green forest silhouette contained fully within its screen. Front phone shows 'Photo scoring', a crisp realistic wildlife photograph of a living whitetail buck outdoors framed within screen, thin green antler measurement guides, labels 'Main beam', 'Inside spread', and a 'View estimate' button, bottom nav scoring/trophy room/map. No hunter names, portraits or outdoor scenery outside phones. No numeric score claim. Product render with full visible phones and transparent background."
+    },
+    {
+      "slug": "intelligent-erp",
+      "name": "cover",
+      "output": "public/work/case-mockups/intelligent-erp/cover.webp",
+      "references": [
+        "public/work/intelligent-erp/hero.png"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: premium agency website case-study cover, landscape 1536x1024. Create a carefully art-directed photorealistic digital product device mockup on a genuinely transparent alpha background. The provided image is a reference for the real product UI and colours, not a background to preserve. Rebuild the devices with crisp, straight screen geometry, slim realistic graphite aluminium bezels, restrained studio highlights, no exaggerated perspective. Group centred and fills 88% of canvas with generous transparent margins. Entire devices visible; no crop. All pixels outside devices must be transparent, including between devices. No floor, scenery, rectangular background, coloured glow, checkerboard, headline outside screens, decorative cards, watermark. Keep the actual app features and brand. No individual names, team names, testimonials or invented business performance claims. Screen text minimal and correctly spelled; fine data can be abstract lines, no gibberish. Subject: slim premium graphite desktop monitor with stand, and upright mobile phone at the right foreground. Source enterprise resource planning application: white/pale blue dashboard with ink navy sidebar, electric blue accents. Brand exact 'Intelligent ERP' instead of ERPNext. Exact main heading 'Business overview'; nav 'Dashboard', 'Sales', 'Purchasing', 'Inventory', 'Finance', 'Reports', 'Access'. Show refined chart, segmented ring, inventory status and workflow cards using concise labels, grey data lines, no performance numbers. Phone shows same design system with sales/inventory/finance shortcuts and trend chart. No welcome personal name, no profile initials for an individual, no dates. Transparent around devices including space under stand."
+    },
+    {
+      "slug": "smartly-ai",
+      "name": "cover",
+      "output": "public/work/case-mockups/smartly-ai/cover.webp",
+      "references": [
+        "public/work/smartly-ai/hero.png"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: premium agency website case-study cover, landscape 1536x1024. Create a carefully art-directed photorealistic digital product device mockup on a genuinely transparent alpha background. The provided image is a reference for the real product UI and colours, not a background to preserve. Rebuild the devices with crisp, straight screen geometry, slim realistic graphite aluminium bezels, restrained studio highlights, no exaggerated perspective. Group centred and fills 88% of canvas with generous transparent margins. Entire devices visible; no crop. All pixels outside devices must be transparent, including between devices. No floor, scenery, rectangular background, coloured glow, checkerboard, headline outside screens, decorative cards, watermark. Keep the actual app features and brand. No individual names, team names, testimonials or invented business performance claims. Screen text minimal and correctly spelled; fine data can be abstract lines, no gibberish. Subject: two premium graphite phones, one slightly behind left and a dominant main phone front right. Smartly AI mobile multi-model assistant app. Left splash midnight navy with source four white rounded-square icon and exact 'Smartly AI'. Right refined dark navy screen with violet accent, exact heading 'Your AI workspace', rounded feature tiles 'Chat', 'Compare', 'Files', 'Camera', 'Images', 'Voice' with distinct restrained coloured icons, and a clean message composer 'Ask anything'. Use source design language; no photos of people, no invented model branding or answers, no long text. Full device edges visible. Crisp display contrast, transparent outside phones, no floor glow."
+    },
+    {
+      "slug": "temp-mail",
+      "name": "cover",
+      "output": "public/work/case-mockups/temp-mail/cover.webp",
+      "references": [
+        "public/work/temp-mail/hero.png"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: premium agency website case-study cover, landscape 1536x1024. Create a carefully art-directed photorealistic digital product device mockup on a genuinely transparent alpha background. The provided image is a reference for the real product UI and colours, not a background to preserve. Rebuild the devices with crisp, straight screen geometry, slim realistic graphite aluminium bezels, restrained studio highlights, no exaggerated perspective. Group centred and fills 88% of canvas with generous transparent margins. Entire devices visible; no crop. All pixels outside devices must be transparent, including between devices. No floor, scenery, rectangular background, coloured glow, checkerboard, headline outside screens, decorative cards, watermark. Keep the actual app features and brand. No individual names, team names, testimonials or invented business performance claims. Screen text minimal and correctly spelled; fine data can be abstract lines, no gibberish. Subject: two upright slim graphite mobile phones, slightly overlapping, premium hardware. Temp Mail privacy email app: purple/yellow original envelope icon. Left screen vibrant purple splash with exact 'Temp Mail' and 'Private temporary email'. Right app ivory content with violet header exact 'Your inbox', purple active mailbox card with address obscured by neutral short lines, copy and refresh icon buttons; clean incoming email rows with exact labels 'Verification', 'Account confirmation', 'Attachment', amber unread indicator, bottom navigation 'Inbox', 'Mailboxes', 'Settings'. No real email addresses, person names or marketing outcomes. Screens should resemble reference product with polished typography. Completely transparent beyond device silhouettes."
+    },
+    {
+      "slug": "colearnix",
+      "name": "onboarding",
+      "output": "public/work/case-mockups/colearnix/onboarding.webp",
+      "references": [
+        "public/work/colearnix/onboarding.png",
+        "public/work/case-mockups/colearnix/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. Four matching slim Android phones aligned horizontally, same height, unobscured, showing successive CoLearnix onboarding screens: 'Welcome', 'Sign in' with email/password fields, 'Create account' form, 'Verify your email' with envelope icon and 'Continue' button. Ivory interface with purple accents. Keep exact brand 'CoLearnix'. Carefully composed four-device workflow, no arrows outside devices."
+    },
+    {
+      "slug": "colearnix",
+      "name": "home",
+      "output": "public/work/case-mockups/colearnix/home.webp",
+      "references": [
+        "public/work/colearnix/home.png",
+        "public/work/case-mockups/colearnix/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright slim Android phone, dominant in canvas. CoLearnix ivory dashboard, exact title 'Discover', purple-to-cyan 'AI skill matches' card, 'Recommended projects', two clean project cards with code/design icons, 'Mentors' with abstract profile icons, bottom app navigation. No personal greeting or individual names. Remove the source random dummy project description."
+    },
+    {
+      "slug": "colearnix",
+      "name": "projects",
+      "output": "public/work/case-mockups/colearnix/projects.webp",
+      "references": [
+        "public/work/colearnix/projects.png",
+        "public/work/case-mockups/colearnix/cover.png"
+      ],
+      "prompt": "Square 1024x1024. Two upright Android phones, same height, little overlap. Left CoLearnix 'Projects' search interface, purple tabs 'All', 'Recruiting', 'Active', organized project cards with neutral data lines. Right 'Create new' bottom sheet with exact options 'Create post', 'Create project', 'Offer mentorship', 'Add achievement', 'Add portfolio item'. Ivory and purple design."
+    },
+    {
+      "slug": "colearnix",
+      "name": "messaging",
+      "output": "public/work/case-mockups/colearnix/messaging.webp",
+      "references": [
+        "public/work/colearnix/messaging.png",
+        "public/work/case-mockups/colearnix/cover.png"
+      ],
+      "prompt": "Square 1024x1024. Two upright Android phones. Left CoLearnix 'Messages' with direct/project/mentorship tabs and clean conversation rows labelled by topic 'Project discussion', 'Mentorship', without people names. Right 'Student profile' purple gradient header with neutral silhouette avatar and tabs 'About', 'Skills', 'Projects', 'Portfolio'; education and skill cards. Remove source person's name, initials, biography, university and location. Preserve app navigation."
+    },
+    {
+      "slug": "temp-mail",
+      "name": "create",
+      "output": "public/work/case-mockups/temp-mail/create.webp",
+      "references": [
+        "public/work/temp-mail/create.png",
+        "public/work/case-mockups/temp-mail/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright slim phone. Temp Mail interface with violet header exact 'Your temporary email', yellow envelope icon, address represented by neutral purple lines, large 'Copy email' button and refresh icon, 'Inbox' panel below with envelope empty state and 'Create address' violet action. White/violet screen, no address strings or premium upsell."
+    },
+    {
+      "slug": "temp-mail",
+      "name": "mailboxes",
+      "output": "public/work/case-mockups/temp-mail/mailboxes.webp",
+      "references": [
+        "public/work/temp-mail/mailboxes.png",
+        "public/work/case-mockups/temp-mail/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright slim phone. Temp Mail 'Mailboxes' screen, violet header, 'Create mailbox' button. Three white address cards using obscured neutral text lines, active purple status pill 'Active', clear copy/switch/delete icon actions. White/violet app screen, clean bottom navigation."
+    },
+    {
+      "slug": "temp-mail",
+      "name": "notifications",
+      "output": "public/work/case-mockups/temp-mail/notifications.webp",
+      "references": [
+        "public/work/temp-mail/notifications.png",
+        "public/work/case-mockups/temp-mail/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright slim phone. Temp Mail message-detail screen titled 'Email details', message exact 'Verify your email', envelope icon, pale yellow code card using six separated dots instead of actual code, 'Copy code' button and 'Open message' violet button. Small notification banner 'New email' inside screen only. No external notification card, names or email addresses."
+    },
+    {
+      "slug": "temp-mail",
+      "name": "custom",
+      "output": "public/work/case-mockups/temp-mail/custom.webp",
+      "references": [
+        "public/work/temp-mail/custom.png",
+        "public/work/case-mockups/temp-mail/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright slim phone. Temp Mail custom-address form titled 'Custom address', violet header and white cards, labelled 'Username' input empty, 'Domain' dropdown with data obscured, large violet 'Create address' button, modest privacy envelope icon. This reference has only a source UI card; integrate its design into the matching full phone, no detached card outside device."
+    },
+    {
+      "slug": "temp-mail",
+      "name": "forwarding",
+      "output": "public/work/case-mockups/temp-mail/forwarding.webp",
+      "references": [
+        "public/work/temp-mail/forwarding.png",
+        "public/work/case-mockups/temp-mail/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright phone, Temp Mail white/violet interface titled 'Email forwarding'. A purple temporary inbox tile connects by thin arrow inside screen to a white destination inbox tile. Blank labelled 'Forwarding address' input, 'Set up forwarding' violet button and 'Manage forwarders' outline button. No actual email address. Preserve source forwarding workflow, clean vector icons only within screen."
+    },
+    {
+      "slug": "temp-mail",
+      "name": "outbound",
+      "output": "public/work/case-mockups/temp-mail/outbound.webp",
+      "references": [
+        "public/work/temp-mail/outbound.png",
+        "public/work/case-mockups/temp-mail/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright phone, Temp Mail compose interface exact heading 'Compose email'. White form with 'From', 'To', 'Subject', 'Message' fields containing neutral obscured lines, paperclip 'Attach file' control, violet 'Send email' action. Purple header, generous form spacing, no actual message, names or addresses."
+    },
+    {
+      "slug": "temp-mail",
+      "name": "attachments",
+      "output": "public/work/case-mockups/temp-mail/attachments.webp",
+      "references": [
+        "public/work/temp-mail/attachments.png",
+        "public/work/case-mockups/temp-mail/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright phone, Temp Mail white/violet message viewer titled 'Email details', sender/subject represented by short neutral lines, body neutral fine lines; prominent PDF attachment card with red PDF icon, exact 'Document.pdf', 'Download' button. Source currently only cropped message card: render it in matching full hardware, eliminate address and dummy correspondence."
+    },
+    {
+      "slug": "temp-mail",
+      "name": "private-mail",
+      "output": "public/work/case-mockups/temp-mail/private-mail.webp",
+      "references": [
+        "public/work/temp-mail/private-mail.png",
+        "public/work/case-mockups/temp-mail/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright phone, Temp Mail private inbox exact title 'Private inbox'. Violet top active-address strip with obscured lines and lock icon, white message rows with envelope icons, exact labels 'Verification', 'Confirmation', 'Notification', 'Attachment'. Yellow unread accents. Bottom navigation inbox/mailboxes/settings. No company sender brands, names or email addresses."
+    },
+    {
+      "slug": "smartly-ai",
+      "name": "compare",
+      "output": "public/work/case-mockups/smartly-ai/compare.webp",
+      "references": [
+        "public/work/smartly-ai/compare.png",
+        "public/work/case-mockups/smartly-ai/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright graphite phone, dark navy Smartly AI interface title 'Compare responses'. Prompt card represented by neutral lines, three stacked response cards headed exact 'ChatGPT', 'Gemini', 'DeepSeek', with violet status dots, tiny copy/share icon controls and neutral response lines. Purple message composer at bottom. No invented factual answers or model version numbers."
+    },
+    {
+      "slug": "smartly-ai",
+      "name": "files",
+      "output": "public/work/case-mockups/smartly-ai/files.webp",
+      "references": [
+        "public/work/smartly-ai/files.png",
+        "public/work/case-mockups/smartly-ai/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright graphite phone. Smartly AI midnight navy and violet 'File analysis' UI, PDF file tile exact 'Report.pdf', chat bubble 'Summarize this document', response panel headed 'Key points' with abstract fine lines, bottom shortcuts exact 'Open file', 'Summary', 'Suggestions', message composer 'Ask about this file'. No dummy marketing metrics or invented report claims."
+    },
+    {
+      "slug": "smartly-ai",
+      "name": "camera",
+      "output": "public/work/case-mockups/smartly-ai/camera.webp",
+      "references": [
+        "public/work/smartly-ai/camera.png",
+        "public/work/case-mockups/smartly-ai/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright graphite phone, Smartly AI dark navy/violet 'Camera analysis' UI. Camera capture card inside screen shows white paper with exact simple equation '2x + 3 = 7', below clear assistant result '2x = 4' and 'x = 2'. Controls 'Retake', 'Ask AI' and small camera icon. Accurate equation text, no complicated hallucinated math, no text outside device."
+    },
+    {
+      "slug": "smartly-ai",
+      "name": "assistants",
+      "output": "public/work/case-mockups/smartly-ai/assistants.webp",
+      "references": [
+        "public/work/smartly-ai/assistants.png",
+        "public/work/case-mockups/smartly-ai/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright graphite phone, Smartly AI midnight navy 'Discover assistants' UI, pill filters 'All', 'Health', 'Finance', 'Learning'. A refined stack of six specialty assistant cards, exact labels 'General physician', 'Pediatrician', 'Cardiologist', 'Dermatologist', 'Dentist', 'ENT specialist', neutral geometric specialty icons, no human headshots or expertise claims. Violet active filter and navigation; retain source product's assistant discovery design."
+    },
+    {
+      "slug": "smartly-ai",
+      "name": "generate",
+      "output": "public/work/case-mockups/smartly-ai/generate.webp",
+      "references": [
+        "public/work/smartly-ai/generate.png",
+        "public/work/case-mockups/smartly-ai/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright graphite phone, Smartly AI dark navy/violet UI titled 'Generate image'. Prompt card exact 'A river beneath a galaxy-filled sky', large vivid realistic generated illustration of a crystalline river, conifers, mountains and spiral galaxy at twilight fully contained within display. Controls 'Generate', 'Save', 'Share' beneath the image. No scenery outside phone."
+    },
+    {
+      "slug": "smartly-ai",
+      "name": "edit",
+      "output": "public/work/case-mockups/smartly-ai/edit.webp",
+      "references": [
+        "public/work/smartly-ai/edit.png",
+        "public/work/case-mockups/smartly-ai/cover.png"
+      ],
+      "prompt": "Square 1024x1024. Two matching upright graphite phones showing Smartly AI dark navy image-editing tools. Left screen exact 'Edit image' with a four-tile tool grid 'Portrait', 'Restore', 'Remove object', 'Enhance', polished thumbnails of landscapes and one anonymous portrait representing actual source functionality. Right screen image editor with landscape before/after comparison and controls 'Original', 'Edited', violet 'Save image'. Images fully inside displays, no decorative external panels or personal names."
+    },
+    {
+      "slug": "smartly-ai",
+      "name": "voice",
+      "output": "public/work/case-mockups/smartly-ai/voice.webp",
+      "references": [
+        "public/work/smartly-ai/voice.png",
+        "public/work/case-mockups/smartly-ai/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One upright graphite phone. Smartly AI midnight navy/violet 'Voice chat' interface: neutral abstract chat bubbles, crisp white/violet sound waveform in centred card, exact status 'Listening', microphone control and 'End chat' button, no source dummy dialogue text. Balanced legible quiet UI, matching source voice conversation functionality."
+    },
+    {
+      "slug": "ai-sales-distribution",
+      "name": "insights",
+      "output": "public/work/case-mockups/ai-sales-distribution/insights.webp",
+      "references": [
+        "public/work/ai-sales-distribution/insights.png",
+        "public/work/case-mockups/ai-sales-distribution/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. One slim complete desktop monitor and silver stand, no tablet overlay. Sales & Distribution source white/violet dashboard, dark navy sidebar. Exact main title 'AI sales insights', dashboard sections 'Sales trend', 'Product categories', 'Recommendations'. Elegant violet line chart, multicolour segmented ring, recommendation list with shopping-bag, stock and analytics icons. Use neutral fine grey data lines instead of source revenue figures, percentage growth claims and client names. No 'TechVince' credit. Each screen panel crisp, orderly and relevant."
+    },
+    {
+      "slug": "ai-sales-distribution",
+      "name": "inventory",
+      "output": "public/work/case-mockups/ai-sales-distribution/inventory.webp",
+      "references": [
+        "public/work/ai-sales-distribution/inventory.png",
+        "public/work/case-mockups/ai-sales-distribution/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. One slim complete desktop monitor and stand. Sales & Distribution white workspace, dark navy sidebar and violet active inventory nav. Exact title 'Inventory management', summary labels 'Products', 'In stock', 'Low stock', 'Out of stock'. Search/filter controls, orderly stock table with product/package icons, neutral product data lines, accurate status pills 'In stock', 'Low stock', 'Out of stock', and 'Add product' button. No drug names or fake totals, no agency credit. Rebuild full screen, not cropped source."
+    },
+    {
+      "slug": "ai-sales-distribution",
+      "name": "route-tracking",
+      "output": "public/work/case-mockups/ai-sales-distribution/route-tracking.webp",
+      "references": [
+        "public/work/ai-sales-distribution/route-tracking.png",
+        "public/work/case-mockups/ai-sales-distribution/cover.png"
+      ],
+      "prompt": "Square 1024x1024. Two matching upright phones showing Sales & Distribution field operations. One 'Route tracking' screen: clear grey street map inside display, violet route line, numbered location pins, lower route card and 'Check in' button. Other 'Visit report' screen: status filters and ordered retailer visit rows with neutral names lines and pills 'Completed', 'In progress', 'Pending'. No actual location or employee names; no external map, no fabricated visit statistics. White screen/violet controls."
+    },
+    {
+      "slug": "ai-sales-distribution",
+      "name": "orders",
+      "output": "public/work/case-mockups/ai-sales-distribution/orders.webp",
+      "references": [
+        "public/work/ai-sales-distribution/orders.png",
+        "public/work/case-mockups/ai-sales-distribution/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. Slim desktop monitor with stand and upright phone to its right, source Sales & Distribution white/violet interface with dark sidebar. Monitor title 'Orders & deliveries', clear order status tabs 'Pending', 'Processing', 'Out for delivery', 'Delivered', orderly order table with neutral data lines, violet 'Create order' action. Phone 'Delivery route' with numbered stop cards and accurate completed/pending status badges, no store names, dates, money or employee names. Keep full devices unobscured."
+    },
+    {
+      "slug": "ai-sales-distribution",
+      "name": "attendance",
+      "output": "public/work/case-mockups/ai-sales-distribution/attendance.webp",
+      "references": [
+        "public/work/ai-sales-distribution/attendance.png",
+        "public/work/case-mockups/ai-sales-distribution/cover.png"
+      ],
+      "prompt": "Square 1024x1024. Two upright matching graphite phones. White/violet Sales & Distribution attendance app. Left exact 'Attendance', clock icon, large 'Check in' action and 'View activity' secondary link, subtle location icon with obscured address. Right exact 'Field activity', compact tabs 'Visits', 'Leave', 'Attendance', neutral activity rows with exact statuses 'Visited', 'Pending', 'Approved'. No source person's name, totals, percentage performance, location, dummy stores or dates. Clean mobile UI."
+    },
+    {
+      "slug": "ai-sales-distribution",
+      "name": "dashboard",
+      "output": "public/work/case-mockups/ai-sales-distribution/dashboard.webp",
+      "references": [
+        "public/work/ai-sales-distribution/dashboard.png",
+        "public/work/case-mockups/ai-sales-distribution/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. One premium desktop monitor and stand, white/violet Sales & Distribution 'Business dashboard', dark sidebar. Overview KPI cards headed 'Sales', 'Products', 'Customers', 'Orders' using neutral short data lines, lower panels 'Sales by region', 'Order status', 'Activity', violet/green bar and ring charts, source dashboard logic but no invented outcomes, personal names or TechVince credit. Crisp and balanced full device."
+    },
+    {
+      "slug": "intelligent-erp",
+      "name": "dashboard",
+      "output": "public/work/case-mockups/intelligent-erp/dashboard.webp",
+      "references": [
+        "public/work/intelligent-erp/dashboard.png",
+        "public/work/case-mockups/intelligent-erp/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. One premium desktop monitor and stand with a companion upright phone, complete and carefully framed. Brand exact 'Intelligent ERP'. Ivory/electric blue enterprise dashboard 'Business overview', nav 'Sales', 'Purchasing', 'Inventory', 'Finance', 'Reports'; income/purchase/customer/product cards with neutral data marks, blue line chart and coloured segmented ring, stock status row. Mobile view of same metrics. No source welcome name, ERPNext brand, date, money or percentage figures."
+    },
+    {
+      "slug": "intelligent-erp",
+      "name": "assistant",
+      "output": "public/work/case-mockups/intelligent-erp/assistant.webp",
+      "references": [
+        "public/work/intelligent-erp/assistant.png",
+        "public/work/case-mockups/intelligent-erp/cover.png"
+      ],
+      "prompt": "Square 1024x1024. Two upright premium phones. Intelligent ERP bright white/blue UI. Left exact 'AI assistant', blue header with bot icon, prompt options 'Summarize sales', 'Show low stock', 'Compare periods', 'Find top products', abstract neutral reply lines and composer 'Ask a question'. Right 'Inventory forecast', blue demand trend charts and product cards with neutral names, accurate status pills 'Healthy', 'Low stock', 'Reorder'. No fabricated sales growth or source product brands."
+    },
+    {
+      "slug": "intelligent-erp",
+      "name": "sales",
+      "output": "public/work/case-mockups/intelligent-erp/sales.webp",
+      "references": [
+        "public/work/intelligent-erp/sales.png",
+        "public/work/case-mockups/intelligent-erp/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. Premium slim graphite laptop plus upright phone beside it. Intelligent ERP bright white/electric blue interface, exact brand 'Intelligent ERP', title 'Sales workspace'. Six clear shortcut tiles 'Customers', 'Quotations', 'Orders', 'Invoices', 'Delivery notes', 'Payments', no numeric totals. Phone 'Purchasing' with supplier, products and category shortcuts. Preserve source workflows and professional design; no ERPNext, personal names, dates or money claims."
+    },
+    {
+      "slug": "intelligent-erp",
+      "name": "finance",
+      "output": "public/work/case-mockups/intelligent-erp/finance.webp",
+      "references": [
+        "public/work/intelligent-erp/finance.png",
+        "public/work/case-mockups/intelligent-erp/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. Complete graphite desktop monitor and stand, one full upright phone at right. Intelligent ERP white/electric blue 'Finance & accounting' dashboard, summary cards 'Income', 'Expenses', 'Net balance', expense bar graph and category ring, tidy transactions table with obscured data. Phone 'HR & payroll', shortcut cards 'Employees', 'Departments', 'Payroll', 'Attendance', 'Payslips', 'Leave'. No employee names, actual monetary figures, dates, outcomes or ERPNext."
+    },
+    {
+      "slug": "intelligent-erp",
+      "name": "roles",
+      "output": "public/work/case-mockups/intelligent-erp/roles.webp",
+      "references": [
+        "public/work/intelligent-erp/roles.png",
+        "public/work/case-mockups/intelligent-erp/cover.png"
+      ],
+      "prompt": "Portrait 1024x1536. One full upright phone. Intelligent ERP white/blue access-control interface, exact title 'Roles & permissions', role selector 'Administrator', permission module cards 'Sales', 'Inventory', 'Finance', 'Reports' with small clear pills 'Full access', 'View only', 'Edit'. Lower accordion options 'Manager', 'Employee', 'Auditor'. Small lock icon in screen, no external floating role cards, shields, neon trails or source pedestal. Keep screen polished and realistic."
+    },
+    {
+      "slug": "audio-mixing-mastering",
+      "name": "services",
+      "output": "public/work/case-mockups/audio-mixing-mastering/services.webp",
+      "references": [
+        "public/work/audio-mixing-mastering/services.png",
+        "public/work/case-mockups/audio-mixing-mastering/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. One complete graphite laptop, restrained perspective, no props. Audio platform midnight navy with vivid lime accents, waveform brand icon. Exact corrected heading 'Choose your service'. Six clean service cards labelled 'Mixing', 'Mastering', 'Dolby Atmos', 'Album package', 'Monthly plan', 'Add-on services', professional service icons and tiny arrow controls. Navigation Home/Upload/Services/Samples/Projects. No source typo, no background music room, headphones or promotional sentence. Match cover design."
+    },
+    {
+      "slug": "audio-mixing-mastering",
+      "name": "upload",
+      "output": "public/work/case-mockups/audio-mixing-mastering/upload.webp",
+      "references": [
+        "public/work/audio-mixing-mastering/upload.png",
+        "public/work/case-mockups/audio-mixing-mastering/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. One complete graphite laptop with full screen and keyboard. Audio platform dark midnight navy/lime. Exact title 'Upload your audio'. Three-step indicator 'Upload files', 'Project details', 'Review'. Large dashed upload area with lime cloud icon, exact 'Drag and drop audio files', 'Choose files' button, format icons 'WAV', 'MP3', 'AIFF', 'Stems'. Right labelled project-title field empty, service-type dropdown 'Mixing & mastering', notes neutral lines, lime 'Continue' button. No background or props."
+    },
+    {
+      "slug": "audio-mixing-mastering",
+      "name": "samples",
+      "output": "public/work/case-mockups/audio-mixing-mastering/samples.webp",
+      "references": [
+        "public/work/audio-mixing-mastering/samples.png",
+        "public/work/case-mockups/audio-mixing-mastering/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. One full thin desktop monitor and stand, dark midnight navy/lime audio UI. Exact heading 'Before & after', genre chips 'All', 'Pop', 'Rock', 'Electronic', 'Acoustic'. Four sample rows labelled by service 'Mixing', 'Mastering', 'Stereo mix', 'Instrumental', each with play control, paired neutral grey 'Original' waveform and vivid lime 'Processed' waveform. All text correctly spelled, no invented song names, no room or headphones."
+    },
+    {
+      "slug": "audio-mixing-mastering",
+      "name": "projects",
+      "output": "public/work/case-mockups/audio-mixing-mastering/projects.webp",
+      "references": [
+        "public/work/audio-mixing-mastering/projects.png",
+        "public/work/case-mockups/audio-mixing-mastering/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. One full graphite laptop. Dark navy/lime audio platform exact title 'My projects', lime 'New project' action, filters 'All', 'In progress', 'In review', 'Completed'. Three clean project rows labelled 'Mixing project', 'Mastering project', 'Instrumental', with small abstract cover-art squares, waveforms, status pills and revision controls. No totals, profile names/initials or invented song titles. Remove source secondary panels and room, keep single full device."
+    },
+    {
+      "slug": "audio-mixing-mastering",
+      "name": "delivery",
+      "output": "public/work/case-mockups/audio-mixing-mastering/delivery.webp",
+      "references": [
+        "public/work/audio-mixing-mastering/delivery.png",
+        "public/work/case-mockups/audio-mixing-mastering/cover.png"
+      ],
+      "prompt": "Square 1024x1024. One full upright graphite tablet, no laptop or room. Audio platform dark midnight navy/lime 'Final audio delivery' interface, completed status, four polished file rows exact 'Master WAV', 'MP3', 'Instrumental', 'Alternate export', clear lime 'Download' buttons, small audio waveform preview and 'Download all' bottom action. Eliminate source admin revenue panel, headphones and studio background. Screen only relevant delivery workflow."
+    },
+    {
+      "slug": "propela",
+      "name": "dashboard",
+      "output": "public/work/case-mockups/propela/dashboard.webp",
+      "references": [
+        "public/work/propela/dashboard.png",
+        "public/work/case-mockups/propela/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. One complete slim graphite desktop monitor and elegant stand, nearly frontal, readable display. Propela ivory dashboard, ink sidebar, amber accents. Exact brand 'Propela', main title 'Dashboard'. Summary cards 'Proposals', 'Drafts', 'Accepted', 'Total value' using neutral short data lines instead of fake figures; recent proposals table with Draft/Sent/Accepted status pills, product distribution bars, amber 'New proposal' button. Remove personal greeting, source client names and all local-browser chrome/address artifacts. No background."
+    },
+    {
+      "slug": "propela",
+      "name": "proposals",
+      "output": "public/work/case-mockups/propela/proposals.webp",
+      "references": [
+        "public/work/propela/proposals.png",
+        "public/work/case-mockups/propela/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. One complete graphite laptop nearly frontal, restrained slight perspective. Propela ivory workspace, dark sidebar, amber active controls. Main title 'Proposals', search field, 'All statuses' dropdown and 'New proposal' action. Wide crisp table with columns 'Proposal', 'Product', 'Template', 'Status', 'Actions', neutral privacy lines replacing IDs and names, accurate status pills 'Sent', 'Accepted', 'Draft', view/download icon actions. No fake client names, amounts, dates or profile identities. No extra floating panels."
+    },
+    {
+      "slug": "propela",
+      "name": "products",
+      "output": "public/work/case-mockups/propela/products.webp",
+      "references": [
+        "public/work/propela/products.png",
+        "public/work/case-mockups/propela/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. One full slim graphite laptop, plus smaller floating browser window overlapping lower right as a purposeful source workflow pair. Propela ivory/dark sidebar with amber accents. Main display 'Products', tidy grid of product cards 'ERP', 'CRM', 'HR & payroll', 'Hospital management', status 'Active', 'View modules' action. Floating screen 'Modules', selected ERP tab, four rows 'Sales & invoicing', 'Inventory', 'Accounting', 'Analytics', clear active pills and 'Add module' action. Hardware and window only, transparent around and between, no external label tags or backdrop."
+    },
+    {
+      "slug": "propela",
+      "name": "roles",
+      "output": "public/work/case-mockups/propela/roles.webp",
+      "references": [
+        "public/work/propela/roles.png",
+        "public/work/case-mockups/propela/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. One complete slim graphite desktop monitor and stand. Propela ivory/dark sidebar/amber interface. Exact title 'Workspace access'. Left two balanced cards exact 'Administrator' and 'Staff', brief feature labels 'Configure products' and 'Create proposals', 'Continue' buttons. Right compact permission table with role labels 'Administrator', 'Staff', 'Viewer', status 'Active', control 'Invite user'. No personal names, emails, real profile data, 'team' labels or invented metrics. Source access workflow clearly represented."
+    },
+    {
+      "slug": "rackline",
+      "name": "scoring",
+      "output": "public/work/case-mockups/rackline/scoring.webp",
+      "references": [
+        "public/work/rackline/scoring.png",
+        "public/work/case-mockups/rackline/cover.png"
+      ],
+      "prompt": "Square 1024x1024. Two complete graphite phones, forest green/ivory Rackline.ai app. Left exact 'Upload photo', realistic wildlife photograph of a living whitetail buck inside screen, camera/gallery/crop shortcut icons and green 'Analyze photo' action. Right 'Score estimate', same buck image with thin green antler guides, badge exact 'Estimate ready', controls 'Details', 'Save result', 'Try another'. No numeric score, hunter names, credits, source outdoor backdrop or external animals. Keep genuine photo texture only within screens."
+    },
+    {
+      "slug": "rackline",
+      "name": "measurements",
+      "output": "public/work/case-mockups/rackline/measurements.webp",
+      "references": [
+        "public/work/rackline/measurements.png",
+        "public/work/case-mockups/rackline/cover.png"
+      ],
+      "prompt": "Square 1024x1024. Two complete upright graphite phones, forest green/ivory Rackline.ai UI. Left exact 'Measurement breakdown', clean structured table with 'Left antler', 'Right antler', 'Main beam', 'Tines', 'Circumference', 'Inside spread', values obscured as neutral thin lines. Right 'Estimated score', green trophy icon and neutral score lines, note exact 'AI-assisted estimate', 'Save to Trophy Room' and 'Share result' buttons; concise navigation. Avoid fabricated numeric score and scientific accuracy claims, no background scenery."
+    },
+    {
+      "slug": "rackline",
+      "name": "trophy-room",
+      "output": "public/work/case-mockups/rackline/trophy-room.webp",
+      "references": [
+        "public/work/rackline/trophy-room.png",
+        "public/work/case-mockups/rackline/cover.png"
+      ],
+      "prompt": "Landscape 1536x1024. Three complete slim graphite phones aligned with little overlap. Rackline.ai forest green/ivory app. Left 'Trophy Room' with three saved buck-photo cards and small antler badges. Centre 'Community' with nature/deer posts, anonymous neutral avatar icons, no names or post paragraphs, like/comment/share controls. Right 'My profile' forest illustration header, neutral profile icon and data lines, tabs 'Posts', 'Trophy Room', 'Badges', photo gallery. All scenery inside screens only. Remove source person names, portraits, locations, dates, scores and social follower metrics."
+    }
+  ]
+}

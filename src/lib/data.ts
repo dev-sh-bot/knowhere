@@ -2,7 +2,7 @@ export type Service = {
   num: string;
   name: string;
   tag: string;
-  img: string;
+  img?: string;
   desc: string;
   inc: string[];
   stack: string[];
@@ -13,7 +13,6 @@ export type CaseStudy = {
   title: string;
   sector: string;
   loc: string;
-  year: string;
   tags: string[];
   homeTag: string;
   img: string;
@@ -22,13 +21,14 @@ export type CaseStudy = {
   bd: string;
   outs: [string, string][];
   stack: string[];
+  pos?: string;
+  slug?: string;
 };
 
 export type Filter = { k: string; l: string };
 export type Step = { n: string; t: string; d: string; m: string };
 export type Engage = { t: string; d: string; m: string };
 export type Principle = { t: string; d: string };
-export type TimelineItem = { y: string; d: string };
 export type Stat = { n: number; suf: string; label: string };
 export type NavLink = { href: string; key: string; label: string };
 
@@ -37,7 +37,7 @@ export const SVC: Service[] = [
     num: "01",
     name: "Web Development",
     tag: "SITES · CMS · SEO",
-    img: "https://picsum.photos/seed/knowhere-web/440/330.jpg",
+    img: "/work/case-mockups/propela/cover.webp",
     desc: "Marketing sites, corporate platforms and CMS builds — fast, accessible and maintainable, engineered for the stack your problem actually needs.",
     inc: [
       "Marketing & corporate websites",
@@ -52,7 +52,7 @@ export const SVC: Service[] = [
     num: "02",
     name: "Custom Web Apps",
     tag: "SAAS · PORTALS · APIs",
-    img: "https://picsum.photos/seed/knowhere-webapp/440/330.jpg",
+    img: "/work/case-mockups/intelligent-erp/cover.webp",
     desc: "Bespoke web applications, SaaS products and internal tools — role-based access, real-time data and APIs that stay clean as you scale.",
     inc: [
       "SaaS product builds",
@@ -67,8 +67,8 @@ export const SVC: Service[] = [
     num: "03",
     name: "Mobile Apps",
     tag: "IOS · ANDROID · SYNC",
-    img: "https://picsum.photos/seed/knowhere-mobile/440/330.jpg",
-    desc: "Cross-platform apps that feel native, shipped to both stores — with the backend, sync, push and offline behaviour to match.",
+    img: "/work/case-mockups/colearnix/cover.webp",
+    desc: "Cross-platform apps that feel native, shipped to both stores — with the backend, sync, push and offline behavior to match.",
     inc: [
       "iOS & Android apps",
       "Cross-platform builds",
@@ -82,7 +82,7 @@ export const SVC: Service[] = [
     num: "04",
     name: "UI/UX & Design",
     tag: "RESEARCH · SYSTEMS · BRAND",
-    img: "https://picsum.photos/seed/knowhere-design/440/330.jpg",
+    img: "/work/case-mockups/smartly-ai/cover.webp",
     desc: "Research, wireframes, prototypes and pixel-final design systems — designed in the browser wherever possible, so what you approve is what ships.",
     inc: [
       "UX research & audits",
@@ -97,8 +97,8 @@ export const SVC: Service[] = [
     num: "05",
     name: "E-commerce",
     tag: "STORES · CHECKOUT · OMS",
-    img: "https://picsum.photos/seed/knowhere-ecom/440/330.jpg",
-    desc: "Storefronts and commerce platforms that convert — catalog, cart, payments, inventory and fulfilment wired end to end.",
+    img: "/work/case-mockups/ai-sales-distribution/cover.webp",
+    desc: "Storefronts and commerce platforms that convert — catalog, cart, payments, inventory and fulfillment wired end to end.",
     inc: [
       "Headless & traditional storefronts",
       "Payment gateway integration",
@@ -112,7 +112,7 @@ export const SVC: Service[] = [
     num: "06",
     name: "Cloud & DevOps",
     tag: "AWS · CI/CD · MONITORING",
-    img: "https://picsum.photos/seed/knowhere-cloud/440/330.jpg",
+    img: "/work/case-mockups/temp-mail/cover.webp",
     desc: "Migration, automation and monitoring set up so deployments become boring — the highest compliment in DevOps.",
     inc: [
       "Cloud migration & setup",
@@ -127,7 +127,6 @@ export const SVC: Service[] = [
     num: "07",
     name: "Cybersecurity",
     tag: "AUDITS · HARDENING · PENTEST",
-    img: "https://picsum.photos/seed/knowhere-sec/440/330.jpg",
     desc: "Vulnerability assessments, penetration testing and hardening that follows OWASP guidance — reported in plain language.",
     inc: [
       "Vulnerability assessments",
@@ -142,7 +141,6 @@ export const SVC: Service[] = [
     num: "08",
     name: "AI & Automation",
     tag: "LLM · BOTS · WORKFLOWS",
-    img: "https://picsum.photos/seed/knowhere-ai/440/330.jpg",
     desc: "Practical AI for real workflows — chat assistants, document intelligence, OCR and automation that saves hours, not demos.",
     inc: [
       "Custom GPT / LLM assistants",
@@ -157,8 +155,7 @@ export const SVC: Service[] = [
     num: "09",
     name: "Data & Analytics",
     tag: "BI · PIPELINES · DASHBOARDS",
-    img: "https://picsum.photos/seed/knowhere-data/440/330.jpg",
-    desc: "Pipelines, warehouses and dashboards that turn operational noise into decisions your team can act on every Monday.",
+    desc: "Pipelines, warehouses and dashboards that turn operational noise into decisions your organization can act on every Monday.",
     inc: [
       "Data pipelines & ETL",
       "Business intelligence dashboards",
@@ -172,7 +169,6 @@ export const SVC: Service[] = [
     num: "10",
     name: "QA & Testing",
     tag: "MANUAL · AUTO · UAT",
-    img: "https://picsum.photos/seed/knowhere-qa/440/330.jpg",
     desc: "Manual and automated quality assurance so releases ship with confidence — regression suites, UAT support and bug triage.",
     inc: [
       "Test strategy & planning",
@@ -187,7 +183,6 @@ export const SVC: Service[] = [
     num: "11",
     name: "ERP & Integrations",
     tag: "CRM · ERP · APIs",
-    img: "https://picsum.photos/seed/knowhere-erp/440/330.jpg",
     desc: "Connect the tools you already run — CRM, ERP, accounting and custom systems talking through reliable integrations.",
     inc: [
       "CRM / ERP implementation",
@@ -202,8 +197,7 @@ export const SVC: Service[] = [
     num: "12",
     name: "IT Consulting & Support",
     tag: "STRATEGY · SLAS · TRAINING",
-    img: "https://picsum.photos/seed/knowhere-consult/440/330.jpg",
-    desc: "Strategy, managed IT and honest second opinions — with SLAs in writing and humans on the phone.",
+    desc: "Technology strategy, managed IT and clear support plans — scoped around the systems your organization relies on.",
     inc: [
       "Technology strategy & audits",
       "Managed IT with SLAs",
@@ -211,7 +205,7 @@ export const SVC: Service[] = [
       "Staff training",
       "Emergency support",
     ],
-    stack: ["SLA-backed", "24/7 monitoring", "<4h response"],
+    stack: ["Technology strategy", "Managed IT", "Support planning"],
   },
 ];
 
@@ -220,111 +214,176 @@ export const SERVICE_OPTIONS = SVC.map((s) => s.name).concat(["Something else"])
 export const CASES: CaseStudy[] = [
   {
     no: "C-01",
-    title: "Meridian Retail",
-    sector: "RETAIL & E-COMMERCE",
-    loc: "RETAIL · E-COMMERCE",
-    year: "2024",
-    tags: ["web", "commerce"],
-    homeTag: "E-COMMERCE — 2024",
-    img: "https://picsum.photos/seed/meridian-retail/1200/800.jpg",
-    blurb: "Full replatform of a 12,000-SKU storefront to a headless build.",
-    ch: "Product pages took nine seconds to load on 3G, and every campaign launch was a two-week engineering event.",
-    bd: "A headless Next.js storefront with a structured CMS, edge caching, and a design system marketing can launch campaigns with — without touching code.",
+    title: "CoLearnix",
+    sector: "EDUCATION",
+    loc: "CAMPUS · ANDROID & iOS",
+    tags: ["mobile", "ai"],
+    homeTag: "MOBILE · AI",
+    img: "/work/case-mockups/colearnix/cover.webp",
+    pos: "78% center",
+    slug: "colearnix",
+    blurb:
+      "A campus app that puts project groups, mentors, messaging and career tools in one Flutter experience.",
+    ch: "Students were split across separate tools for networking, project chat, mentorship and employability, with no structured way to find collaborators.",
+    bd: "A feature-first Flutter app on Firebase Auth and Supabase. Gemini recommendations run through server-side Edge Functions, so model credentials stay off the device. Home, projects, a create hub, messaging and a student profile share one navigation shell.",
     outs: [
-      ["+38%", "CONVERSION RATE"],
-      ["-71%", "PAGE LOAD TIME"],
-      ["2H", "CAMPAIGN LAUNCH, WAS 2 WEEKS"],
+      ["1 APP", "PROJECTS, MENTORS, CHAT AND CAREER"],
+      ["OFF-DEVICE", "GEMINI CALLS STAY ON THE SERVER"],
+      ["MVP", "AUTH, HOME, PROFILE AND RESUME IN"],
     ],
-    stack: ["Next.js", "Node.js", "Headless CMS", "Stripe", "Edge CDN"],
+    stack: ["Flutter", "Firebase Auth", "Supabase", "Gemini", "BLoC"],
   },
   {
     no: "C-02",
-    title: "Pulse Health",
-    sector: "HEALTHCARE",
-    loc: "DUBAI, UAE",
-    year: "2024",
-    tags: ["mobile"],
-    homeTag: "MOBILE — 2024",
-    img: "https://picsum.photos/seed/pulse-health/1200/800.jpg",
+    title: "Temp Mail",
+    sector: "CONSUMER PRIVACY",
+    loc: "ANDROID & iOS",
+    tags: ["mobile", "cloud"],
+    homeTag: "MOBILE",
+    img: "/work/case-mockups/temp-mail/cover.webp",
+    pos: "72% center",
+    slug: "temp-mail",
     blurb:
-      "Patient portal and appointment app for a three-clinic group — 40,000 patients, zero phone queues.",
-    ch: "Every appointment was booked by phone during office hours; staff spent four hours a day scheduling.",
-    bd: "A Flutter app with live slot availability, WhatsApp and SMS reminders, and an admin panel staff actually enjoy.",
+      "A disposable-email app with its own mail server, so sign-ups and short-term mail never touch a personal inbox.",
+    ch: "People were handing out permanent addresses for one-time sign-ups. Public disposable-email tools stopped short of multiple inboxes, forwarding, attachments and outbound mail.",
+    bd: "A Flutter app for Android and iOS, backed by a private Python mail server on a VPS. Users generate an address, keep several mailboxes, get mail in real time, forward it, send from it, and open attachments — on infrastructure the product owns.",
     outs: [
-      ["60K", "APPOINTMENTS IN YEAR ONE"],
-      ["-4H/DAY", "STAFF TIME ON SCHEDULING"],
-      ["4.7★", "APP STORE RATING"],
+      ["12 WK", "DISCOVERY THROUGH PUBLIC RELEASE"],
+      ["LIVE", "ANDROID AND iOS FROM ONE CODEBASE"],
+      ["OWNED", "PRIVATE PYTHON MAIL SERVER ON VPS"],
     ],
-    stack: ["Flutter", "Firebase", "Node.js", "WhatsApp API"],
+    stack: ["Flutter", "Dart", "Python", "VPS", "REST API"],
   },
   {
     no: "C-03",
-    title: "Sona Textiles",
-    sector: "MANUFACTURING & B2B",
-    loc: "MANUFACTURING · B2B",
-    year: "2023",
-    tags: ["web"],
-    homeTag: "B2B WEB — 2023",
-    img: "https://picsum.photos/seed/sona-textiles/1200/800.jpg",
+    title: "Smartly AI",
+    sector: "AI PRODUCTIVITY",
+    loc: "ANDROID & iOS",
+    tags: ["mobile", "ai"],
+    homeTag: "AI · MOBILE",
+    img: "/work/case-mockups/smartly-ai/cover.webp",
+    pos: "70% center",
+    slug: "smartly-ai",
     blurb:
-      "B2B order portal replacing WhatsApp-order chaos for a mill with 300+ trade buyers.",
-    ch: "Orders arrived as voice notes and screenshots; re-entry errors were eating the margin on every third order.",
-    bd: "A role-based order portal with live inventory, buyer-specific pricing, credit limits, and export-ready history for accounts.",
+      "One Flutter assistant for chat, documents, camera solving, image tools and live voice.",
+    ch: "Everyday AI work was split across chat, document, image and voice products, and each provider behaved differently behind the scenes.",
+    bd: "A Flutter app with one navigation, conversation and loading pattern. A shared backend sends each request — text, file, camera, prompt or voice — to the right model, and keeps provider differences out of the interface.",
     outs: [
-      ["-71%", "ORDER ENTRY ERRORS"],
-      ["3×", "ORDER VOLUME CAPACITY"],
-      ["300+", "ACTIVE BUYERS ONBOARDED"],
+      ["100+", "TASK-SPECIFIC ASSISTANTS"],
+      ["16 WK", "BUILD, QA AND PUBLIC LAUNCH"],
+      ["5 TOOLS", "CHAT, FILES, CAMERA, IMAGE, VOICE"],
     ],
-    stack: ["React", "Laravel", "MySQL", "RBAC", "Excel Export"],
+    stack: ["Flutter", "ChatGPT", "Gemini", "DeepSeek", "Voice AI"],
   },
   {
     no: "C-04",
-    title: "LedgerLine",
-    sector: "FINTECH",
-    loc: "LONDON, UK",
-    year: "2023",
-    tags: ["web", "cloud"],
-    homeTag: "FINTECH · CLOUD — 2023",
-    img: "https://picsum.photos/seed/ledgerline/1200/800.jpg",
+    title: "AI Sales & Distribution",
+    sector: "SALES & DISTRIBUTION",
+    loc: "WEB & MOBILE · SAAS",
+    tags: ["web", "mobile", "ai", "cloud"],
+    homeTag: "WEB · MOBILE · AI",
+    img: "/work/case-mockups/ai-sales-distribution/cover.webp",
+    slug: "ai-sales-distribution",
     blurb:
-      "Operations platform and public API for a payments startup handling 4.2M transactions a month.",
-    ch: "Ops ran on spreadsheets and a shared inbox; month-end reconciliation took two full days.",
-    bd: "Real-time reconciliation tooling and a versioned public API with monitoring, docs and a sandbox for partners.",
+      "Web and mobile SaaS that brings sales, inventory, deliveries, attendance and field operations together with AI-driven insights.",
+    ch: "Sales, inventory, deliveries, attendance and field operations needed to sit in one place, with AI-driven insights for faster and smarter decisions.",
+    bd: "A web and mobile SaaS on Flutter, Next.js, React, Python AI, Firebase and AWS. The build covers sales insights, inventory, GPS retailer check-ins, order-to-delivery, field attendance and executive dashboards.",
     outs: [
-      ["4.2M", "MONTHLY TRANSACTIONS"],
-      ["20MIN", "MONTH-END RECON, WAS 2 DAYS"],
-      ["99.98%", "API UPTIME"],
+      ["WEB + MOBILE", "SAAS FOR SALES AND FIELD OPERATIONS"],
+      ["AI INSIGHTS", "ANALYTICS, FORECASTING AND RECOMMENDATIONS"],
+      ["ONE PLATFORM", "SALES, INVENTORY, DELIVERIES, ATTENDANCE"],
     ],
-    stack: ["React", "Node.js", "PostgreSQL", "AWS", "Terraform"],
+    stack: ["Flutter", "Next.js", "React", "Python AI", "Firebase", "AWS"],
   },
   {
     no: "C-05",
-    title: "Agha Freight",
-    sector: "LOGISTICS",
-    loc: "LOGISTICS · FLEET",
-    year: "2025",
-    tags: ["mobile", "cloud"],
-    homeTag: "LOGISTICS — 2025",
-    img: "https://picsum.photos/seed/agha-freight/1200/800.jpg",
+    title: "Audio Mixing & Mastering",
+    sector: "MUSIC PRODUCTION",
+    loc: "RESPONSIVE WEB · SAAS",
+    tags: ["web", "cloud"],
+    homeTag: "WEB",
+    img: "/work/case-mockups/audio-mixing-mastering/cover.webp",
+    slug: "audio-mixing-mastering",
     blurb:
-      "Live tracking platform for a 1,200-vehicle fleet — built to work on 2G.",
-    ch: "Customers called dispatch for location updates; dispatch called the drivers. Nobody knew where anything was.",
-    bd: "Offline-first driver check-ins, live GPS ingestion, geofenced alerts, and a tracking page that loads on 2G.",
+      "A custom web platform for buying mixing and mastering, uploading audio, managing revisions and downloading studio-quality masters.",
+    ch: "Artists needed to purchase mixing and mastering, send files safely, follow revisions and collect finished masters in one online workflow.",
+    bd: "A responsive web app on React, Laravel, Amazon S3 and DigitalOcean. Service selection, secure uploads, project tracking, an admin dashboard and multi-format delivery share one customer experience.",
     outs: [
-      ["1,200", "VEHICLES TRACKED LIVE"],
-      ["-80%", "“WHERE IS MY TRUCK?” CALLS"],
-      ["2G", "WORKS ON 2G NETWORKS"],
+      ["2 MONTHS", "UI/UX, DEVELOPMENT AND CLOUD INTEGRATION"],
+      ["LIVE", "PUBLIC RESPONSIVE WEB APP"],
+      ["S3", "SECURE AUDIO STORAGE AND DELIVERY"],
     ],
-    stack: ["Flutter", "Node.js", "WebSockets", "Redis", "DigitalOcean"],
+    stack: ["React", "Laravel", "Amazon S3", "DigitalOcean", "REST API"],
   },
+  {
+    no: "C-06",
+    title: "Intelligent ERP",
+    sector: "ERP & OPERATIONS",
+    loc: "WEB & MOBILE · SAAS",
+    tags: ["web", "mobile", "ai", "cloud"],
+    homeTag: "WEB · MOBILE · AI",
+    img: "/work/case-mockups/intelligent-erp/cover.webp",
+    slug: "intelligent-erp",
+    blurb:
+      "A unified ERP for sales, purchasing, inventory, finance and HR, with an AI assistant and smart inventory forecasting.",
+    ch: "Sales, purchasing, inventory, finance and HR had to run as one operational picture, with AI insights, demand forecasting and role-based access.",
+    bd: "Web and mobile ERP on Flutter, Next.js, NestJS, PostgreSQL, AWS S3 and DigitalOcean. Live dashboards, natural-language queries, quote-to-payment, finance, HR and department-level permissions share one SaaS product.",
+    outs: [
+      ["6+", "CORE MODULES — SALES, PURCHASE, INVENTORY, FINANCE, HR"],
+      ["100%", "CLOUD READY — SECURE, SCALABLE ARCHITECTURE"],
+      ["AI", "ASSISTANT AND DEMAND FORECASTING"],
+    ],
+    stack: ["Flutter", "Next.js", "NestJS", "PostgreSQL", "AWS S3"],
+  },
+  {
+    no: "C-07",
+    title: "Propela",
+    sector: "PROPOSAL MANAGEMENT",
+    loc: "FULL STACK WEB",
+    tags: ["web"],
+    homeTag: "WEB",
+    img: "/work/case-mockups/propela/cover.webp",
+    slug: "propela",
+    blurb:
+      "A full-stack web app for creating, managing and tracking business proposals with products, modules and role-based access.",
+    ch: "Proposal work needed centralized records, reusable product structures, separate admin and staff access, and PDF-ready output.",
+    bd: "React 18 + Vite on the front end, Next.js + Express for the API, Prisma and PostgreSQL underneath. Tailwind, TypeScript, JWT and Puppeteer support maintainable, secure, professional proposal output.",
+    outs: [
+      ["PDF READY", "ARCHITECTURE FOR PROFESSIONAL PROPOSAL OUTPUT"],
+      ["RBAC", "ADMIN WORKSPACE AND STAFF ACCESS FLOWS"],
+      ["FULL STACK", "REACT, NEXT.JS AND POSTGRESQL"],
+    ],
+    stack: ["React", "Next.js", "PostgreSQL", "Prisma", "Puppeteer"],
+  },
+  {
+    no: "C-08",
+    title: "Rackline.ai",
+    sector: "OUTDOORS",
+    loc: "ANDROID & iOS",
+    tags: ["mobile", "ai"],
+    homeTag: "AI · MOBILE",
+    img: "/work/case-mockups/rackline/cover.webp",
+    slug: "rackline",
+    blurb:
+      "A Flutter app for hunters and outfitters — AI antler scores from trail-camera photos, plus Trophy Room, community, maps and outfitters.",
+    ch: "Hunters needed AI-assisted antler scores from trail-camera or harvest photos, detailed measurements, and a connected Trophy Room, community, map and outfitter experience.",
+    bd: "A cross-platform Flutter app with Firebase, Node.js and the OpenAI API. Scoring, measurement breakdowns, Trophy Room history, badges and community sit in one hunting product, prepared for iOS and Android release.",
+    outs: [
+      ["AI SCORING", "TRAIL CAMERA AND HARVEST PHOTO ESTIMATES"],
+      ["iOS + ANDROID", "FLUTTER CROSS-PLATFORM APP"],
+      ["TROPHY ROOM", "SAVED RECORDS, BADGES AND COMMUNITY"],
+    ],
+    stack: ["Flutter", "Firebase", "Node.js", "OpenAI API"],
+  },
+
 ];
 
 export const FILTERS: Filter[] = [
-  { k: "all", l: "ALL / 05" },
-  { k: "web", l: "WEB / 03" },
-  { k: "mobile", l: "MOBILE / 02" },
-  { k: "commerce", l: "COMMERCE / 01" },
-  { k: "cloud", l: "CLOUD / 02" },
+  { k: "all", l: "ALL / 08" },
+  { k: "web", l: "WEB / 04" },
+  { k: "mobile", l: "MOBILE / 06" },
+  { k: "ai", l: "AI / 05" },
+  { k: "cloud", l: "CLOUD / 04" },
 ];
 
 export const STEPS: Step[] = [
@@ -355,7 +414,7 @@ export const STEPS: Step[] = [
   {
     n: "05",
     t: "Support",
-    d: "Response times and update windows in writing — and a phone number a human answers.",
+    d: "Support scope, response windows and update cadence are agreed in writing.",
     m: "ONGOING",
   },
 ];
@@ -367,8 +426,8 @@ export const ENGAGE: Engage[] = [
     m: "BEST FOR: DEFINED SCOPE",
   },
   {
-    t: "Dedicated team",
-    d: "Our engineers and designers embedded in your roadmap, billed monthly. You steer priorities weekly; we handle hiring, tooling and quality.",
+    t: "Dedicated engineering",
+    d: "Engineering and design work aligned with your roadmap, billed monthly. You steer priorities weekly; delivery, tooling and quality stay organized around them.",
     m: "BEST FOR: ONGOING ROADMAPS",
   },
   {
@@ -384,8 +443,8 @@ export const PRINCIPLES: Principle[] = [
     d: "We’ll tell you what we would do — then build what you decide.",
   },
   {
-    t: "Small team, senior hands",
-    d: "The people you meet on the first call are the people who write the code.",
+    t: "Clear ownership",
+    d: "Each project has a clear point of contact from the first discussion through delivery.",
   },
   {
     t: "Boring tech, exciting results",
@@ -396,40 +455,15 @@ export const PRINCIPLES: Principle[] = [
     d: "Auth, backups and audits are baseline, not add-ons.",
   },
   {
-    t: "Answer the phone",
-    d: "Support with a name and a number. Under four hours, in writing.",
+    t: "Support in the plan",
+    d: "Maintenance, updates and support are scoped alongside the work.",
   },
-];
-
-export const TIMELINE: TimelineItem[] = [
-  { y: "2020", d: "Knowhere Systems founded — one engineer, one stubborn bar for quality." },
-  { y: "2022", d: "25th project shipped. The design practice launches." },
-  { y: "2023", d: "First international clients across the Middle East and Europe." },
-  { y: "2024", d: "Managed services and 24/7 support plans launch." },
-  {
-    y: "2025",
-    d: "80+ projects delivered — still answering our own phones.",
-  },
-];
-
-export type TeamMember = { name: string; role: string };
-
-export const TEAM: TeamMember[] = [
-  { name: "Syed Huzaifa Ali", role: "Founder & Principal Engineer" },
-  { name: "Ayesha Rahman", role: "Head of Product Design" },
-  { name: "Bilal Khan", role: "Lead Mobile Engineer" },
-  { name: "Fatima Noor", role: "Cloud & DevOps Lead" },
-  { name: "Hamza Siddiqui", role: "Full-Stack Engineer" },
-  { name: "Sara Malik", role: "QA & Delivery Lead" },
-  { name: "Omar Farooq", role: "AI & Automation" },
-  { name: "Zainab Ali", role: "Client Success" },
 ];
 
 export const STATS: Stat[] = [
-  { n: 80, suf: "+", label: "Projects shipped" },
-  { n: 6, suf: "", label: "Countries served" },
-  { n: 92, suf: "%", label: "Client retention" },
-  { n: 24, suf: "/7", label: "Support coverage" },
+  { n: 8, suf: "", label: "Case studies" },
+  { n: 3, suf: "", label: "Platforms represented" },
+  { n: 12, suf: "", label: "Service disciplines" },
 ];
 
 export const MQ_ITEMS = [

@@ -30,7 +30,7 @@ export function ContactChannels() {
       </div>
       <div className="ch">
         <span className="ch-k">REPLY</span>
-        <span className="ch-v">Within one business day — a human, not a bot</span>
+        <span className="ch-v">Share the project details and discuss clear next steps.</span>
       </div>
     </Reveal>
   );

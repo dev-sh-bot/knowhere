@@ -53,8 +53,8 @@ export function WorkList() {
                 <Image
                   src={c.img}
                   alt={`${c.title} project`}
-                  width={1200}
-                  height={800}
+                width={1536}
+                height={1024}
                   sizes="(max-width: 900px) 100vw, 40vw"
                 />
               </div>
@@ -62,7 +62,7 @@ export function WorkList() {
                 <h3 className="wl-title">{c.title}</h3>
                 <p className="wl-blurb">{c.blurb}</p>
                 <div className="wl-meta">
-                  {c.sector} — {c.year} — {c.loc}
+                  {c.sector} — {c.loc}
                 </div>
                 <span className="wl-open">
                   OPEN CASE FILE <Ic d={D.ne} />

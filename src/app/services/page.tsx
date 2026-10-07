@@ -16,7 +16,7 @@ export default function ServicesPage() {
       <PageHero
         label="(01) Capabilities"
         title="SERVICES"
-        lead="Twelve disciplines, one accountable team. Web, mobile, cloud, AI, data and security — scoped in writing, priced before we start, built by the people you meet on call one."
+        lead="Twelve disciplines, one accountable delivery process. Web, mobile, cloud, AI, data and security — scoped in writing and priced before work begins."
       />
       <section className="sec bg-paper">
         <div className="wrap">
