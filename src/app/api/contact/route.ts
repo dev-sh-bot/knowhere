@@ -59,9 +59,31 @@ function readField(value: unknown, maxLength = MAX_FIELD_LENGTH) {
   return trimmed.length <= maxLength ? trimmed : null;
 }
 
+function getPublicOrigin(request: Request) {
+  const forwardedHost = request.headers.get("x-forwarded-host");
+  if (forwardedHost) {
+    const host = forwardedHost.split(",")[0]?.trim();
+    const proto = request.headers.get("x-forwarded-proto")?.split(",")[0]?.trim() || "https";
+    if (host) return `${proto}://${host}`;
+  }
+  return new URL(request.url).origin;
+}
+
+function isAllowedOrigin(origin: string, request: Request) {
+  const allowed = new Set([
+    getPublicOrigin(request),
+    new URL(request.url).origin,
+    "https://knowheresystems.com",
+    "https://www.knowheresystems.com",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+  ]);
+  return allowed.has(origin);
+}
+
 export async function POST(request: Request) {
   const origin = request.headers.get("origin");
-  if (origin && origin !== new URL(request.url).origin) {
+  if (origin && !isAllowedOrigin(origin, request)) {
     return NextResponse.json({ error: "Invalid request origin." }, { status: 403 });
   }
 
