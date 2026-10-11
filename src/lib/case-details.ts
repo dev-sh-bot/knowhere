@@ -7,6 +7,8 @@ export type Shot = {
 export type Item = { t: string; d: string };
 
 export type CaseDetail = {
+  kind?: "creative";
+  gallery?: Shot[];
   headline: string;
   intro: string;
   website?: string;
@@ -40,6 +42,287 @@ export type CaseDetail = {
 };
 
 export const CASE_DETAILS: Record<string, CaseDetail> = {
+  "brand-copy-content": {
+    kind: "creative",
+    gallery: [
+      {
+        src: "/work/portfolio-originals/brand-copy-content/woodcare-sofa-concept.webp",
+        w: 1600,
+        h: 900,
+        alt: "Woodcare Interior and Sofa Concept promotional copy from Zehra Ghani's original portfolio",
+      },
+      {
+        src: "/work/portfolio-originals/brand-copy-content/wood-decor.webp",
+        w: 1600,
+        h: 900,
+        alt: "Wood Decor furniture product messages from Zehra Ghani's original portfolio",
+      },
+      {
+        src: "/work/portfolio-originals/brand-copy-content/pakistan-furniture.webp",
+        w: 1600,
+        h: 900,
+        alt: "Pakistan Furniture and Interiors social content from Zehra Ghani's original portfolio",
+      },
+      {
+        src: "/work/portfolio-originals/brand-copy-content/cave-studio.webp",
+        w: 1600,
+        h: 900,
+        alt: "CAVE Studio kitchen, living room and media wall copy from Zehra Ghani's original portfolio",
+      },
+      {
+        src: "/work/portfolio-originals/brand-copy-content/softirium.webp",
+        w: 1600,
+        h: 900,
+        alt: "Softirium promotional and occasion-based content from Zehra Ghani's original portfolio",
+      },
+    ],
+    headline: "Brand copy and social content with a clear point of view",
+    intro:
+      "A curated selection from Zehra Ghani’s writing portfolio, bringing together product promotions, interior-service messages and digital agency content.",
+    hero: {
+      src: "/work/case-mockups/brand-copy-content/cover.webp",
+      w: 1536,
+      h: 1024,
+      alt: "A presentation of furniture, interior and agency brand content from the writing portfolio",
+    },
+    facts: [
+      ["Discipline", "Copywriting and content writing"],
+      ["Format", "Static social content and promotional copy"],
+      ["Sectors", "Furniture · interiors · digital marketing"],
+      ["Portfolio", "Zehra Ghani"],
+    ],
+    overview: {
+      title: "Different brands, carefully chosen words",
+      body: [
+        "This collection pairs concise copy with product and lifestyle imagery. Furniture posts focus on the piece and the invitation to shop; interior posts describe the character of a space; agency promotions make the service message visible at a glance.",
+        "The source portfolio includes Woodcare Interior, Sofa Concept, Wood Décor, Pakistan Furniture & Interiors, CAVÉ Studio and Softirium. The work is presented here as a writing and content collection, with presentation mockups adapted from the supplied examples.",
+      ],
+      cards: [
+        ["Collection", "Selected brand copy and social content"],
+        ["Content focus", "Products, interior services and agency promotions"],
+        ["Writing approach", "A short headline, supporting message and clear action"],
+        ["Presentation", "Campaign examples grouped by audience and subject"],
+      ],
+    },
+    journey: [
+      { t: "Offer", d: "Identify the product or service at the centre" },
+      { t: "Voice", d: "Reflect the character of the brand" },
+      { t: "Message", d: "Give the post one clear headline" },
+      { t: "Action", d: "Connect the message to its next step" },
+    ],
+    challenges: {
+      title: "Making a small amount of copy do useful work",
+      items: [
+        { t: "A clear product focus", d: "A furniture post has limited space to distinguish the piece, communicate its appeal and invite the reader to explore it." },
+        { t: "The right tone for a space", d: "Interior-service copy needs to work with the atmosphere of the image, from practical renovation messaging to a more restrained premium voice." },
+        { t: "A visible service message", d: "Agency promotions need a concise idea that gives the visual a purpose and keeps the offer understandable." },
+      ],
+    },
+    solution: {
+      title: "A message structure that adapts to the brand",
+      body: [
+        "Across the supplied examples, the headline carries the main idea, supporting text adds context and the call to action gives it direction. The balance changes with the subject: a product-led furniture offer, an interior mood or a promotional agency message.",
+      ],
+      center: { t: "Brand message", d: "Voice · context · action" },
+      nodes: [
+        { t: "Product", d: "Names, features and shopping context" },
+        { t: "Lifestyle", d: "The character and use of a space" },
+        { t: "Service", d: "A concise statement of the offer" },
+        { t: "Action", d: "Shop, explore or start a conversation" },
+      ],
+    },
+    features: [
+      {
+        t: "Furniture and product-led copy",
+        d: "Woodcare Interior, Sofa Concept, Wood Décor and Pakistan Furniture & Interiors show different ways to introduce home products and services: a question-led headline, a product name, a catalogue format or a quieter branded lifestyle post.",
+        points: ["Interior-service headlines and invitations", "Furniture product names and promotional messages", "Catalogue and shopping context", "Brand copy that works alongside product imagery"],
+        shot: {
+          src: "/work/case-mockups/brand-copy-content/furniture.webp",
+          w: 1254,
+          h: 1254,
+          alt: "Presentation of furniture and home-product copy examples from the supplied portfolio",
+        },
+      },
+      {
+        t: "Interior storytelling for CAVÉ Studio",
+        d: "The CAVÉ Studio examples use a restrained voice around a farmhouse kitchen, a modern living space and a media wall. Short statements leave room for the interiors to carry the mood while giving each post a distinct message.",
+        points: ["Concise kitchen and living-space headlines", "A consistent premium brand voice", "Copy positioned around the image composition", "Lifestyle and interior-service messaging"],
+        shot: {
+          src: "/work/case-mockups/brand-copy-content/interiors.webp",
+          w: 1254,
+          h: 1254,
+          alt: "CAVÉ Studio interior campaign presentation with concise brand copy",
+        },
+      },
+      {
+        t: "Agency and occasion-based content",
+        d: "Softirium’s examples bring service-led promotional copy and an occasion-based commemorative post into the same portfolio. The promotional messages focus on standing out through design and communicating the value of a clear strategy.",
+        points: ["Web and marketing service messages", "Question-led promotional headlines", "Short supporting statements", "Occasion-based brand content"],
+        shot: {
+          src: "/work/case-mockups/brand-copy-content/agency.webp",
+          w: 1254,
+          h: 1254,
+          alt: "Softirium agency content presentation with purple promotional campaign cards",
+        },
+      },
+    ],
+    tech: ["Copywriting", "Content writing", "Brand voice", "Promotional headlines", "Product messaging", "Calls to action", "Social content"],
+  },
+  "social-media-design": {
+    kind: "creative",
+    gallery: [
+      {
+        src: "/work/portfolio-originals/social-media-design/system-international.webp",
+        w: 1024,
+        h: 768,
+        alt: "System International blue technology campaign from the original social media portfolio",
+      },
+      {
+        src: "/work/portfolio-originals/social-media-design/media-technology.webp",
+        w: 1024,
+        h: 768,
+        alt: "Media Technology product campaign with a phone composition from the original portfolio",
+      },
+      {
+        src: "/work/portfolio-originals/social-media-design/buildsaver.webp",
+        w: 1024,
+        h: 768,
+        alt: "BuildSaver door hardware and home improvement campaign from the original portfolio",
+      },
+      {
+        src: "/work/portfolio-originals/social-media-design/razi-trade.webp",
+        w: 1024,
+        h: 768,
+        alt: "Razi Trade fresh produce and grocery delivery campaign from the original portfolio",
+      },
+      {
+        src: "/work/portfolio-originals/social-media-design/safi-korba.webp",
+        w: 1600,
+        h: 1600,
+        alt: "Safi Korba burger promotion from the original social media portfolio",
+      },
+      {
+        src: "/work/portfolio-originals/social-media-design/essencetics-massage-oil.webp",
+        w: 1600,
+        h: 1600,
+        alt: "Essencetics massage oil campaign in a red product composition from the original portfolio",
+      },
+      {
+        src: "/work/portfolio-originals/social-media-design/essencetics-almond-oil.webp",
+        w: 1600,
+        h: 1600,
+        alt: "Essencetics sweet almond oil campaign in a gold product composition from the original portfolio",
+      },
+      {
+        src: "/work/portfolio-originals/social-media-design/essencetics-essential-oils.webp",
+        w: 1600,
+        h: 1600,
+        alt: "Essencetics essential oils campaign in a purple product composition from the original portfolio",
+      },
+    ],
+    headline: "Product-led social campaigns across distinct brand worlds",
+    intro:
+      "A curated design collection spanning technology, building products, food and beauty, with static posts that combine product imagery, expressive type and a clear campaign identity.",
+    hero: {
+      src: "/work/case-mockups/social-media-design/cover.webp",
+      w: 1536,
+      h: 1024,
+      alt: "A presentation of technology, building-product, food and beauty social campaign designs",
+    },
+    facts: [
+      ["Discipline", "Social media and campaign design"],
+      ["Format", "Static posts and branded campaign series"],
+      ["Sectors", "Technology · hardware · food · beauty"],
+      ["Portfolio", "Curated social media design collection"],
+    ],
+    overview: {
+      title: "A visual language for each product category",
+      body: [
+        "The supplied portfolio brings together several campaign styles: blue technology promotions, orange building-product compositions, fresh green food posts and expressive beauty layouts. Product imagery and headline hierarchy keep the subject visible within each format.",
+        "System International, Media Technology, BuildSaver, Razi Trade, Safi Korba and Essencetics appear in the selected examples. The presentation groups the work by category so the campaign identities and composition choices can be explored together.",
+      ],
+      cards: [
+        ["Collection", "Selected static social campaign designs"],
+        ["Creative focus", "Product imagery, colour and typography"],
+        ["Campaign structure", "Related posts with a consistent visual identity"],
+        ["Presentation", "Category-led galleries and campaign mockups"],
+      ],
+    },
+    journey: [
+      { t: "Subject", d: "Place the product and message at the centre" },
+      { t: "Identity", d: "Establish the campaign’s colour and type" },
+      { t: "Layout", d: "Balance imagery, headline and supporting detail" },
+      { t: "Series", d: "Carry the visual language across related posts" },
+    ],
+    challenges: {
+      title: "Keeping product stories clear within a busy feed",
+      items: [
+        { t: "Different category cues", d: "Technology, hardware, grocery and beauty posts each call for a different balance of colour, imagery and typography." },
+        { t: "Readable hierarchy", d: "The product, headline and supporting message need a clear order so the post remains understandable at a smaller size." },
+        { t: "Consistency across a series", d: "Related posts need to feel connected while retaining enough variation to support different products and messages." },
+      ],
+    },
+    solution: {
+      title: "Campaign composition built around the product",
+      body: [
+        "The selected series use a shared palette and typography within each brand, then vary the product placement and supporting visual elements. Bold headlines introduce the idea while smaller details provide context around the product.",
+      ],
+      center: { t: "Campaign identity", d: "Product · colour · type" },
+      nodes: [
+        { t: "Imagery", d: "A clear product or category focus" },
+        { t: "Typography", d: "Readable headline and detail hierarchy" },
+        { t: "Colour", d: "A palette that connects the series" },
+        { t: "Composition", d: "Variation within a consistent visual system" },
+      ],
+    },
+    features: [
+      {
+        t: "Technology and solar campaigns",
+        d: "System International’s solar promotions use blue and gold alongside product and household imagery. Media Technology’s SaaS, film, camera, archive and storage posts pair cool blue layouts with a more technical product vocabulary.",
+        points: ["Blue-led campaign identities", "Product and service headline hierarchy", "Solar and household energy themes", "Media production and technology promotions"],
+        shot: {
+          src: "/work/case-mockups/social-media-design/technology.webp",
+          w: 1254,
+          h: 1254,
+          alt: "Blue technology and solar social campaign cards inspired by the supplied portfolio",
+        },
+      },
+      {
+        t: "Building products and hardware",
+        d: "BuildSaver’s orange and white campaign examples feature quartz and engineered stone, zinc passage lever sets and basin mixers. The layouts use isolated product imagery and direct headlines to give each building product a clear place in the series.",
+        points: ["Orange and white campaign palette", "Hardware and surface-product compositions", "Passage lever sets and basin mixer promotions", "Consistent product-led post layouts"],
+        shot: {
+          src: "/work/case-mockups/social-media-design/building-products.webp",
+          w: 1254,
+          h: 1254,
+          alt: "BuildSaver building-product campaign presentation with orange and white product cards",
+        },
+      },
+      {
+        t: "Food and grocery campaigns",
+        d: "Razi Trade’s grocery examples use green, white and orange with fresh produce, shopping and delivery imagery. Safi Korba’s restaurant posts use a bold red palette, prominent burger photography and direct promotional headlines.",
+        points: ["Fresh green grocery campaign identity", "Produce, shopping and delivery imagery", "Red restaurant promotions with a food-led focus", "Related posts with a clear category focus"],
+        shot: {
+          src: "/work/case-mockups/social-media-design/food.webp",
+          w: 1254,
+          h: 1254,
+          alt: "Green and orange food and grocery campaign presentation from the selected social portfolio",
+        },
+      },
+      {
+        t: "Beauty and personal-care visuals",
+        d: "Essencetics’ campaign examples present sweet almond oil, coconut oil, soap and essential oils through bold colour, product close-ups and headline-led layouts. Each post gives the packaging a prominent role while the type and palette establish the campaign mood.",
+        points: ["Product-led beauty campaign compositions", "Expressive colour and typography", "Packaging-focused promotional layouts", "Consistent hierarchy across related posts"],
+        shot: {
+          src: "/work/case-mockups/social-media-design/beauty.webp",
+          w: 1254,
+          h: 1254,
+          alt: "Essencetics beauty campaign presentation with colourful packaging and headline-led cards",
+        },
+      },
+    ],
+    tech: ["Social media design", "Art direction", "Visual hierarchy", "Typography", "Colour systems", "Product storytelling", "Campaign layouts"],
+  },
   socialsyncc: {
     headline: "Mobile-first publishing and scheduling across social channels",
     intro:

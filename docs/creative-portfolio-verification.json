@@ -1,0 +1,200 @@
+{
+  "caseCount": 11,
+  "serviceCount": 14,
+  "filters": [
+    {
+      "k": "all",
+      "l": "ALL / 11"
+    },
+    {
+      "k": "web",
+      "l": "WEB / 05"
+    },
+    {
+      "k": "mobile",
+      "l": "MOBILE / 07"
+    },
+    {
+      "k": "ai",
+      "l": "AI / 05"
+    },
+    {
+      "k": "cloud",
+      "l": "CLOUD / 05"
+    },
+    {
+      "k": "content",
+      "l": "CONTENT / 01"
+    },
+    {
+      "k": "design",
+      "l": "DESIGN / 01"
+    }
+  ],
+  "originalCount": 13,
+  "responses": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Knowhere Systems \u2014 IT Services &amp; Software"
+    },
+    {
+      "path": "/work",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Selected Work \u2014 Knowhere Systems"
+    },
+    {
+      "path": "/services",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Services \u2014 Knowhere Systems"
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Contact \u2014 Knowhere Systems"
+    },
+    {
+      "path": "/work/brand-copy-content",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Brand Copy &amp; Content \u2014 Case Study \u2014 Knowhere Systems"
+    },
+    {
+      "path": "/work/social-media-design",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Social Media Design \u2014 Case Study \u2014 Knowhere Systems"
+    },
+    {
+      "path": "/work/case-mockups/brand-copy-content/cover.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/case-mockups/brand-copy-content/furniture.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/case-mockups/brand-copy-content/interiors.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/case-mockups/brand-copy-content/agency.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/brand-copy-content/woodcare-sofa-concept.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/brand-copy-content/wood-decor.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/brand-copy-content/pakistan-furniture.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/brand-copy-content/cave-studio.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/brand-copy-content/softirium.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/_next/image?url=%2Fwork%2Fcase-mockups%2Fbrand-copy-content%2Fcover.webp&w=640&q=75",
+      "status": 200,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "/work/case-mockups/social-media-design/cover.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/case-mockups/social-media-design/technology.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/case-mockups/social-media-design/building-products.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/case-mockups/social-media-design/food.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/case-mockups/social-media-design/beauty.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/social-media-design/system-international.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/social-media-design/media-technology.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/social-media-design/buildsaver.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/social-media-design/razi-trade.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/social-media-design/safi-korba.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/social-media-design/essencetics-massage-oil.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/social-media-design/essencetics-almond-oil.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/work/portfolio-originals/social-media-design/essencetics-essential-oils.webp",
+      "status": 200,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "/_next/image?url=%2Fwork%2Fcase-mockups%2Fsocial-media-design%2Fcover.webp&w=640&q=75",
+      "status": 200,
+      "contentType": "image/jpeg"
+    }
+  ],
+  "build": "passed: npm run build",
+  "lint": "passed: focused ESLint for all changed TypeScript/TSX files",
+  "asset_dimensions": "78 images checked; all intrinsic dimensions match",
+  "visual_browser_check": {
+    "status": "blocked",
+    "reason": "Browser tool URL policy rejected the local preview. No alternate browser automation was attempted."
+  }
+}

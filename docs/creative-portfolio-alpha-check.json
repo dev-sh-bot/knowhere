@@ -1,0 +1,128 @@
+[
+  {
+    "path": "public\\work\\case-mockups\\brand-copy-content\\agency.webp",
+    "size": [
+      1254,
+      1254
+    ],
+    "bytes": 204698,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "path": "public\\work\\case-mockups\\brand-copy-content\\cover.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "bytes": 238718,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "path": "public\\work\\case-mockups\\brand-copy-content\\furniture.webp",
+    "size": [
+      1254,
+      1254
+    ],
+    "bytes": 211480,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "path": "public\\work\\case-mockups\\brand-copy-content\\interiors.webp",
+    "size": [
+      1254,
+      1254
+    ],
+    "bytes": 224024,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "path": "public\\work\\case-mockups\\social-media-design\\beauty.webp",
+    "size": [
+      1254,
+      1254
+    ],
+    "bytes": 325140,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "path": "public\\work\\case-mockups\\social-media-design\\building-products.webp",
+    "size": [
+      1254,
+      1254
+    ],
+    "bytes": 189138,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "path": "public\\work\\case-mockups\\social-media-design\\cover.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "bytes": 305278,
+    "corner_alpha": [
+      0,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "path": "public\\work\\case-mockups\\social-media-design\\food.webp",
+    "size": [
+      1254,
+      1254
+    ],
+    "bytes": 374896,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "path": "public\\work\\case-mockups\\social-media-design\\technology.webp",
+    "size": [
+      1254,
+      1254
+    ],
+    "bytes": 273682,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]

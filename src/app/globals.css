@@ -487,6 +487,14 @@ a.ch:hover .ch-v{text-decoration:underline;text-decoration-thickness:2px;text-de
 .cs-h3{font:700 10px/1 var(--font-m);letter-spacing:.26em;text-transform:uppercase;color:var(--mut);margin:clamp(3.5rem,7vw,5rem) 0 1.6rem}
 .cs-body{display:grid;gap:1.3rem;padding-top:2.6rem}
 .cs-body p{color:var(--mut);font-size:clamp(1rem,1.3vw,1.12rem)}
+.cs-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem;margin-top:2.5rem}
+.cs-gallery-item{min-width:0;margin:0}
+.cs-gallery-item a{display:flex;align-items:center;justify-content:center;min-height:240px;padding:1rem;border:1px solid var(--hair-p);transition:border-color .25s}
+.cs-gallery-item a:hover,.cs-gallery-item a:focus-visible{border-color:var(--ink)}
+.cs-gallery-item img{width:100%;height:280px;object-fit:contain}
+.cs-gallery-item figcaption{font:500 .75rem/1.6 var(--font-m);color:var(--mut);margin-top:.9rem}
+@media(max-width:900px){.cs-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.cs-gallery{grid-template-columns:1fr}.cs-gallery-item img{height:auto;max-height:420px}}
 .cs-lead{margin-top:1.6rem;max-width:62ch}
 .cs-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:clamp(3rem,6vw,4.5rem)}
 .cs-card{border:1px solid var(--line);padding:1.5rem;background:rgba(255,255,255,.35)}

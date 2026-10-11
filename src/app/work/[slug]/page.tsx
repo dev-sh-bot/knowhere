@@ -42,6 +42,7 @@ export default async function CaseStudyPage({
   const c = DETAILED[i];
   const d = CASE_DETAILS[slug];
   if (!c || !d) notFound();
+  const creative = d.kind === "creative";
   const next = DETAILED[(i + 1) % DETAILED.length];
 
   return (
@@ -141,7 +142,7 @@ export default async function CaseStudyPage({
             ))}
           </div>
           <Reveal as="h3" className="cs-h3">
-            User journey
+            {creative ? "Creative workflow" : "User journey"}
           </Reveal>
           <ol className="cs-journey">
             {d.journey.map((s, n) => (
@@ -182,7 +183,7 @@ export default async function CaseStudyPage({
         <div className="wrap">
           <div className="cs-split">
             <div>
-              <Reveal className="sec-label">(03) The solution</Reveal>
+              <Reveal className="sec-label">(03) {creative ? "The approach" : "The solution"}</Reveal>
               <Reveal as="h2" className="cs-h2">
                 {d.solution.title}
               </Reveal>
@@ -196,7 +197,7 @@ export default async function CaseStudyPage({
             </div>
           </div>
           <Reveal className="cs-arch">
-            <span className="cs-arch-k">System architecture</span>
+            <span className="cs-arch-k">{creative ? "Creative direction" : "System architecture"}</span>
             <div className="cs-arch-core">
               <b>{d.solution.center.t}</b>
               <span>{d.solution.center.d}</span>
@@ -218,10 +219,10 @@ export default async function CaseStudyPage({
 
       <section className="sec bg-ink">
         <div className="wrap">
-          <Reveal className="sec-label">(04) Key features</Reveal>
+          <Reveal className="sec-label">(04) {creative ? "Portfolio selections" : "Key features"}</Reveal>
           <Reveal variant="clip" className="sec-title">
             <span>
-              WHAT WE <em>BUILT</em>
+              {creative ? <>SELECTED <em>CREATIVE</em></> : <>WHAT WE <em>BUILT</em></>}
             </span>
           </Reveal>
           <div className="cs-features">
@@ -231,7 +232,7 @@ export default async function CaseStudyPage({
                 className={`cs-feat${f.wide ? " wide" : ""}`}
               >
                 <Reveal className="cs-feat-txt">
-                  <i>Feature {pad(n)}</i>
+                  <i>{creative ? "Selection" : "Feature"} {pad(n)}</i>
                   <h3>{f.t}</h3>
                   <p>{f.d}</p>
                   <ul>
@@ -258,11 +259,30 @@ export default async function CaseStudyPage({
         </div>
       </section>
 
+      {d.gallery?.length ? (
+        <section className="sec bg-paper cs-gallery-sec">
+          <div className="wrap">
+            <Reveal className="sec-label">Original work</Reveal>
+            <Reveal as="h2" className="cs-h2">Original portfolio selections</Reveal>
+            <div className="cs-gallery">
+              {d.gallery.map((shot) => (
+                <Reveal as="figure" key={shot.src} className="cs-gallery-item">
+                  <a href={shot.src} target="_blank" rel="noopener noreferrer" aria-label={`View original artwork: ${shot.alt}`}>
+                    <Image src={shot.src} alt={shot.alt} width={shot.w} height={shot.h} sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 30vw" />
+                  </a>
+                  <figcaption>{shot.alt}</figcaption>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       <section className="sec bg-paper">
         <div className="wrap">
-          <Reveal className="sec-label">(05) Technology</Reveal>
+          <Reveal className="sec-label">(05) {creative ? "Capabilities" : "Technology"}</Reveal>
           <Reveal as="h2" className="cs-h2">
-            {d.process ? "Technology stack & process" : "Technology stack"}
+            {creative ? "Creative capabilities" : d.process ? "Technology stack & process" : "Technology stack"}
           </Reveal>
           <Reveal className="tags cs-stack">
             {d.tech.map((t) => (
@@ -358,7 +378,7 @@ export default async function CaseStudyPage({
             <p className="cs-next-blurb">{next.blurb}</p>
           </div>
           <Link className="btn btn-ink" href="/contact">
-            Build something like this <Ic d={D.ne} />
+            {creative ? "Discuss your brand" : "Build something like this"} <Ic d={D.ne} />
           </Link>
         </div>
       </section>

@@ -1,0 +1,112 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "name": "cover",
+      "refs": [
+        "C:/Users/TECHNOSELLERS/Desktop/agency website/knowhere/tmp/pdfs/social-tech-1.png",
+        "C:/Users/TECHNOSELLERS/Desktop/agency website/knowhere/tmp/pdfs/social-food-1.png",
+        "C:/Users/TECHNOSELLERS/Desktop/agency website/knowhere/tmp/pdfs/social-beauty-1.png"
+      ],
+      "spec": "Landscape 3:2 cover, clean curated assortment of one upright graphite smartphone and three square campaign graphic cards behind it, all fully visible. The phone screen presents the green/orange Razi Trade fresh groceries design; one blue/gold System International solar campaign card with solar panels and headline 'Solar solutions'; one gold cream Essencetics sweet almond oil campaign card; one white/orange BuildSaver door handle card if needed from the referenced context, otherwise only the three supplied brand campaigns. Avoid copying surrounding pink portfolio website chrome. Brand names exact: 'Razi Trade', 'System International', 'Essencetics'. This is a campaign design collection; no invented product app dashboard.",
+      "prompt": "Use case: ui-mockup. Asset type: Knowhere Systems agency portfolio visual. Create a polished commercial design-portfolio mockup using the supplied real campaign artwork as visual references. Showcase SOCIAL GRAPHIC DESIGN, not a software application. Preserve the referenced brand styles, products, typography hierarchy and color palettes. Stage campaign art inside realistic graphite/silver smartphones and/or separate square graphic cards with subtle thickness, modest restrained perspective and sharp edges. Full-color artwork, crisp readable SHORT main brand names and headlines only. All objects fully visible and uncropped, grouped centrally with modest clear margins, balanced scales; occupy most of canvas. Genuine transparent background and alpha channel outside objects, no solid background, no gradient canvas, no floor, no scene, no podium, no enclosing large rectangle, no decorative social icons, no caption outside objects. White/colored backgrounds INSIDE graphic cards are intentional and opaque. Remove personal phone/email/address details, usernames, follower/like numbers, percentage/product efficacy/warranty claims and long filler body copy. Do not invent performance results. Match premium device-mockup rendering style. No watermark.\nAsset specification: Landscape 3:2 cover, clean curated assortment of one upright graphite smartphone and three square campaign graphic cards behind it, all fully visible. The phone screen presents the green/orange Razi Trade fresh groceries design; one blue/gold System International solar campaign card with solar panels and headline 'Solar solutions'; one gold cream Essencetics sweet almond oil campaign card; one white/orange BuildSaver door handle card if needed from the referenced context, otherwise only the three supplied brand campaigns. Avoid copying surrounding pink portfolio website chrome. Brand names exact: 'Razi Trade', 'System International', 'Essencetics'. This is a campaign design collection; no invented product app dashboard.",
+      "generated_source": "C:\\Users\\TECHNOSELLERS\\.codex\\generated_images\\01a12a85-e83f-7ed2-bbc3-928309156f29\\exec-bd0aba75-af34-4625-a2f4-90a919de4224.png",
+      "png": "public\\work\\case-mockups\\social-media-design\\cover.png",
+      "output": "public\\work\\case-mockups\\social-media-design\\cover.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 305278,
+      "transparent_pixel_fraction": 0.3756,
+      "corner_alpha": [
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "technology",
+      "refs": [
+        "C:/Users/TECHNOSELLERS/Desktop/agency website/knowhere/tmp/pdfs/social-tech-1.png"
+      ],
+      "spec": "Square feature image. One upright graphite smartphone showing the System International navy/blue/gold solar campaign with panels and headline 'Solar solutions', plus two separate square Media Technology SaaS artwork cards in cyan/indigo showing a professional film camera and an abstract blue storage cube. Preserve short source headlines 'Redefine cinematic excellence' and 'Media solution'. Exact brands 'System International' and 'Media Technology SaaS'. Leave out all phone numbers and marketing metric/90% savings. Remove surrounding source portfolio pink/navy montage backdrop.",
+      "prompt": "Use case: ui-mockup. Asset type: Knowhere Systems agency portfolio visual. Create a polished commercial design-portfolio mockup using the supplied real campaign artwork as visual references. Showcase SOCIAL GRAPHIC DESIGN, not a software application. Preserve the referenced brand styles, products, typography hierarchy and color palettes. Stage campaign art inside realistic graphite/silver smartphones and/or separate square graphic cards with subtle thickness, modest restrained perspective and sharp edges. Full-color artwork, crisp readable SHORT main brand names and headlines only. All objects fully visible and uncropped, grouped centrally with modest clear margins, balanced scales; occupy most of canvas. Genuine transparent background and alpha channel outside objects, no solid background, no gradient canvas, no floor, no scene, no podium, no enclosing large rectangle, no decorative social icons, no caption outside objects. White/colored backgrounds INSIDE graphic cards are intentional and opaque. Remove personal phone/email/address details, usernames, follower/like numbers, percentage/product efficacy/warranty claims and long filler body copy. Do not invent performance results. Match premium device-mockup rendering style. No watermark.\nAsset specification: Square feature image. One upright graphite smartphone showing the System International navy/blue/gold solar campaign with panels and headline 'Solar solutions', plus two separate square Media Technology SaaS artwork cards in cyan/indigo showing a professional film camera and an abstract blue storage cube. Preserve short source headlines 'Redefine cinematic excellence' and 'Media solution'. Exact brands 'System International' and 'Media Technology SaaS'. Leave out all phone numbers and marketing metric/90% savings. Remove surrounding source portfolio pink/navy montage backdrop.",
+      "generated_source": "C:\\Users\\TECHNOSELLERS\\.codex\\generated_images\\01a12a85-e83f-7ed2-bbc3-928309156f29\\exec-ae481623-2f02-425f-95f8-8b239c0122a9.png",
+      "png": "public\\work\\case-mockups\\social-media-design\\technology.png",
+      "output": "public\\work\\case-mockups\\social-media-design\\technology.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 273682,
+      "transparent_pixel_fraction": 0.3492,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "building-products",
+      "refs": [
+        "C:/Users/TECHNOSELLERS/Desktop/agency website/knowhere/tmp/pdfs/social-audio-1.png"
+      ],
+      "spec": "Square feature image. One silver smartphone and two square campaign cards showing referenced BuildSaver building-product campaign family. Exact brand 'BuildSaver'. White/charcoal and vivid burnt-orange designs featuring matte black and satin chrome passage lever door handles, white-veined engineered stone sample and basin mixer. Use short source-style labels 'Passage lever set', 'Engineered stone', 'Basin mixers'. Building hardware not audio equipment. Preserve product photography-style central focus, orange headline/white typography. Omit 7year warranty, measurements, claims and all contacts. No surrounding source portfolio backdrop.",
+      "prompt": "Use case: ui-mockup. Asset type: Knowhere Systems agency portfolio visual. Create a polished commercial design-portfolio mockup using the supplied real campaign artwork as visual references. Showcase SOCIAL GRAPHIC DESIGN, not a software application. Preserve the referenced brand styles, products, typography hierarchy and color palettes. Stage campaign art inside realistic graphite/silver smartphones and/or separate square graphic cards with subtle thickness, modest restrained perspective and sharp edges. Full-color artwork, crisp readable SHORT main brand names and headlines only. All objects fully visible and uncropped, grouped centrally with modest clear margins, balanced scales; occupy most of canvas. Genuine transparent background and alpha channel outside objects, no solid background, no gradient canvas, no floor, no scene, no podium, no enclosing large rectangle, no decorative social icons, no caption outside objects. White/colored backgrounds INSIDE graphic cards are intentional and opaque. Remove personal phone/email/address details, usernames, follower/like numbers, percentage/product efficacy/warranty claims and long filler body copy. Do not invent performance results. Match premium device-mockup rendering style. No watermark.\nAsset specification: Square feature image. One silver smartphone and two square campaign cards showing referenced BuildSaver building-product campaign family. Exact brand 'BuildSaver'. White/charcoal and vivid burnt-orange designs featuring matte black and satin chrome passage lever door handles, white-veined engineered stone sample and basin mixer. Use short source-style labels 'Passage lever set', 'Engineered stone', 'Basin mixers'. Building hardware not audio equipment. Preserve product photography-style central focus, orange headline/white typography. Omit 7year warranty, measurements, claims and all contacts. No surrounding source portfolio backdrop.",
+      "generated_source": "C:\\Users\\TECHNOSELLERS\\.codex\\generated_images\\01a12a85-e83f-7ed2-bbc3-928309156f29\\exec-1416423d-fdea-4062-81fa-10f3308b8151.png",
+      "png": "public\\work\\case-mockups\\social-media-design\\building-products.png",
+      "output": "public\\work\\case-mockups\\social-media-design\\building-products.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 189138,
+      "transparent_pixel_fraction": 0.5201,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "food",
+      "refs": [
+        "C:/Users/TECHNOSELLERS/Desktop/agency website/knowhere/tmp/pdfs/social-food-1.png"
+      ],
+      "spec": "Square feature image. One graphite smartphone displaying the Razi Trade green/orange fresh produce campaign plus two separate square grocery cards. Match referenced fruits and vegetables, grocery basket and clean green/cream/orange palette. Exact brand 'Razi Trade'. Short readable headlines 'Fresh produce', 'Farm to home', 'Order online'. Keep all vegetables/art within the designed cards or phone screen; no loose surrounding objects. No pseudo ecommerce app screen, no delivery promises, no location/contact data. Omit unrelated brands, CBD/wellness and restaurant images from this reference.",
+      "prompt": "Use case: ui-mockup. Asset type: Knowhere Systems agency portfolio visual. Create a polished commercial design-portfolio mockup using the supplied real campaign artwork as visual references. Showcase SOCIAL GRAPHIC DESIGN, not a software application. Preserve the referenced brand styles, products, typography hierarchy and color palettes. Stage campaign art inside realistic graphite/silver smartphones and/or separate square graphic cards with subtle thickness, modest restrained perspective and sharp edges. Full-color artwork, crisp readable SHORT main brand names and headlines only. All objects fully visible and uncropped, grouped centrally with modest clear margins, balanced scales; occupy most of canvas. Genuine transparent background and alpha channel outside objects, no solid background, no gradient canvas, no floor, no scene, no podium, no enclosing large rectangle, no decorative social icons, no caption outside objects. White/colored backgrounds INSIDE graphic cards are intentional and opaque. Remove personal phone/email/address details, usernames, follower/like numbers, percentage/product efficacy/warranty claims and long filler body copy. Do not invent performance results. Match premium device-mockup rendering style. No watermark.\nAsset specification: Square feature image. One graphite smartphone displaying the Razi Trade green/orange fresh produce campaign plus two separate square grocery cards. Match referenced fruits and vegetables, grocery basket and clean green/cream/orange palette. Exact brand 'Razi Trade'. Short readable headlines 'Fresh produce', 'Farm to home', 'Order online'. Keep all vegetables/art within the designed cards or phone screen; no loose surrounding objects. No pseudo ecommerce app screen, no delivery promises, no location/contact data. Omit unrelated brands, CBD/wellness and restaurant images from this reference.",
+      "generated_source": "C:\\Users\\TECHNOSELLERS\\.codex\\generated_images\\01a12a85-e83f-7ed2-bbc3-928309156f29\\exec-dd15d48a-192f-4dd4-8bc1-b44039f5c814.png",
+      "png": "public\\work\\case-mockups\\social-media-design\\food.png",
+      "output": "public\\work\\case-mockups\\social-media-design\\food.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 374896,
+      "transparent_pixel_fraction": 0.3037,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "beauty",
+      "refs": [
+        "C:/Users/TECHNOSELLERS/Desktop/agency website/knowhere/tmp/pdfs/social-beauty-1.png"
+      ],
+      "spec": "Square feature image. One graphite smartphone displaying gold/cream Essencetics sweet almond oil social campaign, two separate square campaign cards showcasing the white botanical soap creative and rich purple essential oil bottle lineup. EXACT brand spelling 'Essencetics'. Short labels only 'Sweet Almond Oil', 'Shea Butter', 'Essential Oils'. Preserve source product compositions, gold luxury serif aesthetic, white leafy botanical palette and purple campaign. Avoid medical, efficacy or wellness claims from source (no real results, sleep stress or restoration promises). No personal data, no unrelated brands or outer source portfolio background.",
+      "prompt": "Use case: ui-mockup. Asset type: Knowhere Systems agency portfolio visual. Create a polished commercial design-portfolio mockup using the supplied real campaign artwork as visual references. Showcase SOCIAL GRAPHIC DESIGN, not a software application. Preserve the referenced brand styles, products, typography hierarchy and color palettes. Stage campaign art inside realistic graphite/silver smartphones and/or separate square graphic cards with subtle thickness, modest restrained perspective and sharp edges. Full-color artwork, crisp readable SHORT main brand names and headlines only. All objects fully visible and uncropped, grouped centrally with modest clear margins, balanced scales; occupy most of canvas. Genuine transparent background and alpha channel outside objects, no solid background, no gradient canvas, no floor, no scene, no podium, no enclosing large rectangle, no decorative social icons, no caption outside objects. White/colored backgrounds INSIDE graphic cards are intentional and opaque. Remove personal phone/email/address details, usernames, follower/like numbers, percentage/product efficacy/warranty claims and long filler body copy. Do not invent performance results. Match premium device-mockup rendering style. No watermark.\nAsset specification: Square feature image. One graphite smartphone displaying gold/cream Essencetics sweet almond oil social campaign, two separate square campaign cards showcasing the white botanical soap creative and rich purple essential oil bottle lineup. EXACT brand spelling 'Essencetics'. Short labels only 'Sweet Almond Oil', 'Shea Butter', 'Essential Oils'. Preserve source product compositions, gold luxury serif aesthetic, white leafy botanical palette and purple campaign. Avoid medical, efficacy or wellness claims from source (no real results, sleep stress or restoration promises). No personal data, no unrelated brands or outer source portfolio background.",
+      "generated_source": "C:\\Users\\TECHNOSELLERS\\.codex\\generated_images\\01a12a85-e83f-7ed2-bbc3-928309156f29\\exec-9af818b0-c907-45fb-ad09-d09879bc11c9.png",
+      "png": "public\\work\\case-mockups\\social-media-design\\beauty.png",
+      "output": "public\\work\\case-mockups\\social-media-design\\beauty.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 325140,
+      "transparent_pixel_fraction": 0.2912,
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

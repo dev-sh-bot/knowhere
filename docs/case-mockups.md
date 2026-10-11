@@ -1,6 +1,6 @@
 # Transparent case-study mockups
 
-The active website uses 56 product mockups: nine covers and 47 feature images. They were created with the built-in image generation tool from the local case-study reference images, then exported to WebP with the generated alpha channel preserved.
+The active website uses 65 presentation mockups: eleven covers and 54 feature images. They were created with the built-in image generation tool from the supplied portfolio references, then exported to WebP with the generated alpha channel preserved.
 
 Final assets: `public/work/case-mockups/<project>/<image>.webp`.
 
@@ -12,8 +12,10 @@ The images are presentation mockups adapted from the reference decks. They show 
 
 The homepage, Work list, case modal, service hover preview and case-study pages use contained, full-colour images. The previous grayscale filters, edge masks, background frames and cropped image treatment have been removed.
 
-Source PNGs and the previous SVG set remain available locally as references; they are excluded from the GitHub commit. The website uses only the final WebP set. See [the cover overview](previews/case-mockups.png).
+The website uses the final WebP set. Generated PNG originals for the creative collections are also retained in Git as source assets; older local reference PNGs and the previous SVG set are not required at runtime. See [the cover overview](previews/case-mockups.png).
 
 The original 42 feature images were visually reviewed in five proof sheets: [1](previews/case-features-1.png), [2](previews/case-features-2.png), [3](previews/case-features-3.png), [4](previews/case-features-4.png), [5](previews/case-features-5.png). The homepage, Work list and mobile/web case-study layouts were reviewed in the running local website. See [the updated Work-page screenshot](previews/work-transparent.jpg).
 
 The SocialSyncc addition has its own [source notes](socialsyncc-case-study.md), [six-image proof sheet](previews/socialsyncc-mockups.png) and [alpha report](socialsyncc-image-alpha-check.json).
+
+The Brand Copy & Content and Social Media Design collections add nine transparent mockups. Exact prompts, references, dimensions and alpha checks are recorded in [the writing manifest](brand-copy-content-image-prompts.json) and [the design manifest](social-media-design-image-prompts.json). These images present creative campaigns on devices and cards; the collection pages also include thirteen original portfolio selections exported directly from the PDFs. [Source notes](creative-portfolio-source-notes.md) document the shared Drive references and original artwork mappings.

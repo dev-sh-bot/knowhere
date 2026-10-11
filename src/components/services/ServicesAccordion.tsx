@@ -46,7 +46,7 @@ export function ServicesAccordion() {
                     </ul>
                   </div>
                   <div>
-                    <h5>TYPICAL STACK</h5>
+                    <h5>{s.stackLabel ?? "TYPICAL STACK"}</h5>
                     <div className="tags">
                       {s.stack.map((x, j) => (
                         <span key={j}>{x}</span>

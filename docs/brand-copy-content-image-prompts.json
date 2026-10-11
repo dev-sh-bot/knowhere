@@ -1,0 +1,156 @@
+{
+  "collection": "brand-copy-content",
+  "generator": "Built-in image_gen",
+  "useCase": "product-mockup",
+  "intent": "Commercial presentation mockups of supplied copywriting and social caption campaigns; no assertion that the displayed media are app or web implementations.",
+  "sourceDocument": "tmp/pdfs/drive-myPortfolio.pdf",
+  "referencePagesInspected": [
+    "tmp/pdfs/myportfolio-pages/page-1.png",
+    "tmp/pdfs/myportfolio-pages/page-2.png",
+    "tmp/pdfs/myportfolio-pages/page-3.png",
+    "tmp/pdfs/myportfolio-pages/page-4.png",
+    "tmp/pdfs/myportfolio-pages/page-5.png",
+    "tmp/pdfs/myportfolio-pages/page-6.png"
+  ],
+  "imageFormatPolicy": "Selected generated PNG originals copied without pixel manipulation; WebP conversion with Sharp, quality 88, effort 6 and alphaQuality 100. No resizing, compositing, recoloring, alpha masking or generated-pixel editing.",
+  "assets": [
+    {
+      "name": "cover",
+      "prompt": "Use case: product-mockup.\nAsset type: commercial portfolio artwork showcasing supplied brand copy and social caption content, never a new app or website.\nStyle/medium: premium photorealistic 3D product mockup. Satin graphite and brushed silver devices, slender bezels, physically believable glass highlights, restrained perspective. Fully colored brand artwork appears only inside screens and physical flat campaign cards. Beautiful high fidelity furniture and interiors photographic artwork inside source campaigns. Very crisp accurate typography.\nBackdrop: actual RGBA transparent background. Absolutely every pixel outside device/card silhouettes is transparent, including gaps between objects. No environment, floor, pedestal, plinth, desktop, backdrop rectangle, black background, white background, gray background, gradient, wall, checkerboard, or shadow haze. Floating isolated objects only. No content behind their silhouettes.\nComposition/framing: fully uncropped objects with clean modest margins on all sides. Entire device edges and cards visible. Device display is just a campaign artwork proof, with no browser chrome, navigation, app controls, dashboard, likes, followers or engagement statistics.\nConstraints: Preserve the brands and colors supplied in campaign reference images. Do not reproduce PDF pages themselves, surrounding black PDF background, page headings, page numbers, personal names, author identity, phone numbers, website addresses, or lengthy filler text. Use only exact text listed below; remove other text rather than inventing it. No added claims, revenue, percentages, testimonials, watermark or logos from unrelated brands.\nInput images: Image 1 campaign reference Woodcare Interior and Sofa Concept with cream, wood tones and mustard; image 2 Wood Décor furniture campaign in cream/tan/chocolate; image 3 CAVÉ Studio interiors in black, warm stone and ivory; image 4 Softirium agency campaigns in vivid violet/magenta. All are content references, not edit targets. Disregard PDF canvas.\nPrimary request: create one cohesive landscape 3:2 transparent portfolio cover for Brand Copy & Content. Use one large landscape brushed-silver tablet showing a clean two-column campaign proof: an elegant ivory CAVÉ Studio living-room campaign beside a warm cream Wood Décor round wooden dining-table campaign. A slightly smaller graphite portrait smartphone overlaps the tablet edge showing vivid purple Softirium promotional artwork with an hourglass, preserving source style. Keep both devices large and fully visible. Make the campaign text unmistakably the focus.\nText (verbatim): CAVÉ STUDIO; Bespoke Interiors For The Modern Soul.; Wood Décor; Rustic Round Mango; Dining Table; SOFTIRIUM; THE RIGHT STRATEGY SAVES TIME. No other text.\nOutput: 1536 x 1024 landscape, genuine transparency.",
+      "referencedImagePaths": [
+        "tmp/pdfs/myportfolio-pages/page-2.png",
+        "tmp/pdfs/myportfolio-pages/page-3.png",
+        "tmp/pdfs/myportfolio-pages/page-5.png",
+        "tmp/pdfs/myportfolio-pages/page-6.png"
+      ],
+      "generatedPath": "C:\\Users\\TECHNOSELLERS\\.codex\\generated_images\\01a12a8d-fbe2-7af0-b465-d77afc0a2a43\\exec-7634dd3c-7d98-44ad-bd0f-5d47ffbd12d0.png",
+      "selectedPng": "public/work/case-mockups/brand-copy-content/cover.png",
+      "optimizedWebp": "public/work/case-mockups/brand-copy-content/cover.webp",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "channels": 4,
+        "fullyTransparentPixels": 419452,
+        "partiallyTransparentPixels": 1153412,
+        "fullyOpaquePixels": 0,
+        "transparentPixelFraction": 0.26668039957682294,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "webpHasAlpha": true
+      },
+      "bytes": {
+        "png": 2235580,
+        "webp": 238718
+      }
+    },
+    {
+      "name": "furniture",
+      "prompt": "Use case: product-mockup.\nAsset type: commercial portfolio artwork showcasing supplied brand copy and social caption content, never a new app or website.\nStyle/medium: premium photorealistic 3D product mockup. Satin graphite and brushed silver devices, slender bezels, physically believable glass highlights, restrained perspective. Fully colored brand artwork appears only inside screens and physical flat campaign cards. Beautiful high fidelity furniture and interiors photographic artwork inside source campaigns. Very crisp accurate typography.\nBackdrop: actual RGBA transparent background. Absolutely every pixel outside device/card silhouettes is transparent, including gaps between objects. No environment, floor, pedestal, plinth, desktop, backdrop rectangle, black background, white background, gray background, gradient, wall, checkerboard, or shadow haze. Floating isolated objects only. No content behind their silhouettes.\nComposition/framing: fully uncropped objects with clean modest margins on all sides. Entire device edges and cards visible. Device display is just a campaign artwork proof, with no browser chrome, navigation, app controls, dashboard, likes, followers or engagement statistics.\nConstraints: Preserve the brands and colors supplied in campaign reference images. Do not reproduce PDF pages themselves, surrounding black PDF background, page headings, page numbers, personal names, author identity, phone numbers, website addresses, or lengthy filler text. Use only exact text listed below; remove other text rather than inventing it. No added claims, revenue, percentages, testimonials, watermark or logos from unrelated brands.\nInput images: Image 1 Woodcare Interior and Sofa Concept advertising reference; Image 2 Wood Décor furniture campaigns; image 3 Pakistan Furniture & Interiors source product photography. All content references, not edit targets.\nPrimary request: one square transparent commercial mockup for furniture copywriting. A large graphite portrait tablet at a subtle three-quarter angle shows a beautiful restaging of the Wood Décor rustic round mango dining-table post: round wood tabletop, black X-base, minimal dried stems, warm ivory/tan backdrop inside the display. Exact source brand name and main headline integrated clearly. Alongside it, one smaller flat vertical card with clean physical edges shows Pakistan Furniture & Interiors warm wooden floating shelves and plant, subtle green source logo/color. Keep entire tablet and card visible, a restrained two-object composition with no extra props. The source advertising artwork remains recognizable and focuses on concise product language.\nText (verbatim): Wood Décor; RUSTIC ROUND MANGO; Dining Table; PAKISTAN FURNITURE & INTERIORS. No price, no phone, no website, no other text.\nOutput: 1024 x 1024 square, genuine transparency.",
+      "referencedImagePaths": [
+        "tmp/pdfs/myportfolio-pages/page-2.png",
+        "tmp/pdfs/myportfolio-pages/page-3.png",
+        "tmp/pdfs/myportfolio-pages/page-4.png"
+      ],
+      "generatedPath": "C:\\Users\\TECHNOSELLERS\\.codex\\generated_images\\01a12a8d-fbe2-7af0-b465-d77afc0a2a43\\exec-f762e0b1-d4cd-4eb8-9a50-1b0d6c43572f.png",
+      "selectedPng": "public/work/case-mockups/brand-copy-content/furniture.png",
+      "optimizedWebp": "public/work/case-mockups/brand-copy-content/furniture.webp",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "channels": 4,
+        "fullyTransparentPixels": 449140,
+        "partiallyTransparentPixels": 1121801,
+        "fullyOpaquePixels": 1575,
+        "transparentPixelFraction": 0.28561871548524786,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "webpHasAlpha": true
+      },
+      "bytes": {
+        "png": 1912087,
+        "webp": 211480
+      }
+    },
+    {
+      "name": "interiors",
+      "prompt": "Use case: product-mockup.\nAsset type: commercial portfolio artwork showcasing supplied brand copy and social caption content, never a new app or website.\nStyle/medium: premium photorealistic 3D product mockup. Satin graphite and brushed silver devices, slender bezels, physically believable glass highlights, restrained perspective. Fully colored brand artwork appears only inside screens and physical flat campaign cards. Beautiful high fidelity furniture and interiors photographic artwork inside source campaigns. Very crisp accurate typography.\nBackdrop: actual RGBA transparent background. Absolutely every pixel outside device/card silhouettes is transparent, including gaps between objects. No environment, floor, pedestal, plinth, desktop, backdrop rectangle, black background, white background, gray background, gradient, wall, checkerboard, or shadow haze. Floating isolated objects only. No content behind their silhouettes.\nComposition/framing: fully uncropped objects with clean modest margins on all sides. Entire device edges and cards visible. Device display is just a campaign artwork proof, with no browser chrome, navigation, app controls, dashboard, likes, followers or engagement statistics.\nConstraints: Preserve the brands and colors supplied in campaign reference images. Do not reproduce PDF pages themselves, surrounding black PDF background, page headings, page numbers, personal names, author identity, phone numbers, website addresses, or lengthy filler text. Use only exact text listed below; remove other text rather than inventing it. No added claims, revenue, percentages, testimonials, watermark or logos from unrelated brands.\nInput images: image 1 CAVÉ Studio interior campaign reference; image 2 Woodcare Interior source. Use image 1 as primary branded artwork reference, image 2 only as evidence of the broader interiors copy collection. Not edit targets.\nPrimary request: one square transparent portfolio asset for interior-brand copy. Elegant graphite portrait smartphone showing CAVÉ Studio campaign artwork with the luminous warm ivory living room from reference, cream sofa and sculptural light wood table. A second physical tall card sits behind to one side with CAVÉ Studio moody charcoal and warm amber modern farmhouse kitchen artwork. Retain clear short editorial typography and source mark. Entire objects fully visible, spacious enough for easy readability. Brand photography stays inside displays/cards, never spilling into transparent background.\nText (verbatim): CAVÉ STUDIO; Bespoke Interiors For The Modern Soul.; Modern Farmhouse; KITCHEN. No other text.\nOutput: 1024 x 1024 square, genuine transparency.",
+      "referencedImagePaths": [
+        "tmp/pdfs/myportfolio-pages/page-5.png",
+        "tmp/pdfs/myportfolio-pages/page-2.png"
+      ],
+      "generatedPath": "C:\\Users\\TECHNOSELLERS\\.codex\\generated_images\\01a12a8d-fbe2-7af0-b465-d77afc0a2a43\\exec-6db63c58-248e-42c3-a344-607f581456f5.png",
+      "selectedPng": "public/work/case-mockups/brand-copy-content/interiors.png",
+      "optimizedWebp": "public/work/case-mockups/brand-copy-content/interiors.webp",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "channels": 4,
+        "fullyTransparentPixels": 428761,
+        "partiallyTransparentPixels": 1142639,
+        "fullyOpaquePixels": 1116,
+        "transparentPixelFraction": 0.27265922890450717,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "webpHasAlpha": true
+      },
+      "bytes": {
+        "png": 1932831,
+        "webp": 224024
+      }
+    },
+    {
+      "name": "agency",
+      "prompt": "Use case: product-mockup.\nAsset type: commercial portfolio artwork showcasing supplied brand copy and social caption content, never a new app or website.\nStyle/medium: premium photorealistic 3D product mockup. Satin graphite and brushed silver devices, slender bezels, physically believable glass highlights, restrained perspective. Fully colored brand artwork appears only inside screens and physical flat campaign cards. Beautiful high fidelity furniture and interiors photographic artwork inside source campaigns. Very crisp accurate typography.\nBackdrop: actual RGBA transparent background. Absolutely every pixel outside device/card silhouettes is transparent, including gaps between objects. No environment, floor, pedestal, plinth, desktop, backdrop rectangle, black background, white background, gray background, gradient, wall, checkerboard, or shadow haze. Floating isolated objects only. No content behind their silhouettes.\nComposition/framing: fully uncropped objects with clean modest margins on all sides. Entire device edges and cards visible. Device display is just a campaign artwork proof, with no browser chrome, navigation, app controls, dashboard, likes, followers or engagement statistics.\nConstraints: Preserve the brands and colors supplied in campaign reference images. Do not reproduce PDF pages themselves, surrounding black PDF background, page headings, page numbers, personal names, author identity, phone numbers, website addresses, or lengthy filler text. Use only exact text listed below; remove other text rather than inventing it. No added claims, revenue, percentages, testimonials, watermark or logos from unrelated brands.\nInput images: image 1 SOFTIRIUM social advertising source with vivid violet, purple and magenta, hourglass campaign and stand-out campaign. Content reference, not edit target.\nPrimary request: one square transparent portfolio asset for digital agency promotional copy. A photorealistic graphite smartphone in a slight three-quarter view presents a precise restaging of the source SOFTIRIUM purple hourglass campaign: richly violet hourglass on right, clean bold white/yellow/magenta headline on left, subtle purple grid texture inside screen only. Behind it one smaller fully-visible square physical campaign proof card preserves source vivid violet identity and the second concise stand-out headline. Do not depict an agency app or website: these are static advertising posts displayed on a device. Keep complete objects in frame with modest margins, polished edges, no other props or ground.\nText (verbatim): SOFTIRIUM; THE RIGHT STRATEGY SAVES TIME; Will you; Stand out; or blend in? No other text.\nOutput: 1024 x 1024 square, genuine transparency.",
+      "referencedImagePaths": [
+        "tmp/pdfs/myportfolio-pages/page-6.png"
+      ],
+      "generatedPath": "C:\\Users\\TECHNOSELLERS\\.codex\\generated_images\\01a12a8d-fbe2-7af0-b465-d77afc0a2a43\\exec-5e9e7a9f-af95-4597-87d2-c964eb6a8bbb.png",
+      "selectedPng": "public/work/case-mockups/brand-copy-content/agency.png",
+      "optimizedWebp": "public/work/case-mockups/brand-copy-content/agency.webp",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "channels": 4,
+        "fullyTransparentPixels": 651943,
+        "partiallyTransparentPixels": 919116,
+        "fullyOpaquePixels": 1457,
+        "transparentPixelFraction": 0.41458592472191064,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "webpHasAlpha": true
+      },
+      "bytes": {
+        "png": 1605509,
+        "webp": 204698
+      }
+    }
+  ]
+}

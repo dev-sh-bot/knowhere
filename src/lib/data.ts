@@ -6,6 +6,7 @@ export type Service = {
   desc: string;
   inc: string[];
   stack: string[];
+  stackLabel?: string;
 };
 
 export type CaseStudy = {
@@ -23,6 +24,7 @@ export type CaseStudy = {
   stack: string[];
   pos?: string;
   slug?: string;
+  kind?: "creative";
 };
 
 export type Filter = { k: string; l: string };
@@ -206,6 +208,38 @@ export const SVC: Service[] = [
       "Emergency support",
     ],
     stack: ["Technology strategy", "Managed IT", "Support planning"],
+  },
+  {
+    num: "13",
+    name: "Brand & Social Design",
+    tag: "CAMPAIGNS · POSTS · VISUALS",
+    img: "/work/case-mockups/social-media-design/cover.webp",
+    desc: "Brand-led static social posts and campaign visuals, with clear product focus, readable type and a consistent visual language across a series.",
+    inc: [
+      "Static social media posts",
+      "Product campaign visuals",
+      "Promotional post series",
+      "Typography and visual hierarchy",
+      "Brand-consistent creative direction",
+    ],
+    stack: ["Art direction", "Social design", "Campaign layouts", "Product storytelling"],
+    stackLabel: "Creative disciplines",
+  },
+  {
+    num: "14",
+    name: "Copywriting & Content",
+    tag: "BRAND VOICE · HEADLINES · SOCIAL",
+    img: "/work/case-mockups/brand-copy-content/cover.webp",
+    desc: "Concise brand copy and social content for products and services — from a useful headline and supporting message to a clear call to action.",
+    inc: [
+      "Brand and promotional copy",
+      "Social post headlines",
+      "Product-focused messaging",
+      "Service and lifestyle content",
+      "Calls to action",
+    ],
+    stack: ["Copywriting", "Content writing", "Brand voice", "Product messaging"],
+    stackLabel: "Writing disciplines",
   },
 ];
 
@@ -395,6 +429,48 @@ export const CASES: CaseStudy[] = [
     ],
     stack: ["Flutter", "NestJS", "PostgreSQL", "TypeORM", "AWS S3", "OAuth"],
   },
+  {
+    no: "C-10",
+    title: "Brand Copy & Content",
+    sector: "BRAND CONTENT",
+    loc: "CURATED WRITING PORTFOLIO",
+    tags: ["content"],
+    homeTag: "COPY · CONTENT",
+    img: "/work/case-mockups/brand-copy-content/cover.webp",
+    slug: "brand-copy-content",
+    kind: "creative",
+    blurb:
+      "Brand copy and social content across furniture, interiors and digital marketing, drawn from Zehra Ghani’s writing portfolio.",
+    ch: "Furniture, interior and agency brands need concise messages that explain the offer, reflect their character and give a social post a clear purpose.",
+    bd: "A curated collection of product headlines, interior-service messaging, lifestyle copy and promotional calls to action from Woodcare Interior, Sofa Concept, Wood Décor, Pakistan Furniture & Interiors, CAVÉ Studio and Softirium.",
+    outs: [
+      ["COPY", "PRODUCT HEADLINES AND PROMOTIONAL MESSAGES"],
+      ["CONTENT", "FURNITURE, INTERIORS AND AGENCY STORIES"],
+      ["VOICE", "MESSAGING ADAPTED TO EACH BRAND"],
+    ],
+    stack: ["Copywriting", "Content writing", "Brand voice", "Product messaging"],
+  },
+  {
+    no: "C-11",
+    title: "Social Media Design",
+    sector: "SOCIAL CAMPAIGNS",
+    loc: "CURATED DESIGN PORTFOLIO",
+    tags: ["design"],
+    homeTag: "DESIGN · SOCIAL",
+    img: "/work/case-mockups/social-media-design/cover.webp",
+    slug: "social-media-design",
+    kind: "creative",
+    blurb:
+      "Static social campaigns spanning technology, building products, food and beauty, with distinct visual identities and focused product storytelling.",
+    ch: "Different product categories need their own visual language while keeping the headline, imagery and promotional message clear within a social feed.",
+    bd: "A curated collection of solar and media-technology promotions, BuildSaver hardware campaigns, Razi Trade and Safi Korba food content, and Essencetics beauty visuals. Each series uses category-specific colour, typography and product-led composition.",
+    outs: [
+      ["STATIC", "PRODUCT AND PROMOTIONAL SOCIAL POSTS"],
+      ["IDENTITY", "CONSISTENT COLOUR AND TYPE WITHIN EACH SERIES"],
+      ["CAMPAIGNS", "TECHNOLOGY, HARDWARE, FOOD AND BEAUTY"],
+    ],
+    stack: ["Social design", "Art direction", "Visual hierarchy", "Campaign layouts"],
+  },
 ];
 
 export const FILTERS: Filter[] = [
@@ -403,6 +479,8 @@ export const FILTERS: Filter[] = [
   { k: "mobile", l: "MOBILE" },
   { k: "ai", l: "AI" },
   { k: "cloud", l: "CLOUD" },
+  { k: "content", l: "CONTENT" },
+  { k: "design", l: "DESIGN" },
 ].map(({ k, l }) => ({
   k,
   l: `${l} / ${String(k === "all" ? CASES.length : CASES.filter((c) => c.tags.includes(k)).length).padStart(2, "0")}`,
@@ -485,7 +563,7 @@ export const PRINCIPLES: Principle[] = [
 export const STATS: Stat[] = [
   { n: CASES.length, suf: "", label: "Case studies" },
   { n: 3, suf: "", label: "Platforms represented" },
-  { n: 12, suf: "", label: "Service disciplines" },
+  { n: SVC.length, suf: "", label: "Service disciplines" },
 ];
 
 export const MQ_ITEMS = [
@@ -501,6 +579,8 @@ export const MQ_ITEMS = [
   "QA & TESTING",
   "ERP & INTEGRATIONS",
   "IT CONSULTING",
+  "BRAND & SOCIAL DESIGN",
+  "COPYWRITING & CONTENT",
 ];
 
 export const NAVLINKS: NavLink[] = [

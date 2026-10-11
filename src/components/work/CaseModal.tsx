@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Ic } from "@/components/ui/Ic";
 import { CASES } from "@/lib/data";
 import { D } from "@/lib/icons";
@@ -15,15 +15,12 @@ type CaseModalProps = {
 export function CaseModal({ idx, onClose }: CaseModalProps) {
   const [show, setShow] = useState(false);
   const closingRef = useRef(false);
-  const closeRef = useRef(() => {});
-
-  const close = () => {
+  const close = useCallback(() => {
     if (closingRef.current) return;
     closingRef.current = true;
     setShow(false);
     setTimeout(onClose, 420);
-  };
-  closeRef.current = close;
+  }, [onClose]);
 
   useEffect(() => {
     const r = requestAnimationFrame(() =>
@@ -31,7 +28,7 @@ export function CaseModal({ idx, onClose }: CaseModalProps) {
     );
     document.body.classList.add("lock");
     const esc = (e: KeyboardEvent) => {
-      if (e.key === "Escape") closeRef.current();
+      if (e.key === "Escape") close();
     };
     window.addEventListener("keydown", esc);
     return () => {
@@ -39,7 +36,7 @@ export function CaseModal({ idx, onClose }: CaseModalProps) {
       document.body.classList.remove("lock");
       window.removeEventListener("keydown", esc);
     };
-  }, []);
+  }, [close]);
 
   const c = CASES[idx];
 
@@ -75,7 +72,7 @@ export function CaseModal({ idx, onClose }: CaseModalProps) {
             <p>{c.ch}</p>
           </div>
           <div>
-            <h5>THE BUILD</h5>
+            <h5>{c.kind === "creative" ? "THE APPROACH" : "THE BUILD"}</h5>
             <p>{c.bd}</p>
           </div>
         </div>
@@ -88,7 +85,7 @@ export function CaseModal({ idx, onClose }: CaseModalProps) {
           ))}
         </div>
         <div className="m-stack">
-          <h5>STACK</h5>
+          <h5>{c.kind === "creative" ? "CAPABILITIES" : "STACK"}</h5>
           <div className="tags">
             {c.stack.map((s, i) => (
               <span key={i}>{s}</span>
@@ -96,7 +93,7 @@ export function CaseModal({ idx, onClose }: CaseModalProps) {
           </div>
         </div>
         <Link className="btn btn-lime" href="/contact" onClick={close}>
-          Build something like this <Ic d={D.ne} />
+          {c.kind === "creative" ? "Discuss your brand" : "Build something like this"} <Ic d={D.ne} />
         </Link>
       </div>
     </div>
