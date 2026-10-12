@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Archivo, IBM_Plex_Mono } from "next/font/google";
 import { SiteShell } from "@/components/layout/SiteShell";
 import "./globals.css";
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: {
-      url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230D0E0A'/%3E%3Ccircle cx='16' cy='16' r='8.4' fill='none' stroke='%23C6FF3F' stroke-width='2'/%3E%3Cpath d='M16 1.5v5.4M16 25.1v5.4M1.5 16h5.4M25.1 16h5.4' stroke='%23C6FF3F' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23C6FF3F'/%3E%3C/svg%3E",
+      url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230D0E0A'/%3E%3Ccircle cx='16' cy='16' r='8.4' fill='none' stroke='%23ffffff' stroke-width='2'/%3E%3C/svg%3E",
       type: "image/svg+xml",
     },
   },
@@ -56,6 +57,12 @@ const jsonLd = {
   url: "https://knowheresystems.com",
 };
 
+const clarityScript = `(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "ywgvwzxnsg");`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -68,6 +75,9 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="lock" suppressHydrationWarning>
+        <Script id="clarity-script" strategy="afterInteractive">
+          {clarityScript}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
