@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { Archivo, IBM_Plex_Mono } from "next/font/google";
 import { SiteShell } from "@/components/layout/SiteShell";
 import "./globals.css";
@@ -81,9 +80,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <Script id="gtm-script" strategy="beforeInteractive">
-          {gtmScript}
-        </Script>
+        <script dangerouslySetInnerHTML={{ __html: gtmScript }} />
       </head>
       <body className="lock" suppressHydrationWarning>
         <noscript>
@@ -92,15 +89,16 @@ export default function RootLayout({
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+          />
         </noscript>
-        <Script id="clarity-script" strategy="afterInteractive">
-          {clarityScript}
-        </Script>
+
+        <script dangerouslySetInnerHTML={{ __html: clarityScript }} />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+
         <SiteShell>{children}</SiteShell>
       </body>
     </html>
