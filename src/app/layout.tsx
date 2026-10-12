@@ -57,6 +57,12 @@ const jsonLd = {
   url: "https://knowheresystems.com",
 };
 
+const gtmScript = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WWF4RLWF');`;
+
 const clarityScript = `(function(c,l,a,r,i,t,y){
   c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
   t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -74,6 +80,11 @@ export default function RootLayout({
       className={`${archivo.variable} ${ibmPlexMono.variable}`}
       suppressHydrationWarning
     >
+      <head>
+        <Script id="gtm-script" strategy="beforeInteractive">
+          {gtmScript}
+        </Script>
+      </head>
       <body className="lock" suppressHydrationWarning>
         <Script id="clarity-script" strategy="afterInteractive">
           {clarityScript}
