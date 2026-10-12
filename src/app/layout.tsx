@@ -86,6 +86,14 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="lock" suppressHydrationWarning>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WWF4RLWF"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <Script id="clarity-script" strategy="afterInteractive">
           {clarityScript}
         </Script>
